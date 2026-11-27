@@ -1,9 +1,9 @@
 {
-  "source_sha256": "7c17163df40e5aea35061ef14df3e3179888f71098ffd6e466491ccc9ba6a869",
+  "source_sha256": "3e30ad8705b42cd4b5b3367a2f551138113f283ccde1aa18accfbe48c110a56d",
   "video_human_voice": true,
   "video_scope": "USER_SUPPLIED_GENUINE_UI_WITH_RECORDED_AUDIO",
   "case_set_sha256": "08e2e855e0a0756de0ba47e379deac381a6e7c8cad91381998eec4cacaa76fd0",
-  "verification_tests": 122,
+  "verification_tests": 142,
   "human_voice": "USER_SUPPLIED_EMBEDDED_RECORDING",
   "acceptance_report": "acceptance.md",
   "console_final_live_displayed_subtotal_usd": 0.03807,
@@ -13,8 +13,8 @@
   "single_page_live_api_calls": 1,
   "single_page_live_tokens": 925,
   "single_page_six_view_smoke": "PASS",
-  "dialogue_scope": "MEMORY_RETRIEVAL_AND_TASK_HANDOFF",
-  "multi_turn_chat": false,
+  "dialogue_scope": "PERSISTENT_CHAT_MEMORY_AND_TASK_HANDOFF",
+  "multi_turn_chat": true,
   "participant_voice_uploaded": true,
   "participant_voice_file": "participant-voice.m4a",
   "participant_voice_sha256": "6d799ee1b9e28adb5d304e7627c594c47936a2b27a7af7efa6b7e120ff6719a1",
@@ -24,5 +24,12 @@
   "primary_demo_duration_seconds": 99.932833,
   "primary_demo_bytes": 25156301,
   "original_video_sha256": "1d37abf56a31bbfc7cdd52985439aee753082846e90e78cf424ec7478047023c",
-  "audio_video_packet_hash_match": true
+  "audio_video_packet_hash_match": true,
+  "chat_live_tokens": 1980,
+  "chat_live_api_calls": 3,
+  "chat_acceptance_file": "chat-memory-acceptance.json",
+  "chat_review_file": "chat-code-review.md",
+  "chat_development_api_calls": 3,
+  "chat_development_tokens": 17682,
+  "public_source_exclusions": "本機寄件收據、金鑰、執行資料庫及私人開發回覆已排除。"
 }
