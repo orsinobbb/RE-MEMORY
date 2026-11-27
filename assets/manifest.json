@@ -31,5 +31,7 @@
   "chat_review_file": "chat-code-review.md",
   "chat_development_api_calls": 3,
   "chat_development_tokens": 17682,
-  "public_source_exclusions": "本機寄件收據、金鑰、執行資料庫及私人開發回覆已排除。"
+  "public_source_exclusions": "本機寄件收據、金鑰、執行資料庫及私人開發回覆已排除。",
+  "public_text_language_scan": "PASS_ZH_HANT",
+  "legacy_evidence_scope": "11/27 固定實測證據保留為歷史快照；11/28 聊天驗收另見 chat-memory-acceptance.json。"
 }
