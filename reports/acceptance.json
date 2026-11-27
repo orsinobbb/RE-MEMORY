@@ -1,0 +1,923 @@
+{
+  "started_at": "2026-11-27T18:15:47+08:00",
+  "core_verified_at": "2026-11-27T18:29:50.890676+08:00",
+  "source_commit_verified": "907b2fa",
+  "scope": "LOCAL_SYNTHETIC_PROTOTYPE_AND_PRIVATE_DELIVERY",
+  "status": "CORE_ACCEPTED_RESEARCH_GAPS_DECLARED_HUMAN_VOICE_DEFERRED",
+  "checks": [
+    {
+      "command": ".venv/bin/python -m pytest -q -rA",
+      "exit_code": 0,
+      "passed": 122,
+      "warnings": 1,
+      "warning_scope": "Upstream Starlette/httpx deprecation"
+    },
+    {
+      "command": "REMEMORY_BASE_URL=http://127.0.0.1:8792 node tests/browser_smoke.mjs",
+      "exit_code": 0,
+      "scope": "six views/SSE/context/SIM artifact/offline benchmark/1440 and390"
+    },
+    {
+      "command": "node tests/browser_live_demo.mjs",
+      "exit_code": 0,
+      "scope": "two SIM stages/empty sessions/exact prior artifact/reload/no model call"
+    },
+    {
+      "command": "node tests/browser_memory_repair.mjs",
+      "exit_code": 0,
+      "scope": "source-backed edit/alias/history/acknowledgment/revalidation/stale state/1440 and390"
+    },
+    {
+      "check": "SQLite online backup to isolated temporary restore; integrity_check and model_calls/spend/budget_windows",
+      "status": "PASS"
+    },
+    {
+      "check": "Fresh source ZIP extracted; executable modes restored; env.example only; UV_OFFLINE=1 ./start_mac.sh on8795; health/disabled LIVE",
+      "status": "PASS"
+    },
+    {
+      "check": "Stored LIVE distinct actual models/two zero-history sessions/exact prior content SHA/38 final artifacts/8 expected no-call stops",
+      "status": "PASS"
+    },
+    {
+      "check": "Static private delivery tabs/proof/table/downloads/video seek/playback/desktop1440/mobile390",
+      "status": "PASS",
+      "video_duration_seconds": 149.84
+    },
+    {
+      "check": "Fresh IAB local prototype page shows DEMO DATASET CONNECTED",
+      "status": "PASS",
+      "url": "http://127.0.0.1:8791/#observatory"
+    },
+    {
+      "check": "Final40 console model/input/output multiset matches provider usage",
+      "status": "PASS",
+      "known_tokens": 41697,
+      "console_displayed_subtotal_usd": 0.03807,
+      "invoice_usd": null
+    }
+  ],
+  "requirements": [
+    {
+      "id": "BUD-01",
+      "module": "budget",
+      "requirement": "計算 system、user、mandatory、work、evidence、tools、output reserve、safety margin 與 total。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_context.py",
+        "tests/test_mixroute.py",
+        "tests/test_hardening.py",
+        "tests/test_live_demo.py",
+        "reports/console-final-live-reconciliation.json"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "BUD-02",
+      "module": "budget",
+      "requirement": "將最終 messages framing 開銷算入 packing，支援 1K、2K、4K、8K、16K 展示預算與模型 context limit。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_context.py",
+        "tests/test_mixroute.py",
+        "tests/test_hardening.py",
+        "tests/test_live_demo.py",
+        "reports/console-final-live-reconciliation.json"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "BUD-03",
+      "module": "budget",
+      "requirement": "必要限制不可截斷；total 超出預算必須標記 INFEASIBLE／阻止執行。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_context.py",
+        "tests/test_mixroute.py",
+        "tests/test_hardening.py",
+        "tests/test_live_demo.py",
+        "reports/console-final-live-reconciliation.json"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "BUD-04",
+      "module": "budget",
+      "requirement": "本機 Token 估算與 actual provider usage 分開；未知實際值保持 null／UNKNOWN。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_context.py",
+        "tests/test_mixroute.py",
+        "tests/test_hardening.py",
+        "tests/test_live_demo.py",
+        "reports/console-final-live-reconciliation.json"
+      ],
+      "scope_note": "最後40次 usage與控制台逐筆模型／輸入／輸出多重集合相符；累計兩筆早期用量仍未知。"
+    },
+    {
+      "id": "BUD-05",
+      "module": "budget",
+      "requirement": "付費呼叫前以保守輸入／輸出與有限 retry 上界做交易式成本保留，不能超過開發包絡。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_context.py",
+        "tests/test_mixroute.py",
+        "tests/test_hardening.py",
+        "tests/test_live_demo.py",
+        "reports/console-final-live-reconciliation.json"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "BUD-06",
+      "module": "budget",
+      "requirement": "精確帳單尚未核對時，保留上界與未結清 reservation，不假報已測零成本。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_context.py",
+        "tests/test_mixroute.py",
+        "tests/test_hardening.py",
+        "tests/test_live_demo.py",
+        "reports/console-final-live-reconciliation.json"
+      ],
+      "scope_note": "控制台參考小計 US$0.038070 不作發票；原帳本 US$1.35510 未結清保留額不釋出。"
+    },
+    {
+      "id": "COV-01",
+      "module": "coverage",
+      "requirement": "接續工作必須有目前 GOAL、CONSTRAINT、DECISION、未完成任務及其依賴。",
+      "status": "PARTIAL",
+      "evidence": [
+        "tests/test_context.py",
+        "tests/test_hardening.py",
+        "tests/test_live_demo.py",
+        "tests/test_memory_repair.py"
+      ],
+      "scope_note": "已核驗宣告的直接 fact／task／artifact 依賴；任意遞迴依賴圖的完整閉包未完成。"
+    },
+    {
+      "id": "COV-02",
+      "module": "coverage",
+      "requirement": "必要記憶須在有效時間、非 superseded、無衝突、具驗證／可信狀態與同專案可信來源。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_context.py",
+        "tests/test_hardening.py",
+        "tests/test_live_demo.py",
+        "tests/test_memory_repair.py"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "COV-03",
+      "module": "coverage",
+      "requirement": "已完成任務與 required_artifact_ids 指向的成果必須存在、屬於同專案、具有驗證狀態與正確 SHA256。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_context.py",
+        "tests/test_hardening.py",
+        "tests/test_live_demo.py",
+        "tests/test_memory_repair.py"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "COV-04",
+      "module": "coverage",
+      "requirement": "產生含專案、目標版本、active task、mandatory memory、依賴、來源、缺失、衝突、snapshot 與預算的 manifest。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_context.py",
+        "tests/test_hardening.py",
+        "tests/test_live_demo.py",
+        "tests/test_memory_repair.py"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "COV-05",
+      "module": "coverage",
+      "requirement": "缺失、未核實來源、衝突或有效期錯誤要產生 Semantic Page Fault／阻擋原因，不得默認可執行。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_context.py",
+        "tests/test_hardening.py",
+        "tests/test_live_demo.py",
+        "tests/test_memory_repair.py"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "COV-06",
+      "module": "coverage",
+      "requirement": "覆蓋率只描述已知必要記憶；不能宣稱知道全部歷史，生成 CLAIM 不能代替已驗證限制。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_context.py",
+        "tests/test_hardening.py",
+        "tests/test_live_demo.py",
+        "tests/test_memory_repair.py"
+      ],
+      "scope_note": "只覆蓋已知必要記憶；生成成果仍為 CLAIM。"
+    },
+    {
+      "id": "EVA-01",
+      "module": "evaluation",
+      "requirement": "每輪評估使用獨立合成資料庫，不把 ground truth 保存於 memory 或交給 retrieval／task runner。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_evaluation.py",
+        "tests/test_baselines.py",
+        "tests/test_live_evaluation.py",
+        "tests/test_final_live.py",
+        "benchmarks/results/final-live.json",
+        "reports/evaluation-summary.md"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "EVA-02",
+      "module": "evaluation",
+      "requirement": "dev 與 blind 分開，權重調整只使用 dev；report 標記 split、seed／日期與策略配置。",
+      "status": "PARTIAL",
+      "evidence": [
+        "tests/test_evaluation.py",
+        "tests/test_baselines.py",
+        "tests/test_live_evaluation.py",
+        "tests/test_final_live.py",
+        "benchmarks/results/final-live.json",
+        "reports/evaluation-summary.md"
+      ],
+      "scope_note": "dev／blind 標籤與 evaluator 答案隔離已驗證，但舊案例已參與迭代，沒有真正封存盲測。"
+    },
+    {
+      "id": "EVA-03",
+      "module": "evaluation",
+      "requirement": "比較 A–F、10／100／1000 與 1K／2K／4K／8K／16K，不預先假設新策略勝出。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_evaluation.py",
+        "tests/test_baselines.py",
+        "tests/test_live_evaluation.py",
+        "tests/test_final_live.py",
+        "benchmarks/results/final-live.json",
+        "reports/evaluation-summary.md"
+      ],
+      "scope_note": "已保存 3 規模 × 5 預算 × 6 策略＝90 離線列；F 離線不執行模型。"
+    },
+    {
+      "id": "EVA-04",
+      "module": "evaluation",
+      "requirement": "輸出 top1／top3／MRR／critical recall／precision／constraint omission／clarification／rounds／tokens／latency 等實測值與 case results。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_evaluation.py",
+        "tests/test_baselines.py",
+        "tests/test_live_evaluation.py",
+        "tests/test_final_live.py",
+        "benchmarks/results/final-live.json",
+        "reports/evaluation-summary.md"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "EVA-05",
+      "module": "evaluation",
+      "requirement": "離線任務成功、wrong execution、duplicate delivery、API cost、cost per success 維持 null；F 離線為 NOT_RUN_REQUIRES_LIVE_SMART_ROUTING。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_evaluation.py",
+        "tests/test_baselines.py",
+        "tests/test_live_evaluation.py",
+        "tests/test_final_live.py",
+        "benchmarks/results/final-live.json",
+        "reports/evaluation-summary.md"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "EVA-06",
+      "module": "evaluation",
+      "requirement": "LIVE A–E 使用相同固定模型；F 只改 provider routing，fresh trials 與真實 artifact／usage 才能支持 task success。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_evaluation.py",
+        "tests/test_baselines.py",
+        "tests/test_live_evaluation.py",
+        "tests/test_final_live.py",
+        "benchmarks/results/final-live.json",
+        "reports/evaluation-summary.md"
+      ],
+      "scope_note": "既有 A–E 同固定 DeepSeek、F auto；最後新增 E/F 固定20句型和6個 Sonnet 子集。F 實際均為 DeepSeek，無品質提升結論。"
+    },
+    {
+      "id": "EVA-07",
+      "module": "evaluation",
+      "requirement": "完整矩陣、LIVE 比較、元件消融與 billed cost 應逐項報告實測狀態，不能由測試存在推論成績。",
+      "status": "PARTIAL",
+      "evidence": [
+        "tests/test_evaluation.py",
+        "tests/test_baselines.py",
+        "tests/test_live_evaluation.py",
+        "tests/test_final_live.py",
+        "benchmarks/results/final-live.json",
+        "reports/evaluation-summary.md"
+      ],
+      "scope_note": "矩陣與 LIVE 已測；完整元件消融、獨立未見資料和正式 billed cost 尚未完成。"
+    },
+    {
+      "id": "IFR-01",
+      "module": "interface",
+      "requirement": "提供 Workspace、Memory Explorer、Retrieval Observatory、Context Inspector、Recovery Lab、Benchmark Lab 六個可操作視圖。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_api.py",
+        "tests/browser_smoke.mjs",
+        "tests/browser_live_demo.mjs",
+        "tests/browser_memory_repair.mjs",
+        "reports/delivery-verification.json"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "IFR-02",
+      "module": "interface",
+      "requirement": "所有資料來自 same-origin backend，憑證不得進入前端；導入文本通過 textContent／DOM API 呈現，不執行不可信 HTML。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_api.py",
+        "tests/browser_smoke.mjs",
+        "tests/browser_live_demo.mjs",
+        "tests/browser_memory_repair.mjs",
+        "reports/delivery-verification.json"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "IFR-03",
+      "module": "interface",
+      "requirement": "Observatory 呈現真實輪次／候選／證據／Tokens／停止原因；SSE優先，回退回放標示 SAVED REPLAY。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_api.py",
+        "tests/browser_smoke.mjs",
+        "tests/browser_live_demo.mjs",
+        "tests/browser_memory_repair.mjs",
+        "reports/delivery-verification.json"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "IFR-04",
+      "module": "interface",
+      "requirement": "Context 顯示 manifest、必要內容、未載入、缺失、衝突、fault 與八類預算；未知測量為 UNKNOWN。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_api.py",
+        "tests/browser_smoke.mjs",
+        "tests/browser_live_demo.mjs",
+        "tests/browser_memory_repair.mjs",
+        "reports/delivery-verification.json"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "IFR-05",
+      "module": "interface",
+      "requirement": "Recovery 使用真實新 Session、唯一 idempotency key、使用者選擇模式／catalogue model，顯示實際 artifact 與下載。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_api.py",
+        "tests/browser_smoke.mjs",
+        "tests/browser_live_demo.mjs",
+        "tests/browser_memory_repair.mjs",
+        "reports/delivery-verification.json"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "IFR-06",
+      "module": "interface",
+      "requirement": "Benchmark 只通過 UI 執行 offline，顯示 actual rows 與 JSON export；未量測 live 指標不能填示意成績。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_api.py",
+        "tests/browser_smoke.mjs",
+        "tests/browser_live_demo.mjs",
+        "tests/browser_memory_repair.mjs",
+        "reports/delivery-verification.json"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "IFR-07",
+      "module": "interface",
+      "requirement": "深藍／青綠／白色，body 16px、常用labels 14px；桌面／手機無頁面水平溢位，具基本鍵盤與狀態可讀性。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_api.py",
+        "tests/browser_smoke.mjs",
+        "tests/browser_live_demo.mjs",
+        "tests/browser_memory_repair.mjs",
+        "reports/delivery-verification.json"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "IFR-08",
+      "module": "interface",
+      "requirement": "actual browser integration 與最終畫面必須驗證，靜態語法檢查不能代替 six-view end-to-end。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_api.py",
+        "tests/browser_smoke.mjs",
+        "tests/browser_live_demo.mjs",
+        "tests/browser_memory_repair.mjs",
+        "reports/delivery-verification.json"
+      ],
+      "scope_note": "本輪重跑六視圖、兩階段和記憶修正，桌面1440／手機390；IAB 新頁已確認本機連線。"
+    },
+    {
+      "id": "MIX-01",
+      "module": "mixroute",
+      "requirement": "使用已核實的 official endpoint 與 actual model ID；regular／Smart keys 只在本機後端設定，不進入 UI、Git、影片或公開紀錄。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_mixroute.py",
+        "tests/test_hardening.py",
+        "tests/test_live_demo.py",
+        "reports/final-live-demo.json",
+        "reports/console-final-live-reconciliation.json"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "MIX-02",
+      "module": "mixroute",
+      "requirement": "提供 FIXED 與 SMART，保留 requested／actual model、usage、request／response ID、latency 與 failure。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_mixroute.py",
+        "tests/test_hardening.py",
+        "tests/test_live_demo.py",
+        "reports/final-live-demo.json",
+        "reports/console-final-live-reconciliation.json"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "MIX-03",
+      "module": "mixroute",
+      "requirement": "未知價格、空授權池、未啟用 API、超 context limit／budget 時阻止付費執行；唯讀 catalogue 不等於 pool proof。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_mixroute.py",
+        "tests/test_hardening.py",
+        "tests/test_live_demo.py",
+        "reports/final-live-demo.json",
+        "reports/console-final-live-reconciliation.json"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "MIX-04",
+      "module": "mixroute",
+      "requirement": "最終必須驗證 FIXED requested model 與 SMART actual returned model 屬於核准模型池。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_mixroute.py",
+        "tests/test_hardening.py",
+        "tests/test_live_demo.py",
+        "reports/final-live-demo.json",
+        "reports/console-final-live-reconciliation.json"
+      ],
+      "scope_note": "requested／returned allowlist 與 stage2 不同實際模型驗證已通過。"
+    },
+    {
+      "id": "MIX-05",
+      "module": "mixroute",
+      "requirement": "逾時與 transient failure 只有有界 retry；未知 bill 不釋出保守 reservation，不自動儲值。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_mixroute.py",
+        "tests/test_hardening.py",
+        "tests/test_live_demo.py",
+        "reports/final-live-demo.json",
+        "reports/console-final-live-reconciliation.json"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "MIX-06",
+      "module": "mixroute",
+      "requirement": "真實連線、任務接續、跨模型交接與實驗效果分別驗證，單次 auto 探針不能代替任務成功。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_mixroute.py",
+        "tests/test_hardening.py",
+        "tests/test_live_demo.py",
+        "reports/final-live-demo.json",
+        "reports/console-final-live-reconciliation.json"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "STO-01",
+      "module": "storage",
+      "requirement": "所有資料存取以 user_id 篩選，專案記憶另以 project_id 篩選；同一 ID 不得跨使用者覆寫。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_storage.py",
+        "tests/test_evolution.py",
+        "tests/test_memory_repair.py",
+        "DEPLOYMENT.md"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "STO-02",
+      "module": "storage",
+      "requirement": "SQL 值採參數化；資料表名稱只能從白名單選取，任意輸入不得改寫查詢結構。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_storage.py",
+        "tests/test_evolution.py",
+        "tests/test_memory_repair.py",
+        "DEPLOYMENT.md"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "STO-03",
+      "module": "storage",
+      "requirement": "固定 seed 與日期基準可重現 10、100、1000 個合成專案；包含相似主題、歧義別名、舊版本、未完成工作與已存在的完成成果。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_storage.py",
+        "tests/test_evolution.py",
+        "tests/test_memory_repair.py",
+        "DEPLOYMENT.md"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "STO-04",
+      "module": "storage",
+      "requirement": "Fact Cell 保存類型、來源、有效時間、版本、驗證、信任、關聯、存取、superseded 與 conflict；查詢可區分目前版本與完整保存版本。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_storage.py",
+        "tests/test_evolution.py",
+        "tests/test_memory_repair.py",
+        "DEPLOYMENT.md"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "STO-05",
+      "module": "storage",
+      "requirement": "同一 alias 可連結多個專案；CONFIRMED／CANDIDATE 等狀態不得混同。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_storage.py",
+        "tests/test_evolution.py",
+        "tests/test_memory_repair.py",
+        "DEPLOYMENT.md"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "STO-06",
+      "module": "storage",
+      "requirement": "FTS5 支援中文 bigram 與英文詞；索引／資料庫不儲存 evaluator ground truth。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_storage.py",
+        "tests/test_evolution.py",
+        "tests/test_memory_repair.py",
+        "DEPLOYMENT.md"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "STO-07",
+      "module": "storage",
+      "requirement": "任務、成果、事件、快照與交付識別使用交易寫回；成本保留帳本能區分實際已結清值與未結清上界。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_storage.py",
+        "tests/test_evolution.py",
+        "tests/test_memory_repair.py",
+        "DEPLOYMENT.md"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "RES-01",
+      "module": "resolution",
+      "requirement": "解析目前需求的時間、主題與接續行為；日期以明確 reference_date 計算。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_retrieval.py",
+        "tests/test_evolution.py",
+        "benchmarks/results/final-live.json"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "RES-02",
+      "module": "resolution",
+      "requirement": "唯一明確專案 ID／完整名稱可辨識目標，且只能在目前使用者資料範圍搜尋。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_retrieval.py",
+        "tests/test_evolution.py",
+        "benchmarks/results/final-live.json"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "RES-03",
+      "module": "resolution",
+      "requirement": "唯一 CONFIRMED alias 與 CANDIDATE／歧義 alias 分開處理；REJECTED／DEPRECATED 不得作為已確認指令。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_retrieval.py",
+        "tests/test_evolution.py",
+        "benchmarks/results/final-live.json"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "RES-04",
+      "module": "resolution",
+      "requirement": "同一稱呼對應多個專案且無足夠區別線索時，回傳澄清，不執行錯誤專案。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_retrieval.py",
+        "tests/test_evolution.py",
+        "benchmarks/results/final-live.json"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "RES-05",
+      "module": "resolution",
+      "requirement": "候選分數顯示 time、topic、alias、behavior、content、unfinished、frequency 與正反證據；缺失構面重新正規化。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_retrieval.py",
+        "tests/test_evolution.py",
+        "benchmarks/results/final-live.json"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "RES-06",
+      "module": "resolution",
+      "requirement": "吻合分數與校準信心機率分離；未校準 confidence_probability 保持 null／UNKNOWN。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_retrieval.py",
+        "tests/test_evolution.py",
+        "benchmarks/results/final-live.json"
+      ],
+      "scope_note": "未校準信心保持 UNKNOWN；沒有真實使用者校準。"
+    },
+    {
+      "id": "RET-01",
+      "module": "retrieval",
+      "requirement": "由 L0 日期／專案、L1 稱呼、L2 全文與候選探索開始，辨識後執行 L3 目標／狀態、L4 限制／決策、L5 來源檢查。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_retrieval.py",
+        "tests/test_graph.py",
+        "tests/test_baselines.py",
+        "tests/test_api.py",
+        "reports/evaluation-summary.md"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "RET-02",
+      "module": "retrieval",
+      "requirement": "每輪記錄層級、原因、條件、候選、正反證據、新線索、新資訊、本輪與累積 Token。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_retrieval.py",
+        "tests/test_graph.py",
+        "tests/test_baselines.py",
+        "tests/test_api.py",
+        "reports/evaluation-summary.md"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "RET-03",
+      "module": "retrieval",
+      "requirement": "同一資訊版本不重複計入讀取成本；搜尋有輪次、候選與線索上限，不得無限循環。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_retrieval.py",
+        "tests/test_graph.py",
+        "tests/test_baselines.py",
+        "tests/test_api.py",
+        "reports/evaluation-summary.md"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "RET-04",
+      "module": "retrieval",
+      "requirement": "依足夠證據／候選差距、歧義、無新線索與預算停止；沒有可確認目標不得進入任務執行。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_retrieval.py",
+        "tests/test_graph.py",
+        "tests/test_baselines.py",
+        "tests/test_api.py",
+        "reports/evaluation-summary.md"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "RET-05",
+      "module": "retrieval",
+      "requirement": "高吻合度或明確目標仍不可跳過必要限制、來源與成果依賴。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_retrieval.py",
+        "tests/test_graph.py",
+        "tests/test_baselines.py",
+        "tests/test_api.py",
+        "reports/evaluation-summary.md"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "RET-06",
+      "module": "retrieval",
+      "requirement": "regular JSON 與 SSE 取得相同後端結果；非即時呈現須標示 SAVED REPLAY。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_retrieval.py",
+        "tests/test_graph.py",
+        "tests/test_baselines.py",
+        "tests/test_api.py",
+        "reports/evaluation-summary.md"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "RET-07",
+      "module": "retrieval",
+      "requirement": "E／F 的完整關係探索與 A／B 的具體對照 payload 必須依最終實作、測試與結果確認，不從策略名稱推論已完成。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_retrieval.py",
+        "tests/test_graph.py",
+        "tests/test_baselines.py",
+        "tests/test_api.py",
+        "reports/evaluation-summary.md"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "ORC-01",
+      "module": "orchestration",
+      "requirement": "新 Session 的 raw_history_count=0，沒有前一 Session 原始對話，接續只使用目前需求與持久化記憶。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_tasks.py",
+        "tests/test_hardening.py",
+        "tests/test_live_demo.py",
+        "tests/test_memory_repair.py",
+        "reports/final-live-demo.json"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "ORC-02",
+      "module": "orchestration",
+      "requirement": "接續前必須辨識目標、重建 feasible context，並驗證任務工具在白名單。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_tasks.py",
+        "tests/test_hardening.py",
+        "tests/test_live_demo.py",
+        "tests/test_memory_repair.py",
+        "reports/final-live-demo.json"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "ORC-03",
+      "module": "orchestration",
+      "requirement": "P0 僅允許 markdown_handoff，不能執行任意 shell、其他私人專案讀取、上傳或外部變更。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_tasks.py",
+        "tests/test_hardening.py",
+        "tests/test_live_demo.py",
+        "tests/test_memory_repair.py",
+        "reports/final-live-demo.json"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "ORC-04",
+      "module": "orchestration",
+      "requirement": "SIMULATION／FIXED／SMART 標記清楚；成果必須非空、有目標／限制／下一步、保存目前硬性限制與 SHA256。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_tasks.py",
+        "tests/test_hardening.py",
+        "tests/test_live_demo.py",
+        "tests/test_memory_repair.py",
+        "reports/final-live-demo.json"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "ORC-05",
+      "module": "orchestration",
+      "requirement": "同 idempotency key 的不同請求被阻止；同任務不得重複完成，執行中回傳 IN_PROGRESS。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_tasks.py",
+        "tests/test_hardening.py",
+        "tests/test_live_demo.py",
+        "tests/test_memory_repair.py",
+        "reports/final-live-demo.json"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    },
+    {
+      "id": "ORC-06",
+      "module": "orchestration",
+      "requirement": "成果、任務完成、事件、快照與 delivery 在同一交易寫回；生成文字仍為 CLAIM，驗證範圍受限。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_tasks.py",
+        "tests/test_hardening.py",
+        "tests/test_live_demo.py",
+        "tests/test_memory_repair.py",
+        "reports/final-live-demo.json"
+      ],
+      "scope_note": "交易及 SHA／目標／逐字限制／3項清單驗證，不代表語意全部正確或清單已執行。"
+    },
+    {
+      "id": "ORC-07",
+      "module": "orchestration",
+      "requirement": "live 生成內容改寫必要限制時必須 BLOCKED，不能為了展示成功放寬驗證。",
+      "status": "PASS_WITHIN_PROTOTYPE_SCOPE",
+      "evidence": [
+        "tests/test_tasks.py",
+        "tests/test_hardening.py",
+        "tests/test_live_demo.py",
+        "tests/test_memory_repair.py",
+        "reports/final-live-demo.json"
+      ],
+      "scope_note": "合成資料、本機單使用者原型；依本輪重跑測試及已保存 LIVE 證據驗證。"
+    }
+  ],
+  "added_mixroute_calls": 0,
+  "added_mixroute_tokens": 0,
+  "added_mixroute_cost_usd": 0,
+  "original_ledger_before": {
+    "api_calls": 117,
+    "api_tokens": null,
+    "known_api_tokens": 129030,
+    "api_cost_usd": null,
+    "api_reserved_usd": 1.3551,
+    "usage_unknown_calls": 2
+  },
+  "original_ledger_after": {
+    "api_calls": 117,
+    "api_tokens": null,
+    "known_api_tokens": 129030,
+    "api_cost_usd": null,
+    "api_reserved_usd": 1.3551,
+    "usage_unknown_calls": 2
+  },
+  "human_voice": "DEFERRED_BY_USER",
+  "public_visibility": "NOT_AUTHORIZED",
+  "competition_submission": "NOT_SUBMITTED",
+  "codex_tokens": null,
+  "codex_billing_usd": null,
+  "limitations": [
+    "No sealed-blind real-user trial or full component ablation.",
+    "Declared direct dependencies are checked; arbitrary recursive closure is not implemented.",
+    "Windows native launch untested.",
+    "Generated artifacts remain CLAIM; no complete semantic validation.",
+    "Full invoice and two early unknown usages remain UNKNOWN.",
+    "Owner-private static delivery is not public judge access; human voice deferred."
+  ],
+  "verified_at": "2026-11-27T18:32:52.229796+08:00",
+  "elapsed_seconds": 1025.23,
+  "private_delivery_updated": "SUCCEEDED",
+  "source_archive_sha256": "b0774c81fab9a7eea724fb78307a1c688deadef54f2f8b52fa3a42e59615a892",
+  "package_integrity_and_secret_exclusions": "PASS",
+  "updated_static_downloads_and_layout": "PASS",
+  "archive_metadata_scope": "Immutable source/evidence snapshot after core acceptance, before final private publication; canonical local reports include final publication and elapsed time."
+}

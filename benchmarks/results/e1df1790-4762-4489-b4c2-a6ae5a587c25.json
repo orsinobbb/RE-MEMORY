@@ -1,0 +1,521 @@
+{
+  "id": "e1df1790-4762-4489-b4c2-a6ae5a587c25",
+  "mode": "OFFLINE_RETRIEVAL",
+  "split": "blind",
+  "ground_truth_isolated": true,
+  "reference_date": "2026-11-26",
+  "results": [
+    {
+      "strategy": "A",
+      "count": 10,
+      "budget": 4096,
+      "cases": 10,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 0.4,
+      "top3_accuracy": 1.0,
+      "mrr": 0.8,
+      "critical_memory_recall": 0.125,
+      "memory_precision": 0.03125,
+      "critical_constraint_omission_rate": 0.875,
+      "unnecessary_clarification_rate": 0.75,
+      "mean_rounds": 1.2,
+      "mean_retrieval_tokens": 855.3,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 798.5,
+      "mean_latency_ms": 2.354,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "blind-0",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-1",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-2",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-3",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-4",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-5",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-6",
+          "selected_project": "PROJECT-1004",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "EXPLICIT_PROJECT"
+        },
+        {
+          "case_id": "blind-7",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-8",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-9",
+          "selected_project": "PROJECT-028",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "EXPLICIT_PROJECT"
+        }
+      ]
+    },
+    {
+      "strategy": "B",
+      "count": 10,
+      "budget": 4096,
+      "cases": 10,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 0.4,
+      "top3_accuracy": 1.0,
+      "mrr": 0.85,
+      "critical_memory_recall": 0.0,
+      "memory_precision": 0.0,
+      "critical_constraint_omission_rate": 1.0,
+      "unnecessary_clarification_rate": 0.75,
+      "mean_rounds": 1.2,
+      "mean_retrieval_tokens": 196.8,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 234.0,
+      "mean_latency_ms": 0.678,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "blind-0",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-1",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-2",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-3",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-4",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-5",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-6",
+          "selected_project": "PROJECT-1004",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "EXPLICIT_PROJECT"
+        },
+        {
+          "case_id": "blind-7",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-8",
+          "selected_project": null,
+          "correct": true,
+          "status": "NOT_FOUND",
+          "stop_reason": "NO_NEW_CLUES"
+        },
+        {
+          "case_id": "blind-9",
+          "selected_project": "PROJECT-028",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "EXPLICIT_PROJECT"
+        }
+      ]
+    },
+    {
+      "strategy": "C",
+      "count": 10,
+      "budget": 4096,
+      "cases": 10,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 0.4,
+      "top3_accuracy": 1.0,
+      "mrr": 0.8,
+      "critical_memory_recall": 0.25,
+      "memory_precision": 0.25,
+      "critical_constraint_omission_rate": 0.75,
+      "unnecessary_clarification_rate": 0.75,
+      "mean_rounds": 1.2,
+      "mean_retrieval_tokens": 410.4,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 306.2,
+      "mean_latency_ms": 1.518,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "blind-0",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-1",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-2",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-3",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-4",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-5",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-6",
+          "selected_project": "PROJECT-1004",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "EXPLICIT_PROJECT"
+        },
+        {
+          "case_id": "blind-7",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-8",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-9",
+          "selected_project": "PROJECT-028",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "EXPLICIT_PROJECT"
+        }
+      ]
+    },
+    {
+      "strategy": "D",
+      "count": 10,
+      "budget": 4096,
+      "cases": 10,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 0.4,
+      "top3_accuracy": 1.0,
+      "mrr": 0.8,
+      "critical_memory_recall": 0.25,
+      "memory_precision": 0.25,
+      "critical_constraint_omission_rate": 0.75,
+      "unnecessary_clarification_rate": 0.75,
+      "mean_rounds": 3.2,
+      "mean_retrieval_tokens": 501.7,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 331.7,
+      "mean_latency_ms": 1.7920000000000003,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "blind-0",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-1",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-2",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-3",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-4",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-5",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-6",
+          "selected_project": "PROJECT-1004",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "EXPLICIT_PROJECT"
+        },
+        {
+          "case_id": "blind-7",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-8",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-9",
+          "selected_project": "PROJECT-028",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "EXPLICIT_PROJECT"
+        }
+      ]
+    },
+    {
+      "strategy": "E",
+      "count": 10,
+      "budget": 4096,
+      "cases": 10,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 1.0,
+      "top3_accuracy": 1.0,
+      "mrr": 1.0,
+      "critical_memory_recall": 1.0,
+      "memory_precision": 1.0,
+      "critical_constraint_omission_rate": 0.0,
+      "unnecessary_clarification_rate": 0.0,
+      "mean_rounds": 4.0,
+      "mean_retrieval_tokens": 572.9,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 1305.7,
+      "mean_latency_ms": 2.884,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "blind-0",
+          "selected_project": "PROJECT-028",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "EVIDENCE_AND_MARGIN_SUFFICIENT"
+        },
+        {
+          "case_id": "blind-1",
+          "selected_project": "PROJECT-028",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "CONFIRMED_ALIAS"
+        },
+        {
+          "case_id": "blind-2",
+          "selected_project": "PROJECT-028",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "CONFIRMED_ALIAS"
+        },
+        {
+          "case_id": "blind-3",
+          "selected_project": "PROJECT-002",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "CONFIRMED_ALIAS"
+        },
+        {
+          "case_id": "blind-4",
+          "selected_project": "PROJECT-003",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "CONFIRMED_ALIAS"
+        },
+        {
+          "case_id": "blind-5",
+          "selected_project": "PROJECT-004",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "CONFIRMED_ALIAS"
+        },
+        {
+          "case_id": "blind-6",
+          "selected_project": "PROJECT-1004",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "EXPLICIT_PROJECT"
+        },
+        {
+          "case_id": "blind-7",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-8",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "blind-9",
+          "selected_project": "PROJECT-028",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "EXPLICIT_PROJECT"
+        }
+      ]
+    },
+    {
+      "strategy": "F",
+      "count": 10,
+      "budget": 4096,
+      "cases": 10,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": null,
+      "top3_accuracy": null,
+      "mrr": null,
+      "critical_memory_recall": null,
+      "memory_precision": null,
+      "critical_constraint_omission_rate": null,
+      "unnecessary_clarification_rate": null,
+      "mean_rounds": null,
+      "mean_retrieval_tokens": null,
+      "mean_e2e_tokens": null,
+      "mean_latency_ms": null,
+      "status": "NOT_RUN_REQUIRES_LIVE_SMART_ROUTING"
+    }
+  ],
+  "elapsed_ms": 143.99,
+  "limits": [
+    "Local reads and packed context are separate estimates; local reads do not incur API tokens. E2E API tokens are UNKNOWN offline.",
+    "Task success/execution cost are unmeasured offline, shown UNKNOWN.",
+    "Confidence has not been calibrated; synthetic fixtures are deliberately bounded.",
+    "A/B/C use recent history/frozen lossy summary/top-three facts, without memory supplementation; all strategies share a safety validator.",
+    "B deliberately omits current constraints; results do not generalize to every summary algorithm.",
+    "Semantic vectors use replaceable FTS fallback in P0."
+  ]
+}

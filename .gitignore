@@ -1,0 +1,14 @@
+# Local credentials and their copies remain untracked.
+.env
+.env.*
+!.env.example
+.venv/
+.pytest_cache/
+**/__pycache__/
+data/runtime/
+reports/private/
+node_modules/
+.DS_Store
+data/backups/
+dist/
+delivery-site/

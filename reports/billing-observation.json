@@ -1,0 +1,610 @@
+{
+  "source": "MixRoute Usage Logs visible table",
+  "observed_at": "2026-11-26T15:57:25.372Z",
+  "rows": [
+    {
+      "timestamp": "2026-11-26 23:55:55",
+      "mode": "FIXED",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 2008,
+      "output_tokens": 142,
+      "displayed_cost_usd": 0.005436
+    },
+    {
+      "timestamp": "2026-11-26 23:55:53",
+      "mode": "SMART",
+      "model": "deepseek-v3.2",
+      "input_tokens": 868,
+      "output_tokens": 87,
+      "displayed_cost_usd": 0.00028
+    },
+    {
+      "timestamp": "2026-11-26 23:46:40",
+      "mode": "SMART",
+      "model": "deepseek-v3.2",
+      "input_tokens": 869,
+      "output_tokens": 98,
+      "displayed_cost_usd": 0.000284
+    },
+    {
+      "timestamp": "2026-11-26 23:46:39",
+      "mode": "SMART",
+      "model": "deepseek-v3.2",
+      "input_tokens": 864,
+      "output_tokens": 77,
+      "displayed_cost_usd": 0.000274
+    },
+    {
+      "timestamp": "2026-11-26 23:46:37",
+      "mode": "SMART",
+      "model": "deepseek-v3.2",
+      "input_tokens": 817,
+      "output_tokens": 87,
+      "displayed_cost_usd": 0.000266
+    },
+    {
+      "timestamp": "2026-11-26 23:46:36",
+      "mode": "SMART",
+      "model": "deepseek-v3.2",
+      "input_tokens": 826,
+      "output_tokens": 88,
+      "displayed_cost_usd": 0.000268
+    },
+    {
+      "timestamp": "2026-11-26 23:46:35",
+      "mode": "SMART",
+      "model": "deepseek-v3.2",
+      "input_tokens": 840,
+      "output_tokens": 88,
+      "displayed_cost_usd": 0.000272
+    },
+    {
+      "timestamp": "2026-11-26 23:46:33",
+      "mode": "SMART",
+      "model": "deepseek-v3.2",
+      "input_tokens": 867,
+      "output_tokens": 94,
+      "displayed_cost_usd": 0.000282
+    },
+    {
+      "timestamp": "2026-11-26 23:46:32",
+      "mode": "SMART",
+      "model": "deepseek-v3.2",
+      "input_tokens": 870,
+      "output_tokens": 94,
+      "displayed_cost_usd": 0.000284
+    },
+    {
+      "timestamp": "2026-11-26 23:46:31",
+      "mode": "SMART",
+      "model": "deepseek-v3.2",
+      "input_tokens": 871,
+      "output_tokens": 96,
+      "displayed_cost_usd": 0.000284
+    },
+    {
+      "timestamp": "2026-11-26 23:46:30",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 869,
+      "output_tokens": 91,
+      "displayed_cost_usd": 0.000282
+    },
+    {
+      "timestamp": "2026-11-26 23:46:29",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 864,
+      "output_tokens": 91,
+      "displayed_cost_usd": 0.00028
+    },
+    {
+      "timestamp": "2026-11-26 23:46:28",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 817,
+      "output_tokens": 86,
+      "displayed_cost_usd": 0.000264
+    },
+    {
+      "timestamp": "2026-11-26 23:46:27",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 826,
+      "output_tokens": 80,
+      "displayed_cost_usd": 0.000264
+    },
+    {
+      "timestamp": "2026-11-26 23:46:26",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 840,
+      "output_tokens": 88,
+      "displayed_cost_usd": 0.000272
+    },
+    {
+      "timestamp": "2026-11-26 23:46:25",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 867,
+      "output_tokens": 99,
+      "displayed_cost_usd": 0.000284
+    },
+    {
+      "timestamp": "2026-11-26 23:46:23",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 870,
+      "output_tokens": 105,
+      "displayed_cost_usd": 0.000288
+    },
+    {
+      "timestamp": "2026-11-26 23:46:22",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 871,
+      "output_tokens": 91,
+      "displayed_cost_usd": 0.000282
+    },
+    {
+      "timestamp": "2026-11-26 23:46:21",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 869,
+      "output_tokens": 91,
+      "displayed_cost_usd": 0.000282
+    },
+    {
+      "timestamp": "2026-11-26 23:46:20",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 864,
+      "output_tokens": 85,
+      "displayed_cost_usd": 0.000278
+    },
+    {
+      "timestamp": "2026-11-26 23:46:18",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 817,
+      "output_tokens": 73,
+      "displayed_cost_usd": 0.00026
+    },
+    {
+      "timestamp": "2026-11-26 23:46:17",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 826,
+      "output_tokens": 84,
+      "displayed_cost_usd": 0.000266
+    },
+    {
+      "timestamp": "2026-11-26 23:46:17",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 840,
+      "output_tokens": 80,
+      "displayed_cost_usd": 0.000268
+    },
+    {
+      "timestamp": "2026-11-26 23:46:16",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 867,
+      "output_tokens": 101,
+      "displayed_cost_usd": 0.000286
+    },
+    {
+      "timestamp": "2026-11-26 23:46:14",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 870,
+      "output_tokens": 94,
+      "displayed_cost_usd": 0.000284
+    },
+    {
+      "timestamp": "2026-11-26 23:46:13",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 796,
+      "output_tokens": 90,
+      "displayed_cost_usd": 0.00026
+    },
+    {
+      "timestamp": "2026-11-26 23:46:12",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 782,
+      "output_tokens": 80,
+      "displayed_cost_usd": 0.000252
+    },
+    {
+      "timestamp": "2026-11-26 23:46:11",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 753,
+      "output_tokens": 75,
+      "displayed_cost_usd": 0.000242
+    },
+    {
+      "timestamp": "2026-11-26 23:46:10",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 757,
+      "output_tokens": 78,
+      "displayed_cost_usd": 0.000244
+    },
+    {
+      "timestamp": "2026-11-26 23:46:09",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 760,
+      "output_tokens": 79,
+      "displayed_cost_usd": 0.000246
+    },
+    {
+      "timestamp": "2026-11-26 23:46:08",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 794,
+      "output_tokens": 91,
+      "displayed_cost_usd": 0.00026
+    },
+    {
+      "timestamp": "2026-11-26 23:46:07",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 797,
+      "output_tokens": 93,
+      "displayed_cost_usd": 0.000262
+    },
+    {
+      "timestamp": "2026-11-26 23:46:06",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 466,
+      "output_tokens": 95,
+      "displayed_cost_usd": 0.00017
+    },
+    {
+      "timestamp": "2026-11-26 23:46:05",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 451,
+      "output_tokens": 75,
+      "displayed_cost_usd": 0.000158
+    },
+    {
+      "timestamp": "2026-11-26 23:46:03",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 438,
+      "output_tokens": 76,
+      "displayed_cost_usd": 0.000154
+    },
+    {
+      "timestamp": "2026-11-26 23:46:02",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 444,
+      "output_tokens": 155,
+      "displayed_cost_usd": 0.00019
+    },
+    {
+      "timestamp": "2026-11-26 23:46:00",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 436,
+      "output_tokens": 98,
+      "displayed_cost_usd": 0.000164
+    },
+    {
+      "timestamp": "2026-11-26 23:45:59",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 464,
+      "output_tokens": 81,
+      "displayed_cost_usd": 0.000164
+    },
+    {
+      "timestamp": "2026-11-26 23:45:58",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 467,
+      "output_tokens": 102,
+      "displayed_cost_usd": 0.000174
+    },
+    {
+      "timestamp": "2026-11-26 23:45:57",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 2972,
+      "output_tokens": 116,
+      "displayed_cost_usd": 0.00088
+    },
+    {
+      "timestamp": "2026-11-26 23:45:55",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 2973,
+      "output_tokens": 97,
+      "displayed_cost_usd": 0.000874
+    },
+    {
+      "timestamp": "2026-11-26 23:45:53",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 2969,
+      "output_tokens": 93,
+      "displayed_cost_usd": 0.00087
+    },
+    {
+      "timestamp": "2026-11-26 23:45:52",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 2971,
+      "output_tokens": 74,
+      "displayed_cost_usd": 0.000862
+    },
+    {
+      "timestamp": "2026-11-26 23:45:50",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 2970,
+      "output_tokens": 77,
+      "displayed_cost_usd": 0.000864
+    },
+    {
+      "timestamp": "2026-11-26 23:45:49",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 2970,
+      "output_tokens": 114,
+      "displayed_cost_usd": 0.00088
+    },
+    {
+      "timestamp": "2026-11-26 23:45:48",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 2973,
+      "output_tokens": 99,
+      "displayed_cost_usd": 0.000874
+    },
+    {
+      "timestamp": "2026-11-26 23:43:18",
+      "mode": "SMART",
+      "model": "deepseek-v3.2",
+      "input_tokens": 869,
+      "output_tokens": 96,
+      "displayed_cost_usd": 0.000284
+    },
+    {
+      "timestamp": "2026-11-26 23:43:17",
+      "mode": "SMART",
+      "model": "deepseek-v3.2",
+      "input_tokens": 864,
+      "output_tokens": 78,
+      "displayed_cost_usd": 0.000274
+    },
+    {
+      "timestamp": "2026-11-26 23:43:16",
+      "mode": "SMART",
+      "model": "deepseek-v3.2",
+      "input_tokens": 817,
+      "output_tokens": 79,
+      "displayed_cost_usd": 0.000262
+    },
+    {
+      "timestamp": "2026-11-26 23:43:15",
+      "mode": "SMART",
+      "model": "deepseek-v3.2",
+      "input_tokens": 826,
+      "output_tokens": 89,
+      "displayed_cost_usd": 0.000268
+    },
+    {
+      "timestamp": "2026-11-26 23:43:13",
+      "mode": "SMART",
+      "model": "deepseek-v3.2",
+      "input_tokens": 840,
+      "output_tokens": 94,
+      "displayed_cost_usd": 0.000274
+    },
+    {
+      "timestamp": "2026-11-26 23:43:12",
+      "mode": "SMART",
+      "model": "deepseek-v3.2",
+      "input_tokens": 867,
+      "output_tokens": 87,
+      "displayed_cost_usd": 0.00028
+    },
+    {
+      "timestamp": "2026-11-26 23:43:11",
+      "mode": "SMART",
+      "model": "deepseek-v3.2",
+      "input_tokens": 870,
+      "output_tokens": 101,
+      "displayed_cost_usd": 0.000286
+    },
+    {
+      "timestamp": "2026-11-26 23:43:10",
+      "mode": "SMART",
+      "model": "deepseek-v3.2",
+      "input_tokens": 871,
+      "output_tokens": 91,
+      "displayed_cost_usd": 0.000282
+    },
+    {
+      "timestamp": "2026-11-26 23:43:09",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 869,
+      "output_tokens": 96,
+      "displayed_cost_usd": 0.000284
+    },
+    {
+      "timestamp": "2026-11-26 23:43:08",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 864,
+      "output_tokens": 91,
+      "displayed_cost_usd": 0.00028
+    },
+    {
+      "timestamp": "2026-11-26 23:43:06",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 817,
+      "output_tokens": 71,
+      "displayed_cost_usd": 0.000258
+    },
+    {
+      "timestamp": "2026-11-26 23:43:05",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 826,
+      "output_tokens": 89,
+      "displayed_cost_usd": 0.000268
+    },
+    {
+      "timestamp": "2026-11-26 23:43:04",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 840,
+      "output_tokens": 91,
+      "displayed_cost_usd": 0.000274
+    },
+    {
+      "timestamp": "2026-11-26 23:43:03",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 867,
+      "output_tokens": 95,
+      "displayed_cost_usd": 0.000282
+    },
+    {
+      "timestamp": "2026-11-26 23:43:02",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 870,
+      "output_tokens": 93,
+      "displayed_cost_usd": 0.000282
+    },
+    {
+      "timestamp": "2026-11-26 23:43:01",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 871,
+      "output_tokens": 85,
+      "displayed_cost_usd": 0.00028
+    },
+    {
+      "timestamp": "2026-11-26 23:43:00",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 869,
+      "output_tokens": 90,
+      "displayed_cost_usd": 0.000282
+    },
+    {
+      "timestamp": "2026-11-26 23:42:58",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 864,
+      "output_tokens": 93,
+      "displayed_cost_usd": 0.00028
+    },
+    {
+      "timestamp": "2026-11-26 23:42:57",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 796,
+      "output_tokens": 91,
+      "displayed_cost_usd": 0.000262
+    },
+    {
+      "timestamp": "2026-11-26 23:42:56",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 782,
+      "output_tokens": 81,
+      "displayed_cost_usd": 0.000252
+    },
+    {
+      "timestamp": "2026-11-26 23:42:55",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 466,
+      "output_tokens": 120,
+      "displayed_cost_usd": 0.00018
+    },
+    {
+      "timestamp": "2026-11-26 23:42:54",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 451,
+      "output_tokens": 80,
+      "displayed_cost_usd": 0.00016
+    },
+    {
+      "timestamp": "2026-11-26 23:42:52",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 2972,
+      "output_tokens": 98,
+      "displayed_cost_usd": 0.000874
+    },
+    {
+      "timestamp": "2026-11-26 23:42:51",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 2973,
+      "output_tokens": 75,
+      "displayed_cost_usd": 0.000864
+    },
+    {
+      "timestamp": "2026-11-26 23:30:30",
+      "mode": "FIXED",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 2057,
+      "output_tokens": 142,
+      "displayed_cost_usd": 0.005534
+    },
+    {
+      "timestamp": "2026-11-26 23:28:24",
+      "mode": "SMART",
+      "model": "deepseek-v3.2",
+      "input_tokens": 1126,
+      "output_tokens": 89,
+      "displayed_cost_usd": 0.000352
+    },
+    {
+      "timestamp": "2026-11-26 23:27:47",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 703,
+      "output_tokens": 86,
+      "displayed_cost_usd": 0.000232
+    },
+    {
+      "timestamp": "2026-11-26 23:20:35",
+      "mode": "FIXED",
+      "model": "deepseek-v3.2",
+      "input_tokens": 652,
+      "output_tokens": 384,
+      "displayed_cost_usd": 0.000344
+    },
+    {
+      "timestamp": "2026-11-26 23:16:41",
+      "mode": "SMART",
+      "model": "deepseek-v3.2",
+      "input_tokens": 9,
+      "output_tokens": 2,
+      "displayed_cost_usd": 0.000004
+    }
+  ],
+  "displayed_total_usd": 0.03515199999999999,
+  "precision": "six decimal displayed amounts; rounded, not an exact invoice",
+  "actual_invoice_usd": null,
+  "detail_notice": "For reference only; actual billing prevails."
+}

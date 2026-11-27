@@ -1,0 +1,235 @@
+{
+  "started_at": "2026-11-26T22:55:05+08:00",
+  "estimates": {
+    "total_minutes": [
+      145,
+      255
+    ],
+    "disk_mb": [
+      500,
+      1500
+    ],
+    "initial_api_target_usd": 5,
+    "api_hard_cap_usd": 35,
+    "emergency_reserve_usd": 15
+  },
+  "codex_billing_usd": null,
+  "stages": [
+    {
+      "stage": "1-environment-and-storage",
+      "completed_at": "2026-11-26T22:59:40.049818+08:00",
+      "elapsed_seconds": 275.02,
+      "checks": "pytest test_storage: 4 passed; 10/100/1000 projects; provenance, ACL, FTS, artifact existence",
+      "project_disk_bytes": 4681444,
+      "api_calls": 0,
+      "api_tokens": 0,
+      "api_cost_usd": 0
+    },
+    {
+      "stage": "2-retrieval-context-and-recovery",
+      "completed_at": "2026-11-26T23:12:56.846331+08:00",
+      "elapsed_seconds": 796.79,
+      "checks": "pytest: 23 passed; progressive search, coverage, budget, provider ledger, fresh session and idempotency",
+      "project_disk_bytes": 13336175,
+      "api_calls": 2,
+      "api_tokens": null,
+      "api_cost_usd": null,
+      "known_api_tokens": 0
+    },
+    {
+      "stage": "3-api-interface-and-review",
+      "completed_at": "2026-11-26T23:43:07.507657+08:00",
+      "elapsed_seconds": 1811.41,
+      "checks": "88 pytest checks; real FIXED/SMART/Sonnet handoffs; actual Playwright six-view desktop/mobile smoke; independent review regressions",
+      "project_disk_bytes": 21025774,
+      "api_calls": 7,
+      "api_tokens": null,
+      "api_cost_usd": null,
+      "known_api_tokens": 5250
+    },
+    {
+      "stage": "4-six-strategy-and-scale-evaluation",
+      "completed_at": "2026-11-26T23:49:47.036713+08:00",
+      "elapsed_seconds": 416.96,
+      "checks": "10/100/1000 × five budgets × A-F offline rows; measured six-strategy 10-case 4K live trials; 36 verified artifact exports; zero wrong-project and duplicate execution in measured cases",
+      "project_disk_bytes": 18600226,
+      "api_calls": 75,
+      "api_tokens": null,
+      "api_cost_usd": null,
+      "known_api_tokens": 84228
+    },
+    {
+      "stage": "5-final-verification-and-delivery",
+      "completed_at": "2026-11-27T00:01:51.452407+08:00",
+      "elapsed_seconds": 724.38,
+      "checks": "91 tests passed; Playwright final smoke; backup/restore verified; stricter AUTO DeepSeek to FIXED Sonnet continuation; extracted package launch/isolation and credential scan passed",
+      "project_disk_bytes": 25019481,
+      "api_calls": 77,
+      "api_tokens": null,
+      "api_cost_usd": null,
+      "known_api_tokens": 87333
+    }
+  ],
+  "api_calls": 117,
+  "api_tokens": null,
+  "api_cost_usd": null,
+  "notes": [
+    "No generation calls before this run; catalogue queries are not generation token usage.",
+    "Explicitly authorized tiny auto probe; exact cost pending console billing reconciliation.",
+    "Disk size counts project files only; shared dependency-cache growth and Codex billing are UNKNOWN. Stages 3/4 overlap briefly during parallel verification.",
+    "console_displayed_usd is the historical initial console sample; console_final_live_displayed_subtotal_usd is the separately reconciled final40 reference subtotal, not an aggregate invoice."
+  ],
+  "api_usage_unknown_calls": 2,
+  "api_reserved_usd": 1.3551,
+  "known_api_tokens": 129030,
+  "console_displayed_usd": 0.035152,
+  "completed_at": "2026-11-27T00:01:51.505228+08:00",
+  "total_elapsed_seconds": 4006.51,
+  "project_disk_bytes": 64778062,
+  "continuations": [
+    {
+      "name": "memory-repair",
+      "started_at": "2026-11-27T00:15:37+08:00",
+      "completed_at": "2026-11-27T00:33:06.285528+08:00",
+      "estimated_minutes": [
+        45,
+        75
+      ],
+      "elapsed_seconds": 1049.29,
+      "stages": [
+        {
+          "stage": "6-memory-repair-api",
+          "completed_at": "2026-11-27T00:23:37+08:00",
+          "elapsed_seconds": 480.0,
+          "checks": "47 related tests pass; immutable artifact revisions, owner/source checks, stale reviews, execution locks, concurrent save and rollback",
+          "added_api_calls": 0,
+          "added_api_tokens": 0,
+          "added_api_cost_usd": 0
+        },
+        {
+          "stage": "7-memory-repair-interface",
+          "completed_at": "2026-11-27T00:27:18+08:00",
+          "elapsed_seconds": 221.0,
+          "checks": "103 pytest pass; real repair workflow and six-view smoke on live-disabled fixture, desktop1440/mobile390, zero paid calls",
+          "added_api_calls": 0,
+          "added_api_tokens": 0,
+          "added_api_cost_usd": 0
+        },
+        {
+          "stage": "8-memory-repair-review-and-delivery",
+          "completed_at": "2026-11-27T00:33:06.285528+08:00",
+          "elapsed_seconds": 348.29,
+          "checks": "Fresh independent review: no findings; source archive integrity, credential/exclusion scan and extracted source repair/isolation pass; local preview restarted",
+          "added_api_calls": 0,
+          "added_api_tokens": 0,
+          "added_api_cost_usd": 0
+        }
+      ],
+      "added_api_calls": 0,
+      "added_api_tokens": 0,
+      "added_api_cost_usd": 0,
+      "codex_billing_usd": null,
+      "codex_token_usage": null,
+      "project_disk_bytes": 27774144
+    },
+    {
+      "name": "final-live-submission",
+      "started_at": "2026-11-27T16:19:16+08:00",
+      "stages": [
+        {
+          "stage": "9-two-model-live-handoff",
+          "completed_at": "2026-11-27T16:32:49.608827+08:00",
+          "elapsed_seconds": 813.61,
+          "added_api_calls": 2,
+          "added_api_tokens": 2732,
+          "added_api_cost_usd": null,
+          "checks": "114 pytest pass; two-stage desktop/mobile SIM workflow; actual auto/Sonnet → Fixed/DeepSeek with exact prior artifact content, empty sessions and no call on replay"
+        },
+        {
+          "stage": "10-fixed-prospective-live-evaluation",
+          "completed_at": "2026-11-27T16:36:14.062095+08:00",
+          "elapsed_seconds": 204.06,
+          "benchmark_elapsed_seconds": 51.31,
+          "added_api_calls": 38,
+          "added_api_tokens": 38965,
+          "added_api_cost_usd": null,
+          "added_conservative_upper_bound_usd": 0.38965,
+          "checks": "120 pytest pass; frozen20 E/F plus six Sonnet cases; failure retention, no truth in provider messages, 38 actual persisted artifacts and duplicate guards"
+        },
+        {
+          "stage": "11-review-recording-private-delivery",
+          "prepared_at": "2026-11-27T16:54:54.389126+08:00",
+          "elapsed_seconds_to_preparation": 1120.33,
+          "status": "PRIVATE_PREVIEW_READY_VOICE_AND_PUBLIC_AUTH_PENDING",
+          "checks": "Fresh read-only review: two Important issues RED→GREEN,122pytest; genuine149.84s screen video; static desktop/mobile and playback/download PASS; extracted source two-stage isolated API PASS; credential/exclusion scans PASS; private Sites deployment succeeded",
+          "added_api_calls": 0,
+          "added_api_tokens": 0,
+          "added_api_cost_usd": 0
+        }
+      ],
+      "prepared_at": "2026-11-27T16:54:54.389126+08:00",
+      "status": "HUMAN_NARRATION_AND_FINAL_PUBLIC_SUBMISSION_AUTH_PENDING",
+      "elapsed_seconds_to_preparation": 2138.39,
+      "added_api_calls": 40,
+      "added_api_tokens": 41697,
+      "added_api_cost_usd": null,
+      "added_conservative_upper_bound_usd": 0.41697,
+      "codex_token_usage": null,
+      "codex_billing_usd": null,
+      "active_work_intervals": [
+        {
+          "started_at": "2026-11-27T16:19:16+08:00",
+          "ended_at": "2026-11-27T16:54:54.389126+08:00"
+        }
+      ]
+    },
+    {
+      "name": "acceptance-with-voice-deferred",
+      "started_at": "2026-11-27T18:15:47+08:00",
+      "status": "CORE_ACCEPTED_PRIVATE_DELIVERY_READY_HUMAN_VOICE_DEFERRED",
+      "stages": [
+        {
+          "stage": "12-core-browser-backup-startup-and-console-acceptance",
+          "completed_at": "2026-11-27T18:29:50.890676+08:00",
+          "elapsed_seconds": 843.89,
+          "checks": "122 pytest;3 real browser workflows;backup restore;fresh extracted macOS start;static playback/download;final40 console usage reconciliation;60-ID scope trace",
+          "added_api_calls": 0,
+          "added_api_tokens": 0,
+          "added_api_cost_usd": 0
+        },
+        {
+          "stage": "13-acceptance-docs-source-evidence-and-private-publication",
+          "completed_at": "2026-11-27T18:32:52.229796+08:00",
+          "elapsed_seconds": 181.34,
+          "checks": "60 requirement IDs traced;229-file source and53-file evidence ZIP CRC/secret exclusion PASS;updated download/layout PASS;owner-private exact-source publication succeeded",
+          "added_api_calls": 0,
+          "added_api_tokens": 0,
+          "added_api_cost_usd": 0
+        }
+      ],
+      "added_api_calls": 0,
+      "added_api_tokens": 0,
+      "added_api_cost_usd": 0,
+      "human_voice": "DEFERRED_BY_USER",
+      "codex_billing_usd": null,
+      "codex_token_usage": null,
+      "completed_at": "2026-11-27T18:32:52.229796+08:00",
+      "elapsed_seconds": 1025.23,
+      "project_disk_bytes": 64778062,
+      "active_work_intervals": [
+        {
+          "started_at": "2026-11-27T18:15:47+08:00",
+          "ended_at": "2026-11-27T18:32:52.229796+08:00"
+        }
+      ]
+    }
+  ],
+  "all_active_work_elapsed_seconds": 8219.42,
+  "latest_completed_at": "2026-11-27T18:32:52.229796+08:00",
+  "disk_measurement_scope": "Project files excluding symlinks and Git metadata; includes local runtime/backups/video/private static delivery, excludes linked dependency cache.",
+  "usage_unknown_calls": 2,
+  "latest_prepared_at": "2026-11-27T18:32:52.229796+08:00",
+  "all_active_work_elapsed_seconds_to_preparation": 8219.42,
+  "console_final_live_displayed_subtotal_usd": 0.03807,
+  "console_final_live_reconciled_tokens": 41697
+}

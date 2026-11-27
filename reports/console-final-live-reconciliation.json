@@ -1,0 +1,297 @@
+{
+  "scope": "FINAL_LIVE_40_CALLS",
+  "source": "https://console.mixroute.ai/logs/usage",
+  "console_rows": 40,
+  "known_tokens": 41697,
+  "provider_usage_match": "MULTISET_MODEL_INPUT_OUTPUT_EXACT",
+  "console_displayed_subtotal_usd": 0.03807,
+  "invoice_usd": null,
+  "invoice_status": "UNKNOWN",
+  "ledger_settlement_changed": false,
+  "limits": [
+    "Displayed per-row costs are rounded to six decimals and described as reference only.",
+    "Matching model/input/output counts verifies this project window, not a definitive invoice or globally reconciled early failures."
+  ],
+  "rows": [
+    {
+      "time": "2026-11-27 16:35:28",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 1354,
+      "output_tokens": 127,
+      "console_displayed_cost_usd": 0.003978
+    },
+    {
+      "time": "2026-11-27 16:35:26",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 1353,
+      "output_tokens": 123,
+      "console_displayed_cost_usd": 0.003936
+    },
+    {
+      "time": "2026-11-27 16:35:24",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 1356,
+      "output_tokens": 127,
+      "console_displayed_cost_usd": 0.003982
+    },
+    {
+      "time": "2026-11-27 16:35:21",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 1391,
+      "output_tokens": 120,
+      "console_displayed_cost_usd": 0.003982
+    },
+    {
+      "time": "2026-11-27 16:35:19",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 1414,
+      "output_tokens": 159,
+      "console_displayed_cost_usd": 0.004418
+    },
+    {
+      "time": "2026-11-27 16:35:17",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 1422,
+      "output_tokens": 164,
+      "console_displayed_cost_usd": 0.004484
+    },
+    {
+      "time": "2026-11-27 16:35:14",
+      "model": "deepseek-v3.2",
+      "input_tokens": 823,
+      "output_tokens": 76,
+      "console_displayed_cost_usd": 0.000262
+    },
+    {
+      "time": "2026-11-27 16:35:13",
+      "model": "deepseek-v3.2",
+      "input_tokens": 825,
+      "output_tokens": 90,
+      "console_displayed_cost_usd": 0.000268
+    },
+    {
+      "time": "2026-11-27 16:35:12",
+      "model": "deepseek-v3.2",
+      "input_tokens": 826,
+      "output_tokens": 94,
+      "console_displayed_cost_usd": 0.00027
+    },
+    {
+      "time": "2026-11-27 16:35:11",
+      "model": "deepseek-v3.2",
+      "input_tokens": 822,
+      "output_tokens": 82,
+      "console_displayed_cost_usd": 0.000264
+    },
+    {
+      "time": "2026-11-27 16:35:09",
+      "model": "deepseek-v3.2",
+      "input_tokens": 833,
+      "output_tokens": 83,
+      "console_displayed_cost_usd": 0.000268
+    },
+    {
+      "time": "2026-11-27 16:35:08",
+      "model": "deepseek-v3.2",
+      "input_tokens": 831,
+      "output_tokens": 76,
+      "console_displayed_cost_usd": 0.000264
+    },
+    {
+      "time": "2026-11-27 16:35:07",
+      "model": "deepseek-v3.2",
+      "input_tokens": 833,
+      "output_tokens": 97,
+      "console_displayed_cost_usd": 0.000274
+    },
+    {
+      "time": "2026-11-27 16:35:06",
+      "model": "deepseek-v3.2",
+      "input_tokens": 833,
+      "output_tokens": 76,
+      "console_displayed_cost_usd": 0.000266
+    },
+    {
+      "time": "2026-11-27 16:35:05",
+      "model": "deepseek-v3.2",
+      "input_tokens": 847,
+      "output_tokens": 87,
+      "console_displayed_cost_usd": 0.000274
+    },
+    {
+      "time": "2026-11-27 16:35:04",
+      "model": "deepseek-v3.2",
+      "input_tokens": 846,
+      "output_tokens": 74,
+      "console_displayed_cost_usd": 0.000268
+    },
+    {
+      "time": "2026-11-27 16:35:03",
+      "model": "deepseek-v3.2",
+      "input_tokens": 847,
+      "output_tokens": 78,
+      "console_displayed_cost_usd": 0.00027
+    },
+    {
+      "time": "2026-11-27 16:35:02",
+      "model": "deepseek-v3.2",
+      "input_tokens": 847,
+      "output_tokens": 101,
+      "console_displayed_cost_usd": 0.00028
+    },
+    {
+      "time": "2026-11-27 16:35:01",
+      "model": "deepseek-v3.2",
+      "input_tokens": 875,
+      "output_tokens": 110,
+      "console_displayed_cost_usd": 0.000292
+    },
+    {
+      "time": "2026-11-27 16:35:00",
+      "model": "deepseek-v3.2",
+      "input_tokens": 875,
+      "output_tokens": 104,
+      "console_displayed_cost_usd": 0.000288
+    },
+    {
+      "time": "2026-11-27 16:34:59",
+      "model": "deepseek-v3.2",
+      "input_tokens": 872,
+      "output_tokens": 103,
+      "console_displayed_cost_usd": 0.000288
+    },
+    {
+      "time": "2026-11-27 16:34:57",
+      "model": "deepseek-v3.2",
+      "input_tokens": 877,
+      "output_tokens": 95,
+      "console_displayed_cost_usd": 0.000286
+    },
+    {
+      "time": "2026-11-27 16:34:56",
+      "model": "deepseek-v3.2",
+      "input_tokens": 823,
+      "output_tokens": 90,
+      "console_displayed_cost_usd": 0.000268
+    },
+    {
+      "time": "2026-11-27 16:34:55",
+      "model": "deepseek-v3.2",
+      "input_tokens": 825,
+      "output_tokens": 71,
+      "console_displayed_cost_usd": 0.00026
+    },
+    {
+      "time": "2026-11-27 16:34:54",
+      "model": "deepseek-v3.2",
+      "input_tokens": 826,
+      "output_tokens": 74,
+      "console_displayed_cost_usd": 0.000262
+    },
+    {
+      "time": "2026-11-27 16:34:53",
+      "model": "deepseek-v3.2",
+      "input_tokens": 822,
+      "output_tokens": 76,
+      "console_displayed_cost_usd": 0.000262
+    },
+    {
+      "time": "2026-11-27 16:34:52",
+      "model": "deepseek-v3.2",
+      "input_tokens": 833,
+      "output_tokens": 94,
+      "console_displayed_cost_usd": 0.000272
+    },
+    {
+      "time": "2026-11-27 16:34:51",
+      "model": "deepseek-v3.2",
+      "input_tokens": 831,
+      "output_tokens": 77,
+      "console_displayed_cost_usd": 0.000266
+    },
+    {
+      "time": "2026-11-27 16:34:50",
+      "model": "deepseek-v3.2",
+      "input_tokens": 833,
+      "output_tokens": 89,
+      "console_displayed_cost_usd": 0.00027
+    },
+    {
+      "time": "2026-11-27 16:34:48",
+      "model": "deepseek-v3.2",
+      "input_tokens": 833,
+      "output_tokens": 83,
+      "console_displayed_cost_usd": 0.000268
+    },
+    {
+      "time": "2026-11-27 16:34:47",
+      "model": "deepseek-v3.2",
+      "input_tokens": 847,
+      "output_tokens": 87,
+      "console_displayed_cost_usd": 0.000274
+    },
+    {
+      "time": "2026-11-27 16:34:46",
+      "model": "deepseek-v3.2",
+      "input_tokens": 846,
+      "output_tokens": 92,
+      "console_displayed_cost_usd": 0.000276
+    },
+    {
+      "time": "2026-11-27 16:34:44",
+      "model": "deepseek-v3.2",
+      "input_tokens": 847,
+      "output_tokens": 71,
+      "console_displayed_cost_usd": 0.000266
+    },
+    {
+      "time": "2026-11-27 16:34:43",
+      "model": "deepseek-v3.2",
+      "input_tokens": 847,
+      "output_tokens": 100,
+      "console_displayed_cost_usd": 0.00028
+    },
+    {
+      "time": "2026-11-27 16:34:42",
+      "model": "deepseek-v3.2",
+      "input_tokens": 875,
+      "output_tokens": 103,
+      "console_displayed_cost_usd": 0.000288
+    },
+    {
+      "time": "2026-11-27 16:34:41",
+      "model": "deepseek-v3.2",
+      "input_tokens": 875,
+      "output_tokens": 92,
+      "console_displayed_cost_usd": 0.000284
+    },
+    {
+      "time": "2026-11-27 16:34:40",
+      "model": "deepseek-v3.2",
+      "input_tokens": 872,
+      "output_tokens": 87,
+      "console_displayed_cost_usd": 0.00028
+    },
+    {
+      "time": "2026-11-27 16:34:38",
+      "model": "deepseek-v3.2",
+      "input_tokens": 877,
+      "output_tokens": 119,
+      "console_displayed_cost_usd": 0.000296
+    },
+    {
+      "time": "2026-11-27 16:32:14",
+      "model": "deepseek-v3.2",
+      "input_tokens": 1214,
+      "output_tokens": 122,
+      "console_displayed_cost_usd": 0.000392
+    },
+    {
+      "time": "2026-11-27 16:31:52",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 1227,
+      "output_tokens": 169,
+      "console_displayed_cost_usd": 0.004144
+    }
+  ]
+}

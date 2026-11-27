@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "frozen_at": "2026-11-27T16:34:30+08:00",
+  "protocol": "New fixed synthetic wording; no tuning after freeze; evaluator-only labels; not sealed blind",
+  "cases": [
+    {
+      "id": "final-01",
+      "query": "請把 MIDI 專案目前未完成的驗收接下去。",
+      "expected_project": "PROJECT-028",
+      "expected_outcome": "COMPLETE"
+    },
+    {
+      "id": "final-02",
+      "query": "轉譜工具的下一階段清單請繼續。",
+      "expected_project": "PROJECT-028",
+      "expected_outcome": "COMPLETE"
+    },
+    {
+      "id": "final-03",
+      "query": "請接續樂器分離的後續待辦。",
+      "expected_project": "PROJECT-028",
+      "expected_outcome": "COMPLETE"
+    },
+    {
+      "id": "final-04",
+      "query": "音訊轉換系統，延續既有成果寫下一步。",
+      "expected_project": "PROJECT-028",
+      "expected_outcome": "COMPLETE"
+    },
+    {
+      "id": "final-05",
+      "query": "請接續鋼琴課的下一階段驗收。",
+      "expected_project": "PROJECT-002",
+      "expected_outcome": "COMPLETE"
+    },
+    {
+      "id": "final-06",
+      "query": "樂理教材未完成的事項，請繼續整理。",
+      "expected_project": "PROJECT-002",
+      "expected_outcome": "COMPLETE"
+    },
+    {
+      "id": "final-07",
+      "query": "延續鋼琴樂理教材的既有里程碑。",
+      "expected_project": "PROJECT-002",
+      "expected_outcome": "COMPLETE"
+    },
+    {
+      "id": "final-08",
+      "query": "鋼琴課，從保存的進度接續。",
+      "expected_project": "PROJECT-002",
+      "expected_outcome": "COMPLETE"
+    },
+    {
+      "id": "final-09",
+      "query": "島嶼遊戲的下一階段待辦請接續。",
+      "expected_project": "PROJECT-003",
+      "expected_outcome": "COMPLETE"
+    },
+    {
+      "id": "final-10",
+      "query": "人生冒險島，請沿用現有成果接下去。",
+      "expected_project": "PROJECT-003",
+      "expected_outcome": "COMPLETE"
+    },
+    {
+      "id": "final-11",
+      "query": "冒險島未完成的驗收，請繼續。",
+      "expected_project": "PROJECT-003",
+      "expected_outcome": "COMPLETE"
+    },
+    {
+      "id": "final-12",
+      "query": "請為島嶼遊戲延續保存的進度。",
+      "expected_project": "PROJECT-003",
+      "expected_outcome": "COMPLETE"
+    },
+    {
+      "id": "final-13",
+      "query": "工作管理的下一階段驗收請繼續。",
+      "expected_project": "PROJECT-004",
+      "expected_outcome": "COMPLETE"
+    },
+    {
+      "id": "final-14",
+      "query": "看板未完成的事項，從既有紀錄接下去。",
+      "expected_project": "PROJECT-004",
+      "expected_outcome": "COMPLETE"
+    },
+    {
+      "id": "final-15",
+      "query": "AI 工作管理，延續目前保存的成果。",
+      "expected_project": "PROJECT-004",
+      "expected_outcome": "COMPLETE"
+    },
+    {
+      "id": "final-16",
+      "query": "請接續工作管理的剩餘待辦。",
+      "expected_project": "PROJECT-004",
+      "expected_outcome": "COMPLETE"
+    },
+    {
+      "id": "final-17",
+      "query": "音樂專案，請繼續待辦。",
+      "expected_project": null,
+      "expected_outcome": "STOP"
+    },
+    {
+      "id": "final-18",
+      "query": "請接續我說的那個音樂專案。",
+      "expected_project": null,
+      "expected_outcome": "STOP"
+    },
+    {
+      "id": "final-19",
+      "query": "接續北極星量子衛星計畫。",
+      "expected_project": null,
+      "expected_outcome": "STOP"
+    },
+    {
+      "id": "final-20",
+      "query": "請接續深海火星探測器專案。",
+      "expected_project": null,
+      "expected_outcome": "STOP"
+    }
+  ]
+}

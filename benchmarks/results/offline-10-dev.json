@@ -1,0 +1,1483 @@
+{
+  "id": "65aba663-94a9-496f-a1ad-d4a08fb10020",
+  "mode": "OFFLINE_RETRIEVAL",
+  "split": "dev",
+  "ground_truth_isolated": true,
+  "reference_date": "2026-11-26",
+  "results": [
+    {
+      "strategy": "A",
+      "count": 10,
+      "budget": 1024,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 0.5,
+      "top3_accuracy": 1.0,
+      "mrr": 0.875,
+      "critical_memory_recall": 0.0,
+      "memory_precision": 0.0,
+      "critical_constraint_omission_rate": 1.0,
+      "unnecessary_clarification_rate": 0.6666666666666666,
+      "mean_rounds": 1.25,
+      "mean_retrieval_tokens": 317.5,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 219.0,
+      "mean_latency_ms": 21.172500000000003,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "dev-0",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-1",
+          "selected_project": "PROJECT-002",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "UNIQUE_CANONICAL_CONTENT_CUE"
+        },
+        {
+          "case_id": "dev-2",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-3",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "strategy": "B",
+      "count": 10,
+      "budget": 1024,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 0.5,
+      "top3_accuracy": 1.0,
+      "mrr": 0.875,
+      "critical_memory_recall": 0.0,
+      "memory_precision": 0.0,
+      "critical_constraint_omission_rate": 1.0,
+      "unnecessary_clarification_rate": 0.6666666666666666,
+      "mean_rounds": 1.25,
+      "mean_retrieval_tokens": 261.5,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 293.0,
+      "mean_latency_ms": 0.905,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "dev-0",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-1",
+          "selected_project": "PROJECT-002",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "UNIQUE_CANONICAL_CONTENT_CUE"
+        },
+        {
+          "case_id": "dev-2",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-3",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "strategy": "C",
+      "count": 10,
+      "budget": 1024,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 0.5,
+      "top3_accuracy": 0.75,
+      "mrr": 0.75,
+      "critical_memory_recall": 0.3333333333333333,
+      "memory_precision": 0.3333333333333333,
+      "critical_constraint_omission_rate": 0.6666666666666666,
+      "unnecessary_clarification_rate": 0.3333333333333333,
+      "mean_rounds": 1.25,
+      "mean_retrieval_tokens": 375.25,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 377.25,
+      "mean_latency_ms": 1.4525,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "dev-0",
+          "selected_project": null,
+          "correct": false,
+          "status": "NOT_FOUND",
+          "stop_reason": "NO_NEW_CLUES"
+        },
+        {
+          "case_id": "dev-1",
+          "selected_project": "PROJECT-002",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "UNIQUE_CANONICAL_CONTENT_CUE"
+        },
+        {
+          "case_id": "dev-2",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-3",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "strategy": "D",
+      "count": 10,
+      "budget": 1024,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 0.5,
+      "top3_accuracy": 1.0,
+      "mrr": 0.875,
+      "critical_memory_recall": 0.3333333333333333,
+      "memory_precision": 0.3333333333333333,
+      "critical_constraint_omission_rate": 0.6666666666666666,
+      "unnecessary_clarification_rate": 0.6666666666666666,
+      "mean_rounds": 3.25,
+      "mean_retrieval_tokens": 543.75,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 410.75,
+      "mean_latency_ms": 1.6300000000000001,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "dev-0",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-1",
+          "selected_project": "PROJECT-002",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "UNIQUE_CANONICAL_CONTENT_CUE"
+        },
+        {
+          "case_id": "dev-2",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-3",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "strategy": "E",
+      "count": 10,
+      "budget": 1024,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 1.0,
+      "top3_accuracy": 1.0,
+      "mrr": 1.0,
+      "critical_memory_recall": 1.0,
+      "memory_precision": 1.0,
+      "critical_constraint_omission_rate": 0.0,
+      "unnecessary_clarification_rate": 0.0,
+      "mean_rounds": 3.75,
+      "mean_retrieval_tokens": 566.75,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 1222.25,
+      "mean_latency_ms": 2.18,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "dev-0",
+          "selected_project": "PROJECT-028",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "CONFIRMED_ALIAS"
+        },
+        {
+          "case_id": "dev-1",
+          "selected_project": "PROJECT-002",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "CONFIRMED_ALIAS"
+        },
+        {
+          "case_id": "dev-2",
+          "selected_project": "PROJECT-003",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "CONFIRMED_ALIAS"
+        },
+        {
+          "case_id": "dev-3",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "strategy": "F",
+      "count": 10,
+      "budget": 1024,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": null,
+      "top3_accuracy": null,
+      "mrr": null,
+      "critical_memory_recall": null,
+      "memory_precision": null,
+      "critical_constraint_omission_rate": null,
+      "unnecessary_clarification_rate": null,
+      "mean_rounds": null,
+      "mean_retrieval_tokens": null,
+      "mean_e2e_tokens": null,
+      "mean_latency_ms": null,
+      "status": "NOT_RUN_REQUIRES_LIVE_SMART_ROUTING"
+    },
+    {
+      "strategy": "A",
+      "count": 10,
+      "budget": 2048,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 0.5,
+      "top3_accuracy": 1.0,
+      "mrr": 0.875,
+      "critical_memory_recall": 0.2222222222222222,
+      "memory_precision": 0.3333333333333333,
+      "critical_constraint_omission_rate": 0.6666666666666666,
+      "unnecessary_clarification_rate": 0.6666666666666666,
+      "mean_rounds": 1.25,
+      "mean_retrieval_tokens": 551.25,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 471.75,
+      "mean_latency_ms": 1.7275,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "dev-0",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-1",
+          "selected_project": "PROJECT-002",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "UNIQUE_CANONICAL_CONTENT_CUE"
+        },
+        {
+          "case_id": "dev-2",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-3",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "strategy": "B",
+      "count": 10,
+      "budget": 2048,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 0.5,
+      "top3_accuracy": 1.0,
+      "mrr": 0.875,
+      "critical_memory_recall": 0.0,
+      "memory_precision": 0.0,
+      "critical_constraint_omission_rate": 1.0,
+      "unnecessary_clarification_rate": 0.6666666666666666,
+      "mean_rounds": 1.25,
+      "mean_retrieval_tokens": 261.5,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 293.0,
+      "mean_latency_ms": 0.59,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "dev-0",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-1",
+          "selected_project": "PROJECT-002",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "UNIQUE_CANONICAL_CONTENT_CUE"
+        },
+        {
+          "case_id": "dev-2",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-3",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "strategy": "C",
+      "count": 10,
+      "budget": 2048,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 0.5,
+      "top3_accuracy": 0.75,
+      "mrr": 0.75,
+      "critical_memory_recall": 0.3333333333333333,
+      "memory_precision": 0.3333333333333333,
+      "critical_constraint_omission_rate": 0.6666666666666666,
+      "unnecessary_clarification_rate": 0.3333333333333333,
+      "mean_rounds": 1.25,
+      "mean_retrieval_tokens": 375.25,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 377.25,
+      "mean_latency_ms": 1.3025,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "dev-0",
+          "selected_project": null,
+          "correct": false,
+          "status": "NOT_FOUND",
+          "stop_reason": "NO_NEW_CLUES"
+        },
+        {
+          "case_id": "dev-1",
+          "selected_project": "PROJECT-002",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "UNIQUE_CANONICAL_CONTENT_CUE"
+        },
+        {
+          "case_id": "dev-2",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-3",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "strategy": "D",
+      "count": 10,
+      "budget": 2048,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 0.5,
+      "top3_accuracy": 1.0,
+      "mrr": 0.875,
+      "critical_memory_recall": 0.3333333333333333,
+      "memory_precision": 0.3333333333333333,
+      "critical_constraint_omission_rate": 0.6666666666666666,
+      "unnecessary_clarification_rate": 0.6666666666666666,
+      "mean_rounds": 3.25,
+      "mean_retrieval_tokens": 543.75,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 410.75,
+      "mean_latency_ms": 1.59,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "dev-0",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-1",
+          "selected_project": "PROJECT-002",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "UNIQUE_CANONICAL_CONTENT_CUE"
+        },
+        {
+          "case_id": "dev-2",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-3",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "strategy": "E",
+      "count": 10,
+      "budget": 2048,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 1.0,
+      "top3_accuracy": 1.0,
+      "mrr": 1.0,
+      "critical_memory_recall": 1.0,
+      "memory_precision": 1.0,
+      "critical_constraint_omission_rate": 0.0,
+      "unnecessary_clarification_rate": 0.0,
+      "mean_rounds": 3.75,
+      "mean_retrieval_tokens": 566.75,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 1222.25,
+      "mean_latency_ms": 2.205,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "dev-0",
+          "selected_project": "PROJECT-028",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "CONFIRMED_ALIAS"
+        },
+        {
+          "case_id": "dev-1",
+          "selected_project": "PROJECT-002",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "CONFIRMED_ALIAS"
+        },
+        {
+          "case_id": "dev-2",
+          "selected_project": "PROJECT-003",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "CONFIRMED_ALIAS"
+        },
+        {
+          "case_id": "dev-3",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "strategy": "F",
+      "count": 10,
+      "budget": 2048,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": null,
+      "top3_accuracy": null,
+      "mrr": null,
+      "critical_memory_recall": null,
+      "memory_precision": null,
+      "critical_constraint_omission_rate": null,
+      "unnecessary_clarification_rate": null,
+      "mean_rounds": null,
+      "mean_retrieval_tokens": null,
+      "mean_e2e_tokens": null,
+      "mean_latency_ms": null,
+      "status": "NOT_RUN_REQUIRES_LIVE_SMART_ROUTING"
+    },
+    {
+      "strategy": "A",
+      "count": 10,
+      "budget": 4096,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 0.5,
+      "top3_accuracy": 1.0,
+      "mrr": 0.875,
+      "critical_memory_recall": 0.3333333333333333,
+      "memory_precision": 0.08333333333333333,
+      "critical_constraint_omission_rate": 0.6666666666666666,
+      "unnecessary_clarification_rate": 0.6666666666666666,
+      "mean_rounds": 1.25,
+      "mean_retrieval_tokens": 1033.5,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 998.0,
+      "mean_latency_ms": 2.145,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "dev-0",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-1",
+          "selected_project": "PROJECT-002",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "UNIQUE_CANONICAL_CONTENT_CUE"
+        },
+        {
+          "case_id": "dev-2",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-3",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "strategy": "B",
+      "count": 10,
+      "budget": 4096,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 0.5,
+      "top3_accuracy": 1.0,
+      "mrr": 0.875,
+      "critical_memory_recall": 0.0,
+      "memory_precision": 0.0,
+      "critical_constraint_omission_rate": 1.0,
+      "unnecessary_clarification_rate": 0.6666666666666666,
+      "mean_rounds": 1.25,
+      "mean_retrieval_tokens": 261.5,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 293.0,
+      "mean_latency_ms": 0.5650000000000001,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "dev-0",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-1",
+          "selected_project": "PROJECT-002",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "UNIQUE_CANONICAL_CONTENT_CUE"
+        },
+        {
+          "case_id": "dev-2",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-3",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "strategy": "C",
+      "count": 10,
+      "budget": 4096,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 0.5,
+      "top3_accuracy": 0.75,
+      "mrr": 0.75,
+      "critical_memory_recall": 0.3333333333333333,
+      "memory_precision": 0.3333333333333333,
+      "critical_constraint_omission_rate": 0.6666666666666666,
+      "unnecessary_clarification_rate": 0.3333333333333333,
+      "mean_rounds": 1.25,
+      "mean_retrieval_tokens": 375.25,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 377.25,
+      "mean_latency_ms": 1.6925,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "dev-0",
+          "selected_project": null,
+          "correct": false,
+          "status": "NOT_FOUND",
+          "stop_reason": "NO_NEW_CLUES"
+        },
+        {
+          "case_id": "dev-1",
+          "selected_project": "PROJECT-002",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "UNIQUE_CANONICAL_CONTENT_CUE"
+        },
+        {
+          "case_id": "dev-2",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-3",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "strategy": "D",
+      "count": 10,
+      "budget": 4096,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 0.5,
+      "top3_accuracy": 1.0,
+      "mrr": 0.875,
+      "critical_memory_recall": 0.3333333333333333,
+      "memory_precision": 0.3333333333333333,
+      "critical_constraint_omission_rate": 0.6666666666666666,
+      "unnecessary_clarification_rate": 0.6666666666666666,
+      "mean_rounds": 3.25,
+      "mean_retrieval_tokens": 543.75,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 410.75,
+      "mean_latency_ms": 1.7625,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "dev-0",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-1",
+          "selected_project": "PROJECT-002",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "UNIQUE_CANONICAL_CONTENT_CUE"
+        },
+        {
+          "case_id": "dev-2",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-3",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "strategy": "E",
+      "count": 10,
+      "budget": 4096,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 1.0,
+      "top3_accuracy": 1.0,
+      "mrr": 1.0,
+      "critical_memory_recall": 1.0,
+      "memory_precision": 1.0,
+      "critical_constraint_omission_rate": 0.0,
+      "unnecessary_clarification_rate": 0.0,
+      "mean_rounds": 3.75,
+      "mean_retrieval_tokens": 566.75,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 1222.25,
+      "mean_latency_ms": 2.3274999999999997,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "dev-0",
+          "selected_project": "PROJECT-028",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "CONFIRMED_ALIAS"
+        },
+        {
+          "case_id": "dev-1",
+          "selected_project": "PROJECT-002",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "CONFIRMED_ALIAS"
+        },
+        {
+          "case_id": "dev-2",
+          "selected_project": "PROJECT-003",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "CONFIRMED_ALIAS"
+        },
+        {
+          "case_id": "dev-3",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "strategy": "F",
+      "count": 10,
+      "budget": 4096,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": null,
+      "top3_accuracy": null,
+      "mrr": null,
+      "critical_memory_recall": null,
+      "memory_precision": null,
+      "critical_constraint_omission_rate": null,
+      "unnecessary_clarification_rate": null,
+      "mean_rounds": null,
+      "mean_retrieval_tokens": null,
+      "mean_e2e_tokens": null,
+      "mean_latency_ms": null,
+      "status": "NOT_RUN_REQUIRES_LIVE_SMART_ROUTING"
+    },
+    {
+      "strategy": "A",
+      "count": 10,
+      "budget": 8192,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 0.5,
+      "top3_accuracy": 1.0,
+      "mrr": 0.875,
+      "critical_memory_recall": 0.3333333333333333,
+      "memory_precision": 0.05263157894736842,
+      "critical_constraint_omission_rate": 0.6666666666666666,
+      "unnecessary_clarification_rate": 0.6666666666666666,
+      "mean_rounds": 1.25,
+      "mean_retrieval_tokens": 1935.75,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 2006.75,
+      "mean_latency_ms": 3.3875,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "dev-0",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-1",
+          "selected_project": "PROJECT-002",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "UNIQUE_CANONICAL_CONTENT_CUE"
+        },
+        {
+          "case_id": "dev-2",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-3",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "strategy": "B",
+      "count": 10,
+      "budget": 8192,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 0.5,
+      "top3_accuracy": 1.0,
+      "mrr": 0.875,
+      "critical_memory_recall": 0.0,
+      "memory_precision": 0.0,
+      "critical_constraint_omission_rate": 1.0,
+      "unnecessary_clarification_rate": 0.6666666666666666,
+      "mean_rounds": 1.25,
+      "mean_retrieval_tokens": 261.5,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 293.0,
+      "mean_latency_ms": 0.6225,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "dev-0",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-1",
+          "selected_project": "PROJECT-002",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "UNIQUE_CANONICAL_CONTENT_CUE"
+        },
+        {
+          "case_id": "dev-2",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-3",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "strategy": "C",
+      "count": 10,
+      "budget": 8192,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 0.5,
+      "top3_accuracy": 0.75,
+      "mrr": 0.75,
+      "critical_memory_recall": 0.3333333333333333,
+      "memory_precision": 0.3333333333333333,
+      "critical_constraint_omission_rate": 0.6666666666666666,
+      "unnecessary_clarification_rate": 0.3333333333333333,
+      "mean_rounds": 1.25,
+      "mean_retrieval_tokens": 375.25,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 377.25,
+      "mean_latency_ms": 1.3975,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "dev-0",
+          "selected_project": null,
+          "correct": false,
+          "status": "NOT_FOUND",
+          "stop_reason": "NO_NEW_CLUES"
+        },
+        {
+          "case_id": "dev-1",
+          "selected_project": "PROJECT-002",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "UNIQUE_CANONICAL_CONTENT_CUE"
+        },
+        {
+          "case_id": "dev-2",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-3",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "strategy": "D",
+      "count": 10,
+      "budget": 8192,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 0.5,
+      "top3_accuracy": 1.0,
+      "mrr": 0.875,
+      "critical_memory_recall": 0.3333333333333333,
+      "memory_precision": 0.3333333333333333,
+      "critical_constraint_omission_rate": 0.6666666666666666,
+      "unnecessary_clarification_rate": 0.6666666666666666,
+      "mean_rounds": 3.25,
+      "mean_retrieval_tokens": 543.75,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 410.75,
+      "mean_latency_ms": 1.6925,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "dev-0",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-1",
+          "selected_project": "PROJECT-002",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "UNIQUE_CANONICAL_CONTENT_CUE"
+        },
+        {
+          "case_id": "dev-2",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-3",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "strategy": "E",
+      "count": 10,
+      "budget": 8192,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 1.0,
+      "top3_accuracy": 1.0,
+      "mrr": 1.0,
+      "critical_memory_recall": 1.0,
+      "memory_precision": 1.0,
+      "critical_constraint_omission_rate": 0.0,
+      "unnecessary_clarification_rate": 0.0,
+      "mean_rounds": 3.75,
+      "mean_retrieval_tokens": 566.75,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 1222.25,
+      "mean_latency_ms": 2.3575,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "dev-0",
+          "selected_project": "PROJECT-028",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "CONFIRMED_ALIAS"
+        },
+        {
+          "case_id": "dev-1",
+          "selected_project": "PROJECT-002",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "CONFIRMED_ALIAS"
+        },
+        {
+          "case_id": "dev-2",
+          "selected_project": "PROJECT-003",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "CONFIRMED_ALIAS"
+        },
+        {
+          "case_id": "dev-3",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "strategy": "F",
+      "count": 10,
+      "budget": 8192,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": null,
+      "top3_accuracy": null,
+      "mrr": null,
+      "critical_memory_recall": null,
+      "memory_precision": null,
+      "critical_constraint_omission_rate": null,
+      "unnecessary_clarification_rate": null,
+      "mean_rounds": null,
+      "mean_retrieval_tokens": null,
+      "mean_e2e_tokens": null,
+      "mean_latency_ms": null,
+      "status": "NOT_RUN_REQUIRES_LIVE_SMART_ROUTING"
+    },
+    {
+      "strategy": "A",
+      "count": 10,
+      "budget": 16384,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 0.5,
+      "top3_accuracy": 1.0,
+      "mrr": 0.875,
+      "critical_memory_recall": 0.3333333333333333,
+      "memory_precision": 0.02631578947368421,
+      "critical_constraint_omission_rate": 0.6666666666666666,
+      "unnecessary_clarification_rate": 0.6666666666666666,
+      "mean_rounds": 1.25,
+      "mean_retrieval_tokens": 3824.25,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 4086.75,
+      "mean_latency_ms": 7.01,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "dev-0",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-1",
+          "selected_project": "PROJECT-002",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "UNIQUE_CANONICAL_CONTENT_CUE"
+        },
+        {
+          "case_id": "dev-2",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-3",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "strategy": "B",
+      "count": 10,
+      "budget": 16384,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 0.5,
+      "top3_accuracy": 1.0,
+      "mrr": 0.875,
+      "critical_memory_recall": 0.0,
+      "memory_precision": 0.0,
+      "critical_constraint_omission_rate": 1.0,
+      "unnecessary_clarification_rate": 0.6666666666666666,
+      "mean_rounds": 1.25,
+      "mean_retrieval_tokens": 261.5,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 293.0,
+      "mean_latency_ms": 0.7,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "dev-0",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-1",
+          "selected_project": "PROJECT-002",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "UNIQUE_CANONICAL_CONTENT_CUE"
+        },
+        {
+          "case_id": "dev-2",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-3",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "strategy": "C",
+      "count": 10,
+      "budget": 16384,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 0.5,
+      "top3_accuracy": 0.75,
+      "mrr": 0.75,
+      "critical_memory_recall": 0.3333333333333333,
+      "memory_precision": 0.3333333333333333,
+      "critical_constraint_omission_rate": 0.6666666666666666,
+      "unnecessary_clarification_rate": 0.3333333333333333,
+      "mean_rounds": 1.25,
+      "mean_retrieval_tokens": 375.25,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 377.25,
+      "mean_latency_ms": 1.71,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "dev-0",
+          "selected_project": null,
+          "correct": false,
+          "status": "NOT_FOUND",
+          "stop_reason": "NO_NEW_CLUES"
+        },
+        {
+          "case_id": "dev-1",
+          "selected_project": "PROJECT-002",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "UNIQUE_CANONICAL_CONTENT_CUE"
+        },
+        {
+          "case_id": "dev-2",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-3",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "strategy": "D",
+      "count": 10,
+      "budget": 16384,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 0.5,
+      "top3_accuracy": 1.0,
+      "mrr": 0.875,
+      "critical_memory_recall": 0.3333333333333333,
+      "memory_precision": 0.3333333333333333,
+      "critical_constraint_omission_rate": 0.6666666666666666,
+      "unnecessary_clarification_rate": 0.6666666666666666,
+      "mean_rounds": 3.25,
+      "mean_retrieval_tokens": 543.75,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 410.75,
+      "mean_latency_ms": 1.7475,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "dev-0",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-1",
+          "selected_project": "PROJECT-002",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "UNIQUE_CANONICAL_CONTENT_CUE"
+        },
+        {
+          "case_id": "dev-2",
+          "selected_project": null,
+          "correct": false,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "case_id": "dev-3",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "strategy": "E",
+      "count": 10,
+      "budget": 16384,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": 1.0,
+      "top3_accuracy": 1.0,
+      "mrr": 1.0,
+      "critical_memory_recall": 1.0,
+      "memory_precision": 1.0,
+      "critical_constraint_omission_rate": 0.0,
+      "unnecessary_clarification_rate": 0.0,
+      "mean_rounds": 3.75,
+      "mean_retrieval_tokens": 566.75,
+      "mean_e2e_tokens": null,
+      "mean_context_tokens_estimate": 1222.25,
+      "mean_latency_ms": 2.465,
+      "status": "MEASURED_LOCAL_RETRIEVAL",
+      "case_results": [
+        {
+          "case_id": "dev-0",
+          "selected_project": "PROJECT-028",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "CONFIRMED_ALIAS"
+        },
+        {
+          "case_id": "dev-1",
+          "selected_project": "PROJECT-002",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "CONFIRMED_ALIAS"
+        },
+        {
+          "case_id": "dev-2",
+          "selected_project": "PROJECT-003",
+          "correct": true,
+          "status": "RESOLVED",
+          "stop_reason": "CONFIRMED_ALIAS"
+        },
+        {
+          "case_id": "dev-3",
+          "selected_project": null,
+          "correct": true,
+          "status": "NEEDS_CONFIRMATION",
+          "stop_reason": "AMBIGUOUS_OR_INSUFFICIENT_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "strategy": "F",
+      "count": 10,
+      "budget": 16384,
+      "cases": 4,
+      "task_success_rate": null,
+      "api_cost_usd": null,
+      "cost_per_success": null,
+      "wrong_project_execution_rate": null,
+      "duplicate_completed_rate": null,
+      "top1_accuracy": null,
+      "top3_accuracy": null,
+      "mrr": null,
+      "critical_memory_recall": null,
+      "memory_precision": null,
+      "critical_constraint_omission_rate": null,
+      "unnecessary_clarification_rate": null,
+      "mean_rounds": null,
+      "mean_retrieval_tokens": null,
+      "mean_e2e_tokens": null,
+      "mean_latency_ms": null,
+      "status": "NOT_RUN_REQUIRES_LIVE_SMART_ROUTING"
+    }
+  ],
+  "elapsed_ms": 336.6,
+  "limits": [
+    "Local reads and packed context are separate estimates; local reads do not incur API tokens. E2E API tokens are UNKNOWN offline.",
+    "Task success/execution cost are unmeasured offline, shown UNKNOWN.",
+    "Confidence has not been calibrated; synthetic fixtures are deliberately bounded.",
+    "A/B/C use recent history/frozen lossy summary/top-three facts, without memory supplementation; all strategies share a safety validator.",
+    "B deliberately omits current constraints; results do not generalize to every summary algorithm.",
+    "Semantic vectors use replaceable FTS fallback in P0."
+  ]
+}

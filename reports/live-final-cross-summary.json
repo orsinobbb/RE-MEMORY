@@ -1,0 +1,24 @@
+{
+  "status": "COMPLETED",
+  "models": [
+    "DeepSeek-V3.2",
+    "claude-sonnet-5-5"
+  ],
+  "sessions": [
+    "284f2a5d-1e5a-4690-8467-779435d65de1",
+    "e8ff5b30-4914-4e99-8c01-f691779eb508"
+  ],
+  "raw_history_counts": [
+    0,
+    0
+  ],
+  "source_artifact": "artifact-20fb4f73-7970-4834-9779-30468eeab196",
+  "source_artifact_content_verified_in_second_prompt": true,
+  "verified_scope": "STRUCTURE_CURRENT_GOAL_AND_CONSTRAINTS",
+  "tokens": [
+    955,
+    2150
+  ],
+  "total_tokens": 3105,
+  "invoice_usd": null
+}

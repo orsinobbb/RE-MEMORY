@@ -1,0 +1,23 @@
+{
+  "prepared_at": "2026-11-27T16:49:34.200988+08:00",
+  "implementation": "VERIFIED",
+  "pytest_passed": 122,
+  "browser_two_stage_simulation": "PASS",
+  "browser_six_views_desktop_mobile": "PASS",
+  "genuine_recording_duration_seconds": 149.84,
+  "recording_added_api_calls": 0,
+  "private_delivery_deployment": "SUCCEEDED",
+  "static_playback_and_asset_downloads": "PASS",
+  "source_credential_scan_and_exclusions": "PASS",
+  "extracted_source_two_stage_isolation": "PASS",
+  "actual_live_models": [
+    "claude-sonnet-5-5",
+    "DeepSeek-V3.2"
+  ],
+  "same_prior_full_content_loaded": true,
+  "code_review": "TWO_IMPORTANT_FIXES_VERIFIED_ONE_MINOR_DEFERRED",
+  "human_narration": "DEFERRED_BY_USER",
+  "public_visibility_approval": "PENDING",
+  "competition_submission": "NOT_SUBMITTED",
+  "latest_acceptance_report": "reports/acceptance.json"
+}

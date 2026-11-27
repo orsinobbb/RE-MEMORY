@@ -1,0 +1,15 @@
+{
+  "project_id": "appgprj_6b0940c4ccf081918f3257f8a6f30e87",
+  "expected_url": "https://rememory-openlab-2026.orsinoojzp.chatgpt.site",
+  "audience": "OWNER_PRIVATE",
+  "publication_status": "succeeded",
+  "human_narration": "DEFERRED_BY_USER",
+  "public_submission_approval": "PENDING",
+  "source_path": "delivery-site",
+  "url": "https://rememory-openlab-2026.orsinoojzp.chatgpt.site",
+  "version_id": "appgprj_6b0940c4ccf081918f3257f8a6f30e87~appgver_3f804ae8861c8191b2705b8029913b2b",
+  "deployment_id": "appgdep_6b095c1ca45881918ef7a26a771c060a",
+  "source_commit": "d93e058166411ab06dec49445697ac18fbcea565",
+  "source_archive_sha256": "b0774c81fab9a7eea724fb78307a1c688deadef54f2f8b52fa3a42e59615a892",
+  "latest_acceptance_report": "reports/acceptance.json"
+}

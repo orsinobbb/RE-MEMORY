@@ -1,0 +1,21 @@
+{
+  "id": "076e91ba-5079-4a52-acdd-2bb99c5d587a",
+  "user_id": "demo",
+  "project_id": "",
+  "mode": "SMART",
+  "status": "SUCCESS",
+  "requested_model": "auto",
+  "model": "DeepSeek-V3.2",
+  "response_id": "cd6442046c71458f97baa98d7008317c",
+  "request_id": "976835ad-14db-485f-89da-ebad44112431",
+  "input_tokens": 9,
+  "output_tokens": 2,
+  "total_tokens": 11,
+  "cost_usd": null,
+  "cost_source": "UNKNOWN_PENDING_BILLING_RECONCILIATION",
+  "cost_upper_bound_usd": 0.00011,
+  "retry_count": 0,
+  "latency_ms": 870.91,
+  "content": "OK",
+  "created_at": "2026-11-26T23:16:41.511793+08:00"
+}

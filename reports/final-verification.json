@@ -1,0 +1,29 @@
+{
+  "pytest_exit_code": 0,
+  "pytest_summary": "103 passed, 1 warning in 3.49s",
+  "pytest_elapsed_seconds": 3.73,
+  "paid_calls_during_tests": 0,
+  "backup_restore": "PASS",
+  "source_whitespace_check": "PASS",
+  "mac_shell_syntax": "PASS",
+  "windows_runtime": "NOT_TESTED",
+  "independent_review": "READY_LOCAL_MEMORY_REPAIR",
+  "timestamp": 1795710786.285528,
+  "browser_smoke": "PASS six views, retrieval/context, simulation, offline export, desktop/mobile; no paid call",
+  "final_cross_model": "PASS AUTO DeepSeek→FIXED Sonnet, empty histories, exact persisted prior artifact, current goal/constraint validator",
+  "archive_source_exclusion": "PASS .env/runtime/private/backups excluded",
+  "archive_extracted_smoke": "PASS health, live disabled, source/GT isolation, persisted simulation",
+  "credential_scan": "PASS",
+  "paid_calls_during_archive_verification": 0,
+  "memory_repair": {
+    "api_acceptance_tests": "12 passed",
+    "browser_workflow": "PASS alias/revision/revalidation/history/stale context, desktop/mobile",
+    "independent_review": "0 critical / 0 important / 0 minor; tests inspected but not independently rerun by reviewer",
+    "archive_extracted_repair": "PASS; keys absent, live disabled, current coverage restored",
+    "incremental_paid_calls": 0,
+    "incremental_api_tokens": 0,
+    "incremental_api_cost_usd": 0,
+    "preview_health": "PASS localhost8791; source revision form visually checked at1440/390; no original memory mutation submitted"
+  },
+  "p0_timestamp": 1795708484.331297
+}

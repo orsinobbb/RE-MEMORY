@@ -1,0 +1,16 @@
+{
+  "static_tabs_proof_and_benchmark": "PASS",
+  "desktop_1440_mobile_390_no_overflow": "PASS",
+  "assets_checked": [
+    "assets/stage1.md",
+    "assets/screen-silent.mp4",
+    "assets/voiceover.txt",
+    "assets/RE-MEMORY-source.zip",
+    "assets/RE-MEMORY-evidence.zip",
+    "assets/final-live-summary.md"
+  ],
+  "video_duration_seconds": 149.84,
+  "video_playback": "PASS",
+  "human_voice": "DEFERRED_BY_USER",
+  "latest_acceptance_report": "reports/acceptance.json"
+}
