@@ -1,6 +1,10 @@
 # RE:MEMORY 最終版本驗收
 
-程式與私人交付的本輪驗收通過。範圍是合成資料、本機單使用者原型、持久化記憶與 Markdown 接手清單。本人旁白依使用者安排延後；公開評審入口及競賽投稿尚未執行。此結論不代表全部 V5 研究驗證完成。
+程式與私人交付的本輪驗收通過。範圍是合成資料、本機單使用者原型、持久化記憶與 Markdown 接手清單。本人旁白依使用者安排延後；公開評審入口已上線，競賽尚未投稿。此結論不代表全部 V5 研究驗證完成。
+
+## 公開交付狀態
+
+作品頁：[RE:MEMORY](https://orsinobbb.github.io/RE-MEMORY/)；原始碼：[GitHub](https://github.com/orsinobbb/RE-MEMORY)。目前為記憶找回與任務接續，尚未支援聊天式多輪對話。最新單頁 SMART／auto 實測回傳 DeepSeek-V3.2，新增1次呼叫／925Token，成果下載 SHA、空白 Session、桌機／手機與重播零追加呼叫通過；累計118次生成嘗試／129,955已知Token，仍有2次早期用量未知。詳見 [單頁實測](quick-flow-live.json)、[審查](quick-flow-review.md) 與 [資源紀錄](resources.json)。下方保留18:15開始的歷史驗收與當時用量。
 
 ## 本輪實際驗證
 
@@ -103,6 +107,6 @@ PASS 為上述原型範圍內已驗證；PARTIAL 直接列出尚未完成的部�
 | Demo 腳本／本人逐句稿 | 已準備；錄音依使用者安排延後 |
 | 評審導覽 | [judge-guide.md](../submission/judge-guide.md) |
 | 已知限制 | [known-limits.md](../submission/known-limits.md) 及本表 PARTIAL |
-| 秘密排除／私人交付 | 來源／證據包排除 .env、runtime、backups；交付頁僅本人可見 |
+| 秘密排除／私人交付 | 來源／證據包排除 .env、runtime、backups；GitHub Pages 靜態作品頁已公開 |
 
-正式 Demo 目前為 149.84 秒真實靜音預覽，尚未符合「參賽者本人實際聲音」的正式影片條件。私人頁已部署：[RE:MEMORY](https://rememory-openlab-2026.orsinoojzp.chatgpt.site)。程式使用 loopback，沒有部署公開付費後端。
+正式 Demo 目前為 149.84 秒真實靜音預覽，尚未符合「參賽者本人實際聲音」的正式影片條件。公開作品頁：[RE:MEMORY](https://orsinobbb.github.io/RE-MEMORY/)。程式使用 loopback，沒有部署公開付費後端。
