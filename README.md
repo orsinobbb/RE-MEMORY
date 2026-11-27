@@ -18,14 +18,15 @@ Windows 執行 `start_windows.bat`。Windows 腳本已準備，尚未在 Windows
 
 ## 使用
 
-1. Workspace 輸入「我要你繼續做昨天的音樂專案。」並選擇上下文預算。
-2. Retrieval Observatory 顯示真實 SSE 搜尋輪次、候選、正反證據、關係線索與停止原因。回放會明確標示 SAVED REPLAY。
-3. Context Inspector 查看最新目標、限制、來源、成果依賴、覆蓋率與缺失。覆蓋率只代表已知必要記憶。
-4. Recovery Lab 建立原始歷史數量為 0 的 Session，選 SIMULATION／FIXED／SMART，產出並下載成果。已完成任務會返回原成果，保留其實際模式，不重跑。
-5. Memory Explorer 顯示來源、版本、個人稱呼、關係與持久化成果。可確認稱呼，依既有可信來源修正目前記憶，再核對來源與草稿、保存受影響成品的重新驗證版本。
-6. Benchmark Lab 可跑離線矩陣，也可查看 CLI 已保存的 LIVE 結果與匯出 JSON。介面的 benchmark 按鈕只執行離線測試。
+首頁現在只需三步：
 
-初始合成展示日為 2026-11-26；記憶修正後，介面採用最新目前記憶的生效日重新檢索。離線基準資料仍固定原展示日。DEMO 表示合成資料；SIMULATION 表示沒有模型呼叫。使用者確認的 `project_id` 是明確選擇，不能拿它當自動辨識成功的證據。
+1. 輸入「請接續鋼琴樂理教材，完成目前尚未完成的驗收清單。」並按「找回工作脈絡」。搜尋後留在首頁。
+2. 確認顯示的專案、目標與限制，選 MixRoute 自動選模（SMART）或本機示範，再按確認接續。系統自動建立空白 Session。
+3. 同一頁查看並下載 Markdown 成果。SMART 使用 model=auto；已完成任務讀取既有成果，不重複生成。
+
+修改需求或預算後需重新搜尋。尚未辨識或必要記憶不足時不能接續。左側研究頁保留詳細記憶、檢索、完整性、兩階段示範與測試資料。
+
+單頁真實驗收已由 SMART／auto 回傳 DeepSeek-V3.2，925Tokens，1次呼叫；空白 Session、下載 SHA、重播零追加呼叫及桌機／手機通過。詳見 [單頁實測](reports/quick-flow-live.json) 與 [審查](reports/quick-flow-review.md)。
 
 ## 驗證與實驗
 

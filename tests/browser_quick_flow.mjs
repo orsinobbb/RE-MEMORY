@@ -1,0 +1,50 @@
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {mkdirSync,writeFileSync} from 'node:fs';
+import {loadPlaywright,browserLaunchOptions} from '../scripts/playwright_runtime.mjs';
+const live=process.env.REMEMORY_LIVE_ACCEPTANCE==='1';
+const replay=process.env.REMEMORY_EXPECT_REPLAY==='1';
+const base=process.env.REMEMORY_BASE_URL||'http://127.0.0.1:8791';
+const before=await(await fetch(base+'/api/state')).json();
+if(live)assert.equal(before.settings.enabled,true);
+const browser=await loadPlaywright().chromium.launch(browserLaunchOptions());
+const page=await browser.newPage({viewport:{width:1440,height:1000}});page.setDefaultTimeout(6000);
+const errors=[];page.on('pageerror',e=>errors.push(e.message));
+try{
+ await page.goto(base+'/#workspace');
+ await page.locator('[data-testid="backend-status"]').filter({hasText:'CONNECTED'}).waitFor();
+ assert.equal(await page.locator('#quick-context').count(),1,'Three-step confirmation must be on the home page.');
+ await page.locator('#query').fill('請接續鋼琴樂理教材，完成目前尚未完成的驗收清單。');
+ await page.locator('#budget').selectOption('4096');
+ await page.locator('[data-testid="run-retrieval"]').click();
+ await page.locator('#quick-context').filter({hasText:'鋼琴樂理教材'}).waitFor();
+ assert.equal(await page.locator('#view-workspace').isVisible(),true);
+ await page.locator('#execution-mode').selectOption(live?'SMART':'SIMULATION');
+ if(live)assert.equal(await page.locator('#execution-model').inputValue(),'auto');
+ const sessionPromise=page.waitForResponse(r=>r.url().endsWith('/api/session')&&r.request().method()==='POST');
+ const executionPromise=page.waitForResponse(r=>r.url().endsWith('/api/execute')&&r.request().method()==='POST',{timeout:45000});
+ await page.locator('[data-testid="execute-task"]').click();
+ const session=await(await sessionPromise).json();const result=await(await executionPromise).json();
+ assert.equal(session.raw_history_count,0);assert.equal(result.status,replay?'ALREADY_COMPLETED':'COMPLETED',result.reason);
+ assert.equal(result.mode,live?'SMART':'SIMULATION');
+ if(live&&!replay)assert.equal(result.model_call.requested_model,'auto');
+ assert.equal(createHash('sha256').update(result.artifact.content).digest('hex'),result.artifact.sha256);
+ await page.locator('[data-testid="artifact-content"]').filter({hasText:'下一步'}).waitFor();
+ assert.equal(await page.locator('#view-workspace').isVisible(),true);
+ assert.match(await page.locator('[data-testid="artifact-download"]').getAttribute('href'),new RegExp(result.artifact.id));
+ mkdirSync('reports/private',{recursive:true});
+ await page.screenshot({path:'reports/private/quick-flow-desktop.png',fullPage:true});
+ for(const size of [{width:1440,height:1000},{width:390,height:844}]){
+  await page.setViewportSize(size);assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+ }
+ await page.locator('#query').fill('請接續完全不存在的量子果汁工廠。');
+ assert.equal(await page.locator('[data-testid="execute-task"]').isDisabled(),true);
+ await page.locator('[data-testid="run-retrieval"]').click();
+ await page.locator('[data-testid="run-retrieval"]').filter({hasText:'找回'}).waitFor();
+ assert.equal(await page.locator('[data-testid="execute-task"]').isDisabled(),true);
+ const after=await(await fetch(base+'/api/state')).json();
+ assert.equal(after.resources.api_calls-before.resources.api_calls,live&&!replay?1:0);
+ assert.deepEqual(errors,[]);
+ writeFileSync(replay?'reports/quick-flow-replay.json':'reports/quick-flow-live.json',JSON.stringify({mode:live?'GENUINE_MIXROUTE_UI_ACCEPTANCE':'SIMULATION_UI_ACCEPTANCE',result,raw_history_count:session.raw_history_count,added_api_calls:after.resources.api_calls-before.resources.api_calls,added_known_api_tokens:after.resources.known_api_tokens-before.resources.known_api_tokens,actual_billing_usd:null,desktop_mobile:'PASS',stale_query_block:'PASS',unknown_project_block:'PASS'},null,2));
+ console.log('PASS: one-page retrieval, automatic empty session, actual artifact SHA/download, stale/unknown blocking, desktop/mobile and exact API increment.');
+}finally{await browser.close();}

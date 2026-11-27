@@ -51,7 +51,7 @@ const state = {
   workspace: null, models: null, memory: null, kind: 'ALL',
   rounds: [], retrieval: null, retrieving: false, memoryRequest: 0,
   session: null, execution: null, executing: false, creatingSession: false,
-  repairing: false,
+  repairing: false, quickBusy: false, quickBudget: null,
   liveDemo: null, demoBusy: false,
   benchmark: null,
 };
@@ -238,7 +238,7 @@ function repairReference() {
 }
 function clearStaleContext() {
   state.retrieval = null; state.rounds = []; state.execution = null;
-  renderRounds(); renderContext();
+  renderRounds(); renderContext(); updateExecuteButton();
   $('#retrieval-status').textContent = 'STALE'; $('#retrieval-status').className = 'badge badge-amber';
   $('#stop-reason').textContent = '記憶已修正，請重新檢索目前版本。';
   replace('#intent-strip'); $('#clarification').hidden = true;
@@ -392,13 +392,13 @@ async function retrieveStream(payload) {
 async function runRetrieval(event) {
   event.preventDefault();
   if (state.repairing) { notify('記憶版本正在儲存，請完成後再檢索。'); return; }
-  if (state.retrieving) return;
+  if (state.retrieving || state.quickBusy || state.executing) return;
   notify('');
   const query = $('#query').value.trim();
   if (!query) { $('#query').focus(); return; }
   const payload = { query, budget: Number($('#budget').value), strategy: 'E' };
   if (state.workspace?.reference_date) payload.reference_date = state.workspace.reference_date;
-  state.retrieving = true; state.rounds = []; state.retrieval = null;
+  state.retrieving = true; state.rounds = []; state.retrieval = null; state.quickBudget = Number($('#budget').value); updateExecuteButton();
   $('#recovery-query').value = query;
   $('#trace-query').textContent = query;
   $('#stop-reason').textContent = '正在由低成本線索開始搜尋…';
@@ -409,7 +409,7 @@ async function runRetrieval(event) {
   $('#retrieval-status').className = 'badge badge-teal';
   $('#context-empty').hidden = false; $('#context-result').hidden = true;
   replace('#intent-strip', ...['TIME', 'TOPIC', 'ACTION', 'CONFIDENCE PROBABILITY'].map(label => append(el('div'), el('span', '', label), el('strong', '', label === 'CONFIDENCE PROBABILITY' ? 'UNKNOWN' : 'Parsing…'))));
-  renderRounds(); navigate('observatory');
+  renderRounds(); navigate('workspace');
   const submit = $('[data-testid="run-retrieval"]');
   setBusy(submit, true, '正在找回脈絡…');
   try {
@@ -427,7 +427,7 @@ async function runRetrieval(event) {
     $('#retrieval-status').className = 'badge badge-red';
     $('#stop-reason').textContent = error.message;
     notify(`檢索未完成：${error.message}`, 'error');
-  } finally { state.retrieving = false; setBusy(submit, false); }
+  } finally { state.retrieving = false; setBusy(submit, false); updateExecuteButton(); }
 }
 function acceptRetrieval(result) {
   state.retrieval = result;
@@ -440,7 +440,7 @@ function acceptRetrieval(result) {
   $('#stop-reason').textContent = result.stop_reason || 'UNKNOWN';
   $('#clarification').textContent = result.clarification ? compactText(result.clarification) : '';
   $('#clarification').hidden = !result.clarification;
-  renderRounds(); renderContext();
+  renderRounds(); renderContext(); updateExecuteButton();
   if (result.project_id && list(state.workspace?.projects).some(project => project.id === result.project_id)) {
     $('#memory-project').value = result.project_id;
     $('#memory-search').value = '';
@@ -607,9 +607,13 @@ function renderModelSelection() {
 function updateExecuteButton() {
   const mode = $('#execution-mode').value;
   const submit = $('#execute-task');
-  submit.disabled = !state.session || state.executing || state.creatingSession;
-  if (state.executing) { submit.textContent = `正在接續工作 · ${mode}…`; return; }
-  submit.textContent = state.session ? `接續工作 · ${mode}` : '建立 Session 後接續工作';
+  const busy = state.executing || state.creatingSession || state.quickBusy;
+  submit.disabled = busy || state.retrieving || state.repairing || !quickReady();
+  $('#query').disabled = busy; $('#budget').disabled = busy; $('#execution-mode').disabled = busy;
+  if (busy) $('#execution-model').disabled = true;
+  const example = $('#quick-example'); if (example) example.disabled = busy;
+  submit.textContent = busy ? '正在接續，請稍候…' : mode === 'SIMULATION' ? '確認專案，產生本機示範成果' : '確認專案，使用 MixRoute 接續';
+  updateQuickSummary();
 }
 async function newSession() {
   if (state.executing || state.creatingSession) return;
@@ -633,7 +637,68 @@ async function newSession() {
   } catch (error) { notify(`Session 建立失敗：${error.message}`, 'error'); }
   finally { state.creatingSession = false; setBusy(node, false); updateExecuteButton(); }
 }
+
+function quickReady() {
+  const r = state.retrieval;
+  const completed = r?.context?.budget_status === 'FEASIBLE' && list(r.context?.missing).length === 1 && r.context.missing[0] === '沒有可接續的未完成任務' && list(state.workspace?.tasks).some(t => t.project_id === r.project_id && t.status === 'COMPLETED' && t.artifact_id);
+  return r?.status === 'RESOLVED' && (r.context?.feasible === true || completed) &&
+    r.query?.trim() === $('#query').value.trim() && state.quickBudget === Number($('#budget').value);
+}
+function updateQuickSummary() {
+  const node = $('#quick-context'); if (!node) return;
+  const r = state.retrieval;
+  if (!quickReady()) {
+    node.replaceChildren(el('p', 'supporting-text', state.retrieving ? '正在找回專案、目標與限制…' : r?.clarification ? compactText(r.clarification) : '先找回記憶；若修改需求或預算，請重新搜尋後再接續。'));
+    return;
+  }
+  const loaded = list(r.context.loaded);
+  const parts = loaded.filter(f => ['GOAL', 'CONSTRAINT'].includes(f.kind));
+  node.replaceChildren(el('h3', '', `找到專案：${projectName(r.project_id)}`),
+    ...parts.map(f => el('p', 'supporting-text', `${f.kind === 'GOAL' ? '目標' : '限制'}：${f.content}`)),
+    el('p', 'supporting-text', r.context.feasible ? '必要記憶已備妥。請確認這是你要接續的專案；按下接續後會自動建立空白對話。' : '此專案沒有未完成任務，將取回已保存成果，不新增模型呼叫。'));
+}
 async function executeTask(event) {
+  event.preventDefault();
+  if (state.quickBusy || state.executing || state.creatingSession || state.repairing || !quickReady()) return;
+  const confirmed = { query: $('#query').value.trim(), budget: $('#budget').value, mode: $('#execution-mode').value, model: $('#execution-model').value };
+  state.quickBusy = true; updateExecuteButton();
+  try {
+    const previous = state.session?.id;
+    await newSession();
+    if (!state.session || state.session.id === previous || state.session.raw_history_count !== 0) return;
+    if (!quickReady() || confirmed.query !== $('#query').value.trim() || confirmed.budget !== $('#budget').value || confirmed.mode !== $('#execution-mode').value || confirmed.model !== $('#execution-model').value) { notify('確認內容已改變，請重新找回記憶後再接續。'); return; }
+    $('#recovery-query').value = confirmed.query;
+    await performExecution({ preventDefault() {} });
+    $('#quick-output').scrollIntoView({ block: 'start', behavior: 'smooth' });
+  } finally { state.quickBusy = false; renderModelSelection(); }
+}
+function mountQuickFlow() {
+  const main = $('#view-workspace .workspace-main');
+  const flow = el('div', 'quick-flow');
+  const confirm = el('section', 'panel quick-confirm');
+  confirm.append(el('h2', '', '2 · 確認找到的專案'));
+  const summary = el('div'); summary.id = 'quick-context'; confirm.append(summary, $('#execution-form'));
+  const output = el('section'); output.id = 'quick-output';
+  output.append(el('h2', '', '3 · 取得成果'), $('.recovery-output'));
+  flow.append(confirm, output); main.insertBefore(flow, $('#retrieval-form').nextSibling);
+  $('#recovery-query').closest('label').hidden = true;
+  $('#workspace-title').textContent = '把上次的工作，接著做好。';
+  $('#view-workspace .page-description').textContent = '輸入需求 → 確認專案 → 取得成果。先試試已準備好的鋼琴教材情境。';
+  $('#retrieval-form h2').textContent = '1 · 輸入你想接續的工作';
+  $('#query').value = '請接續鋼琴樂理教材，完成目前尚未完成的驗收清單。';
+  const example = button('填入鋼琴教材範例', 'text-button', () => { $('#query').value = '請接續鋼琴樂理教材，完成目前尚未完成的驗收清單。'; updateExecuteButton(); $('#query').focus(); });
+  example.id = 'quick-example'; $('#retrieval-form').insertBefore(example, $('#query'));
+  $('#execution-form .section-top h2').textContent = '選擇接續方式';
+  $('#execution-form .supporting-text').textContent = 'SMART／FIXED 會使用真實 MixRoute API 額度；本機示範不呼叫模型。已完成的任務會讀取既有成果。';
+  const details = el('details'); details.append(el('summary', '', '模型、Token 與請求明細'), $('#model-call-details')); $('#execution-summary').after(details);
+  const advanced = el('details', 'quick-advanced'); advanced.append(el('summary', '', '查看專案與活動（進階）'));
+  [...main.children].filter(n => n !== $('#retrieval-form') && n !== flow).forEach(n => advanced.append(n)); main.append(advanced);
+  $('#query').addEventListener('input', updateExecuteButton);
+  $('#budget').addEventListener('change', updateExecuteButton);
+  updateExecuteButton();
+}
+
+async function performExecution(event) {
   event.preventDefault();
   if (state.repairing) { notify('記憶版本正在儲存，請完成後再接續工作。'); return; }
   if (!state.session || state.executing) return;
@@ -840,7 +905,7 @@ async function boot() {
   const [workspace, models, benchmark] = results;
   if (models.status === 'fulfilled') state.models = models.value;
   if (workspace.status === 'fulfilled' && Array.isArray(workspace.value.projects) && workspace.value.dataset) {
-    state.workspace = workspace.value; renderWorkspace(workspace.value);
+    state.workspace = workspace.value; renderWorkspace(workspace.value); if (state.workspace.settings?.enabled) { $('#execution-mode').value = 'SMART'; renderModelSelection(); }
     $('[data-testid="backend-status"]').textContent = 'CONNECTED';
     $('[data-testid="backend-status"]').className = 'connection connected';
     loadMemory();
@@ -876,5 +941,6 @@ $('#demo-prepare').addEventListener('click', prepareLiveDemo);
 $('#demo-stage-1').addEventListener('click', () => runLiveDemo(1));
 $('#demo-stage-2').addEventListener('click', () => runLiveDemo(2));
 $('#budget').addEventListener('change', () => { $('#recovery-budget').textContent = `${fmt(Number($('#budget').value) / 1024)}K tokens`; });
+mountQuickFlow();
 navigate(location.hash.slice(1) || 'workspace', false);
 boot();

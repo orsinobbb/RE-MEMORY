@@ -70,18 +70,19 @@
       "known_api_tokens": 87333
     }
   ],
-  "api_calls": 117,
+  "api_calls": 118,
   "api_tokens": null,
   "api_cost_usd": null,
   "notes": [
     "No generation calls before this run; catalogue queries are not generation token usage.",
     "Explicitly authorized tiny auto probe; exact cost pending console billing reconciliation.",
     "Disk size counts project files only; shared dependency-cache growth and Codex billing are UNKNOWN. Stages 3/4 overlap briefly during parallel verification.",
-    "console_displayed_usd is the historical initial console sample; console_final_live_displayed_subtotal_usd is the separately reconciled final40 reference subtotal, not an aggregate invoice."
+    "console_displayed_usd is the historical initial console sample; console_final_live_displayed_subtotal_usd is the separately reconciled final40 reference subtotal, not an aggregate invoice.",
+    "Traditional Chinese release adds only the measured interval from23:08:30; preceding language investigation time was not precisely captured and is not included in the elapsed aggregate."
   ],
   "api_usage_unknown_calls": 2,
-  "api_reserved_usd": 1.3551,
-  "known_api_tokens": 129030,
+  "api_reserved_usd": 1.36435,
+  "known_api_tokens": 129955,
   "console_displayed_usd": 0.035152,
   "completed_at": "2026-11-27T00:01:51.505228+08:00",
   "total_elapsed_seconds": 4006.51,
@@ -274,21 +275,38 @@
       "preceding_investigation_elapsed_seconds": null,
       "prepared_at": "2026-11-27T23:10:24.493619+08:00",
       "tracked_elapsed_seconds_to_preparation": 114.49,
-      "status": "TEXT_CORRECTED_TESTED_PUBLIC_UPDATE_PENDING",
-      "checks": "22 source text files and3 page assets corrected; existing122-test suite exits0; original LIVE artifacts and usage unmodified",
+      "status": "PUBLIC_TRADITIONAL_CHINESE_RELEASE_ANONYMOUSLY_VERIFIED",
+      "checks": "122-test suite exits0;235 source ZIP members,55 evidence ZIP members and12 live text assets checked; latest source/pages commits built; current online bytes/SHA match; original LIVE and media bytes unmodified; user .env and ledger unchanged",
       "added_api_calls": 0,
       "added_api_tokens": 0,
       "added_api_cost_usd": 0,
       "codex_token_usage": null,
-      "codex_billing_usd": null
+      "codex_billing_usd": null,
+      "completed_at": "2026-11-27T23:15:18.996139+08:00",
+      "tracked_elapsed_seconds": 409.0,
+      "source_commit": "409327fb548d90413e35fca6900509ccd0400e9d",
+      "pages_commit": "b406cbd06d70b7f84309aaaf81a2d8b3bda77715",
+      "source_sha256": "3bdf4626be2c2c40486c5d6af2145a18b32fde6b75ce7331dc75118955c440c2"
+    },
+    {
+      "name": "single-page-quick-flow",
+      "started_at": "2026-11-27T23:29:32+08:00",
+      "prepared_at": "2026-11-27T23:38:56.219868+08:00",
+      "elapsed_seconds_to_preparation": 564.22,
+      "status": "LIVE_UI_VERIFIED_SOURCE_PUBLICATION_IN_PROGRESS",
+      "added_api_calls": 1,
+      "added_api_tokens": 925,
+      "added_api_cost_usd": null,
+      "codex_billing_usd": null,
+      "checks": "True SMART/auto DeepSeek925Tokens, emptySession0, artifact/downloadSHA, desktop/mobile, replay0calls, confirmation racesRED-GREEN,122pytest"
     }
   ],
-  "all_active_work_elapsed_seconds": 9480.42,
-  "latest_completed_at": "2026-11-27T23:02:01.000238+08:00",
+  "all_active_work_elapsed_seconds": 9889.42,
+  "latest_completed_at": "2026-11-27T23:15:18.996139+08:00",
   "disk_measurement_scope": "Project files excluding symlinks and Git metadata; includes local runtime/backups/video/private static delivery, excludes linked dependency cache.",
   "usage_unknown_calls": 2,
-  "latest_prepared_at": "2026-11-27T23:02:01.000238+08:00",
-  "all_active_work_elapsed_seconds_to_preparation": 9480.42,
+  "latest_prepared_at": "2026-11-27T23:15:18.996139+08:00",
+  "all_active_work_elapsed_seconds_to_preparation": 9889.42,
   "console_final_live_displayed_subtotal_usd": 0.03807,
   "console_final_live_reconciled_tokens": 41697
 }
