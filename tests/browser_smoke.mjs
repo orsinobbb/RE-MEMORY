@@ -41,7 +41,7 @@ try {
   await page.locator('#query').fill('我要你繼續做昨天的音樂專案。');
   await page.locator('#budget').selectOption('4096');
   await page.locator('[data-testid="run-retrieval"]').click();
-  await page.locator('[data-testid="retrieval-status"]').filter({ hasText: /RESOLVED|NEEDS_CONFIRMATION|NOT_FOUND|BUDGET_EXCEEDED/ }).waitFor({ timeout: 30000 });
+  await page.locator('[data-testid="retrieval-status"]').filter({ hasText: /RESOLVED|NEEDS_CONFIRMATION|NOT_FOUND|BUDGET_EXCEEDED/ }).waitFor({ state: 'attached', timeout: 30000 });
   assert.ok(await page.locator('[data-testid="retrieval-round"]').count() > 0, 'query has real retrieval rounds');
   assert.match(await page.locator('[data-testid="trace-source"]').textContent(), /LIVE SSE|SAVED REPLAY/);
   await noPageOverflow('desktop observatory');
@@ -62,6 +62,7 @@ try {
   const session = await (await sessionResponse).json();
   assert.equal(session.raw_history_count, 0, 'fresh session must have no raw history');
   await page.locator('[data-testid="session-history"]').filter({ hasText: '0' }).waitFor();
+  await navigate('workspace');
   await page.locator('#execution-mode').selectOption('SIMULATION');
   const executeResponse = page.waitForResponse(response => response.url().endsWith('/api/execute') && response.request().method() === 'POST');
   await page.locator('[data-testid="execute-task"]').click();

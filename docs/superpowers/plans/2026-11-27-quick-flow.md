@@ -23,8 +23,8 @@
 
 **Files:** frontend/index.html, frontend/app.js, frontend/style.css, tests/browser_quick_flow.mjs
 **Interfaces:** 沿用 /api/retrieve、/api/session、/api/execute，使用既有狀態與 SHA 成品。
-- [ ] 新瀏覽器測試先驗證單頁摘要不存在（RED，零付費呼叫）。
-- [ ] 整理三步驟首頁並加入自動 Session、狀態與失效處理。
-- [ ] 真實 SMART/auto 生成一份成品；核對空白 Session、SHA、下載、單次呼叫與手機寬度。
-- [ ] 既有 pytest 及一次獨立審查；修正重大問題。
-- [ ] 更新原工作區與 GitHub 來源包，保留原始實測證據及資源紀錄。
+- [x] 新瀏覽器測試先驗證單頁摘要不存在（RED，零付費呼叫）。
+- [x] 整理三步驟首頁並加入自動 Session、狀態與失效處理。
+- [x] 真實 SMART/auto 生成一份成品；核對空白 Session、SHA、下載、單次呼叫與手機寬度。
+- [x] 既有 pytest 及一次獨立審查；修正重大問題。
+- [x] 更新原工作區與 GitHub 來源包，保留原始實測證據及資源紀錄。
