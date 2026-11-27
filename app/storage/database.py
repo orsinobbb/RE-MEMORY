@@ -7,7 +7,7 @@ from pathlib import Path
 
 TABLES = {"users","projects","facts","aliases","evidence","events","goals","constraints",
           "decisions","tasks","artifacts","relations","snapshots","sessions","traces",
-          "model_calls","evaluations","topics","entities"}
+          "model_calls","evaluations","topics","entities","conversations","chat_messages","chat_memories","chat_requests"}
 
 def terms(text):
     found = re.findall(r"[a-z0-9_-]+", text.casefold())
@@ -28,6 +28,7 @@ class Store:
             db.execute("CREATE TABLE IF NOT EXISTS deliveries(user_id TEXT,key TEXT,request_hash TEXT,task_id TEXT,artifact_id TEXT,result TEXT,PRIMARY KEY(user_id,key),UNIQUE(user_id,task_id))")
             db.execute("CREATE TABLE IF NOT EXISTS task_locks(user_id TEXT,task_id TEXT,owner TEXT,started REAL,PRIMARY KEY(user_id,task_id))")
             db.execute("CREATE TABLE IF NOT EXISTS execution_claims(user_id TEXT,key TEXT,request_hash TEXT,owner TEXT,started REAL,PRIMARY KEY(user_id,key))")
+            db.execute("CREATE TABLE IF NOT EXISTS chat_locks(user_id TEXT,conversation_id TEXT,owner TEXT,started REAL,PRIMARY KEY(user_id,conversation_id))")
             db.execute("CREATE TABLE IF NOT EXISTS cost_ledger(id TEXT PRIMARY KEY,reserved REAL NOT NULL,actual REAL,status TEXT NOT NULL)")
             db.execute("CREATE TABLE IF NOT EXISTS budget_windows(id TEXT PRIMARY KEY,starting_spend REAL NOT NULL,extra_limit REAL NOT NULL,ceiling REAL NOT NULL,active INTEGER NOT NULL)")
             db.execute("CREATE UNIQUE INDEX IF NOT EXISTS one_active_budget_window ON budget_windows(active) WHERE active=1")

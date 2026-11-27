@@ -1,0 +1,331 @@
+{
+  "status": "PASS",
+  "data_scope": "SYNTHETIC_ONLY",
+  "development_assistance": [
+    {
+      "purpose": "CHAT_MEMORY_DESIGN_REVIEW",
+      "verdict": "TRUNCATED_EMPTY_NO_USABLE_DESIGN",
+      "model": "claude-sonnet-5-5",
+      "total_tokens": 15497,
+      "elapsed_seconds": 17.05,
+      "cost_usd": null,
+      "cost_upper_bound_usd": 0.15497,
+      "model_call_id": "cabadddb-c93a-4cff-8fdf-46b5c8598c4f"
+    },
+    {
+      "purpose": "CHAT_MEMORY_SHORT_DESIGN_REVIEW",
+      "verdict": "USABLE_DESIGN",
+      "model": "DeepSeek-V3.2",
+      "total_tokens": 906,
+      "elapsed_seconds": 6.07,
+      "cost_usd": null,
+      "cost_upper_bound_usd": 0.00906,
+      "model_call_id": "deab097f-28ef-4967-b154-63661ac158cc"
+    },
+    {
+      "purpose": "CHAT_MEMORY_PARSER_CODE_DRAFT",
+      "verdict": "REVIEWED_AND_ADAPTED_CODE_DRAFT",
+      "model": "DeepSeek-V3.2",
+      "total_tokens": 1279,
+      "elapsed_seconds": 6.5,
+      "cost_usd": null,
+      "cost_upper_bound_usd": 0.01279,
+      "model_call_id": "5dc44574-0f31-44a4-9625-247f7de39bc8"
+    }
+  ],
+  "integration_notes": "MixRoute 草稿提供引用驗證邏輯；整合時加入嚴格型別、完整 JSON fence 及拒絕截斷，不直接執行模型程式或命令。",
+  "live_conversation": {
+    "started_at": "2026-11-28T01:08:50.619805+08:00",
+    "source": "SYNTHETIC_CHAT_ONLY",
+    "steps": [
+      {
+        "step": 1,
+        "completed_at": "2026-11-28T01:08:55.004658+08:00",
+        "elapsed_seconds": 4.38,
+        "result": {
+          "status": "COMPLETED",
+          "reply": "已確認限制：總預算新臺幣兩萬元，所有文案使用繁體中文。我是RE:MEMORY對話助手，將協助您規劃「星光小展」。",
+          "message": {
+            "id": "84b34a3e-0398-4585-bfde-9e1aad0cbd83",
+            "user_id": "demo",
+            "project_id": "CHAT-LIVE-20261128",
+            "conversation_id": "b1b243fe-32b7-4f83-847a-bebf7be3c765",
+            "request_id": "6ed2f7545d7a35c046c50d7b65601f9d1ba7e85de99f994a1659098fea908b31",
+            "role": "assistant",
+            "content": "已確認限制：總預算新臺幣兩萬元，所有文案使用繁體中文。我是RE:MEMORY對話助手，將協助您規劃「星光小展」。",
+            "status": "COMPLETED",
+            "sequence": 2,
+            "created_at": "2026-11-27T17:08:55.003486+00:00",
+            "model_call_id": "2e41f3e3-339e-4abe-a6c2-774cb89eb88b"
+          },
+          "new_memories": [
+            {
+              "kind": "GOAL",
+              "content": "規劃「星光小展」",
+              "source_message_id": "9ca0a6a7-4f4e-44d7-8702-1c4098ffc312",
+              "source_quote": "我正在規劃「星光小展」",
+              "id": "c85059ca-e26f-4c90-a5e4-804d69cb7009",
+              "user_id": "demo",
+              "project_id": "CHAT-LIVE-20261128",
+              "conversation_id": "b1b243fe-32b7-4f83-847a-bebf7be3c765",
+              "status": "CANDIDATE",
+              "created_at": "2026-11-27T17:08:55.002733+00:00",
+              "updated_at": "2026-11-27T17:08:55.002749+00:00",
+              "versions": []
+            },
+            {
+              "kind": "CONSTRAINT",
+              "content": "總預算為新臺幣兩萬元",
+              "source_message_id": "9ca0a6a7-4f4e-44d7-8702-1c4098ffc312",
+              "source_quote": "總預算是新臺幣兩萬元",
+              "id": "c7f2554a-6e0a-4e5d-92a1-5c38ae0dfecc",
+              "user_id": "demo",
+              "project_id": "CHAT-LIVE-20261128",
+              "conversation_id": "b1b243fe-32b7-4f83-847a-bebf7be3c765",
+              "status": "CANDIDATE",
+              "created_at": "2026-11-27T17:08:55.003219+00:00",
+              "updated_at": "2026-11-27T17:08:55.003226+00:00",
+              "versions": []
+            },
+            {
+              "kind": "CONSTRAINT",
+              "content": "所有文案都使用繁體中文",
+              "source_message_id": "9ca0a6a7-4f4e-44d7-8702-1c4098ffc312",
+              "source_quote": "所有文案都使用繁體中文",
+              "id": "1159e283-ec69-4b6f-a277-9d43fe8a98bc",
+              "user_id": "demo",
+              "project_id": "CHAT-LIVE-20261128",
+              "conversation_id": "b1b243fe-32b7-4f83-847a-bebf7be3c765",
+              "status": "CANDIDATE",
+              "created_at": "2026-11-27T17:08:55.003264+00:00",
+              "updated_at": "2026-11-27T17:08:55.003266+00:00",
+              "versions": []
+            }
+          ],
+          "warnings": [],
+          "context": {
+            "history_messages": 0,
+            "memory_ids": [],
+            "memory_count": 0,
+            "input_tokens_estimate": 581,
+            "output_reserve": 1536,
+            "total_tokens_estimate": 2245,
+            "budget": 4096,
+            "omitted_history_messages": 0
+          },
+          "usage": {
+            "id": "2e41f3e3-339e-4abe-a6c2-774cb89eb88b",
+            "model": "DeepSeek-V3.2",
+            "requested_model": "auto",
+            "total_tokens": 619,
+            "input_tokens": 339,
+            "output_tokens": 280,
+            "cost_usd": null,
+            "cost_upper_bound_usd": 0.00619,
+            "latency_ms": 4303.51
+          },
+          "stored_replay": false
+        }
+      },
+      {
+        "step": 2,
+        "completed_at": "2026-11-28T01:09:09.698004+08:00",
+        "elapsed_seconds": 1.65,
+        "result": {
+          "status": "COMPLETED",
+          "reply": "好的，根據「星光小展」與現有兩項限制，我建議三個準備步驟：\n1. 內容企劃：定義展覽主題與故事線，準備所有繁體中文展覽文案與說明，確保敘事連貫且符合預算精神。\n2. 成本鎖定：以總預算兩萬元為上限，將經費分為場地、製作、行銷等大項，優先安排免費或低成本資源。\n3. 物料清單：基於前兩步成果，列出所有需採購或製作的實體物料與數位素材，並逐項估算費用，確保總和不超支。",
+          "message": {
+            "id": "8ef463ab-89d3-42b4-a898-650eec042b33",
+            "user_id": "demo",
+            "project_id": "CHAT-LIVE-20261128",
+            "conversation_id": "b1b243fe-32b7-4f83-847a-bebf7be3c765",
+            "request_id": "8a571ee6c7a1b0fa51d1e6011090f653d071457e6904ced4202dc9c4210de937",
+            "role": "assistant",
+            "content": "好的，根據「星光小展」與現有兩項限制，我建議三個準備步驟：\n1. 內容企劃：定義展覽主題與故事線，準備所有繁體中文展覽文案與說明，確保敘事連貫且符合預算精神。\n2. 成本鎖定：以總預算兩萬元為上限，將經費分為場地、製作、行銷等大項，優先安排免費或低成本資源。\n3. 物料清單：基於前兩步成果，列出所有需採購或製作的實體物料與數位素材，並逐項估算費用，確保總和不超支。",
+            "status": "COMPLETED",
+            "sequence": 4,
+            "created_at": "2026-11-27T17:09:09.696370+00:00",
+            "model_call_id": "9b6a0991-5426-4584-9bea-a9608fff7b2a"
+          },
+          "new_memories": [],
+          "warnings": [],
+          "context": {
+            "history_messages": 2,
+            "memory_ids": [
+              "c7f2554a-6e0a-4e5d-92a1-5c38ae0dfecc",
+              "1159e283-ec69-4b6f-a277-9d43fe8a98bc",
+              "c85059ca-e26f-4c90-a5e4-804d69cb7009"
+            ],
+            "memory_count": 3,
+            "input_tokens_estimate": 918,
+            "output_reserve": 1536,
+            "total_tokens_estimate": 2582,
+            "budget": 4096,
+            "omitted_history_messages": 0
+          },
+          "usage": {
+            "id": "9b6a0991-5426-4584-9bea-a9608fff7b2a",
+            "model": "DeepSeek-V3.2",
+            "requested_model": "auto",
+            "total_tokens": 734,
+            "input_tokens": 575,
+            "output_tokens": 159,
+            "cost_usd": null,
+            "cost_upper_bound_usd": 0.00734,
+            "latency_ms": 1561.16
+          },
+          "stored_replay": false
+        }
+      },
+      {
+        "step": 3,
+        "completed_at": "2026-11-28T01:09:35.259465+08:00",
+        "elapsed_seconds": 13.26,
+        "result": {
+          "status": "COMPLETED",
+          "reply": "根據已載入的記憶，目前專案設定如下：\n\n**保存的專案記憶**\n1. **目標**：規劃「星光小展」（狀態：候選）\n2. **限制**：總預算為新臺幣兩萬元（狀態：候選）\n3. **限制**：所有文案都使用繁體中文（狀態：候選）\n\n以上為當前已記錄的設定，皆為候選記憶，尚未確認為最終事實。",
+          "message": {
+            "id": "e41a9a65-5bb5-46f6-a24c-c7b61d304566",
+            "user_id": "demo",
+            "project_id": "CHAT-LIVE-20261128",
+            "conversation_id": "0536ee4c-3c44-48e4-9844-f41180250e98",
+            "request_id": "431b0ad54fe4ecbbc69f96ac2a84b30d3b75f74378e5b8fe9befb031cda16524",
+            "role": "assistant",
+            "content": "根據已載入的記憶，目前專案設定如下：\n\n**保存的專案記憶**\n1. **目標**：規劃「星光小展」（狀態：候選）\n2. **限制**：總預算為新臺幣兩萬元（狀態：候選）\n3. **限制**：所有文案都使用繁體中文（狀態：候選）\n\n以上為當前已記錄的設定，皆為候選記憶，尚未確認為最終事實。",
+            "status": "COMPLETED",
+            "sequence": 2,
+            "created_at": "2026-11-27T17:09:35.258753+00:00",
+            "model_call_id": "3d463bec-bffb-46c5-a8e0-d319682f43cd"
+          },
+          "new_memories": [],
+          "warnings": [],
+          "context": {
+            "history_messages": 0,
+            "memory_ids": [
+              "c7f2554a-6e0a-4e5d-92a1-5c38ae0dfecc",
+              "1159e283-ec69-4b6f-a277-9d43fe8a98bc",
+              "c85059ca-e26f-4c90-a5e4-804d69cb7009"
+            ],
+            "memory_count": 3,
+            "input_tokens_estimate": 756,
+            "output_reserve": 1536,
+            "total_tokens_estimate": 2420,
+            "budget": 4096,
+            "omitted_history_messages": 0
+          },
+          "usage": {
+            "id": "3d463bec-bffb-46c5-a8e0-d319682f43cd",
+            "model": "DeepSeek-V3.2",
+            "requested_model": "auto",
+            "total_tokens": 627,
+            "input_tokens": 504,
+            "output_tokens": 123,
+            "cost_usd": null,
+            "cost_upper_bound_usd": 0.00627,
+            "latency_ms": 13183.22
+          },
+          "stored_replay": false
+        }
+      }
+    ],
+    "conversation": {
+      "id": "b1b243fe-32b7-4f83-847a-bebf7be3c765",
+      "user_id": "demo",
+      "project_id": "CHAT-LIVE-20261128",
+      "title": "新的對話",
+      "created_at": "2026-11-27T17:08:50.620169+00:00",
+      "updated_at": "2026-11-27T17:08:50.620171+00:00"
+    },
+    "state": {
+      "project_id": "CHAT-LIVE-20261128",
+      "conversations": [
+        {
+          "id": "0536ee4c-3c44-48e4-9844-f41180250e98",
+          "user_id": "demo",
+          "project_id": "CHAT-LIVE-20261128",
+          "title": "這是同一專案的新聊天。你記得我原本的展覽名稱、總預算與文案語言嗎？請列出",
+          "created_at": "2026-11-27T17:09:21.997056+00:00",
+          "updated_at": "2026-11-27T17:09:35.258799+00:00"
+        },
+        {
+          "id": "b1b243fe-32b7-4f83-847a-bebf7be3c765",
+          "user_id": "demo",
+          "project_id": "CHAT-LIVE-20261128",
+          "title": "這是合成驗收資料。我正在規劃「星光小展」，總預算是新臺幣兩萬元，所有文案",
+          "created_at": "2026-11-27T17:08:50.620169+00:00",
+          "updated_at": "2026-11-27T17:09:09.696443+00:00"
+        }
+      ],
+      "memories": [
+        {
+          "kind": "CONSTRAINT",
+          "content": "所有文案都使用繁體中文",
+          "source_message_id": "9ca0a6a7-4f4e-44d7-8702-1c4098ffc312",
+          "source_quote": "所有文案都使用繁體中文",
+          "id": "1159e283-ec69-4b6f-a277-9d43fe8a98bc",
+          "user_id": "demo",
+          "project_id": "CHAT-LIVE-20261128",
+          "conversation_id": "b1b243fe-32b7-4f83-847a-bebf7be3c765",
+          "status": "CANDIDATE",
+          "created_at": "2026-11-27T17:08:55.003264+00:00",
+          "updated_at": "2026-11-27T17:08:55.003266+00:00",
+          "versions": []
+        },
+        {
+          "kind": "CONSTRAINT",
+          "content": "總預算為新臺幣兩萬元",
+          "source_message_id": "9ca0a6a7-4f4e-44d7-8702-1c4098ffc312",
+          "source_quote": "總預算是新臺幣兩萬元",
+          "id": "c7f2554a-6e0a-4e5d-92a1-5c38ae0dfecc",
+          "user_id": "demo",
+          "project_id": "CHAT-LIVE-20261128",
+          "conversation_id": "b1b243fe-32b7-4f83-847a-bebf7be3c765",
+          "status": "CANDIDATE",
+          "created_at": "2026-11-27T17:08:55.003219+00:00",
+          "updated_at": "2026-11-27T17:08:55.003226+00:00",
+          "versions": []
+        },
+        {
+          "kind": "GOAL",
+          "content": "規劃「星光小展」",
+          "source_message_id": "9ca0a6a7-4f4e-44d7-8702-1c4098ffc312",
+          "source_quote": "我正在規劃「星光小展」",
+          "id": "c85059ca-e26f-4c90-a5e4-804d69cb7009",
+          "user_id": "demo",
+          "project_id": "CHAT-LIVE-20261128",
+          "conversation_id": "b1b243fe-32b7-4f83-847a-bebf7be3c765",
+          "status": "CANDIDATE",
+          "created_at": "2026-11-27T17:08:55.002733+00:00",
+          "updated_at": "2026-11-27T17:08:55.002749+00:00",
+          "versions": []
+        }
+      ],
+      "storage": "LOCAL",
+      "provider": "MIXROUTE"
+    },
+    "fresh_conversation": {
+      "id": "0536ee4c-3c44-48e4-9844-f41180250e98",
+      "user_id": "demo",
+      "project_id": "CHAT-LIVE-20261128",
+      "title": "新的對話",
+      "created_at": "2026-11-27T17:09:21.997056+00:00",
+      "updated_at": "2026-11-27T17:09:21.997170+00:00"
+    }
+  },
+  "live_api_calls": 3,
+  "live_tokens": 1980,
+  "cost_usd": null,
+  "cost_upper_bound_usd": 0.0198,
+  "tests": {
+    "pytest_passed": 142,
+    "browser_chat": "PASS",
+    "original_three_step_browser": "PASS",
+    "browser_chat_race": "PASS",
+    "independent_review": "IMPORTANT_FINDINGS_FIXED_RED_GREEN"
+  },
+  "limitations": [
+    "來源引用只能證明出自使用者原文，不能證明內容為外部事實。",
+    "候選記憶可供新聊天使用，但保留候選狀態；請確認重要內容。",
+    "目前只在本機單一使用者執行，沒有程式檔案修改工具。"
+  ]
+}

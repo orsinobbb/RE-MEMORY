@@ -15,6 +15,7 @@ from app.engines.memory_evolution import MemoryEvolution
 from app.engines.artifact_revalidation import ArtifactRevalidation
 from app.engines.live_demo import LiveDemo
 from benchmarks.generators.synthetic import seed
+from app.chat_routes import mount_chat_routes
 
 ROOT=Path(__file__).resolve().parents[1]
 class RetrievalRequest(BaseModel):
@@ -159,6 +160,7 @@ def create_app(store=None,settings=None,provider=None):
     def style():return FileResponse(ROOT/"frontend/style.css")
     @app.get("/app.js")
     def script():return FileResponse(ROOT/"frontend/app.js")
+    mount_chat_routes(app,s,provider)
     return app
 
 app=create_app()

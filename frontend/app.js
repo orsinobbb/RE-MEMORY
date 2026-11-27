@@ -55,15 +55,16 @@ const state = {
   liveDemo: null, demoBusy: false,
   benchmark: null,
 };
-const viewNames = { workspace: 'Workspace', memory: 'Memory Explorer', observatory: 'Retrieval Observatory', context: 'Context Inspector', recovery: 'Recovery Lab', benchmark: 'Benchmark Lab' };
+const viewNames = { chat: '聊天與記憶', workspace: 'Workspace', memory: 'Memory Explorer', observatory: 'Retrieval Observatory', context: 'Context Inspector', recovery: 'Recovery Lab', benchmark: 'Benchmark Lab' };
 function navigate(view, updateHash = true) {
-  if (!viewNames[view]) view = 'workspace';
+  if (!viewNames[view]) view = 'chat';
   $$('.view').forEach(node => { node.hidden = node.id !== `view-${view}`; });
   $$('[data-view]').forEach(node => {
     if (node.dataset.view === view) node.setAttribute('aria-current', 'page');
     else node.removeAttribute('aria-current');
   });
   $('#current-view-name').textContent = viewNames[view];
+  $('[data-testid="dataset-label"]').textContent = view === 'chat' ? '本機聊天資料' : 'DEMO DATASET';
   if (updateHash && location.hash !== `#${view}`) history.replaceState(null, '', `#${view}`);
   if (view === 'recovery') $('#recovery-budget').textContent = `${fmt(Number($('#budget').value) / 1024)}K tokens`;
 }
@@ -134,7 +135,7 @@ function renderWorkspace(data) {
   const previousProject = $('#memory-project').value;
   $('#memory-project').replaceChildren(...projects.map(project => option(project.id, `${project.name} · ${project.id}`)));
   if (projects.some(project => project.id === previousProject)) $('#memory-project').value = previousProject;
-  $$('[data-testid="dataset-label"]').forEach(node => { node.textContent = `${text(data.dataset)} DATASET`; });
+  $$('[data-testid="dataset-label"]').forEach(node => { node.textContent = !$('#view-chat').hidden ? '本機聊天資料' : `${text(data.dataset)} DATASET`; });
   renderModelSelection();
 }
 
@@ -921,6 +922,7 @@ async function boot() {
   if (models.status === 'rejected') { state.models = { error: models.reason.message }; renderModelSelection(); }
   if (benchmark.status === 'fulfilled' && list(benchmark.value.results).length) { state.benchmark = benchmark.value; renderBenchmark(benchmark.value); }
   await loadLiveDemo();
+  if (typeof initChat === 'function') await initChat();
 }
 $$('[data-view]').forEach(node => node.addEventListener('click', () => navigate(node.dataset.view)));
 $$('[data-go]').forEach(node => node.addEventListener('click', () => navigate(node.dataset.go)));
@@ -942,5 +944,5 @@ $('#demo-stage-1').addEventListener('click', () => runLiveDemo(1));
 $('#demo-stage-2').addEventListener('click', () => runLiveDemo(2));
 $('#budget').addEventListener('change', () => { $('#recovery-budget').textContent = `${fmt(Number($('#budget').value) / 1024)}K tokens`; });
 mountQuickFlow();
-navigate(location.hash.slice(1) || 'workspace', false);
+navigate(location.hash.slice(1) || 'chat', false);
 boot();

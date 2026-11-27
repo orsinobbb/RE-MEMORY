@@ -7,15 +7,17 @@
   <meta name="theme-color" content="#0a121d">
   <meta name="description" content="RE:MEMORY — 用最少必要記憶，重建工作的下一步。Adaptive Memory Router research workspace.">
   <title>RE:MEMORY · Adaptive Memory Router</title>
-  <link rel="stylesheet" href="/style.css?v=quick-20261127">
-  <script src="/app.js?v=quick-20261127" defer></script>
+  <link rel="stylesheet" href="/style.css?v=chat-20261128">
+  <script src="/app.js?v=chat-20261128" defer></script>
+  <script src="/chat.js?v=chat-20261128" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">跳到主要內容</a>
   <aside class="sidebar" aria-label="Application navigation">
-    <a class="brand" href="#workspace" aria-label="RE:MEMORY Workspace"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>RE<span class="brand-colon">:</span>MEMORY<small>ADAPTIVE MEMORY ROUTER</small></span></a>
+    <a class="brand" href="#chat" aria-label="RE:MEMORY 聊天與記憶"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>RE<span class="brand-colon">:</span>MEMORY<small>ADAPTIVE MEMORY ROUTER</small></span></a>
     <div class="sidebar-label">接續工作與進階檢查</div>
     <nav class="navigation" aria-label="主要視圖">
+      <button type="button" data-view="chat"><span class="nav-icon" aria-hidden="true">◌</span><span>聊天與記憶<small>持續對話，自動整理</small></span></button>
       <button type="button" data-view="workspace" aria-current="page"><span class="nav-icon" aria-hidden="true">▦</span><span>接續工作<small>三步驟操作</small></span></button>
       <button type="button" data-view="memory"><span class="nav-icon" aria-hidden="true">◇</span><span>Memory Explorer<small>記憶與證據</small></span></button>
       <button type="button" data-view="observatory"><span class="nav-icon" aria-hidden="true">◎</span><span>Retrieval Observatory<small>看見回想的過程</small></span></button>
@@ -29,6 +31,13 @@
     <header class="topbar"><span class="topbar-location">Research workspace <span>/</span> <strong id="current-view-name">Workspace</strong></span><div class="topbar-badges"><span class="badge badge-neutral" data-testid="dataset-label">DEMO DATASET</span><span class="connection" data-testid="backend-status">CONNECTING</span></div></header>
     <main id="main" tabindex="-1">
       <div id="global-message" class="notice" role="status" hidden></div>
+<section id="view-chat" class="view" aria-labelledby="chat-title" hidden>
+<div class="page-heading compact"><div><p class="eyebrow">MIXROUTE · 持久化對話</p><h1 id="chat-title">聊下去，讓記憶留下來。</h1><p class="page-description">選擇記憶範圍，直接對話。下次開新聊天，也能接著使用保存的記憶。</p></div><span class="badge badge-teal">本機保存 · 真實 API</span></div>
+<p class="notice">訊息會傳送至 MixRoute，並保存在這台電腦。模型整理的內容先列為候選；請確認重要記憶。</p>
+<div class="chat-layout"><aside class="panel chat-sidebar"><label for="chat-project">記憶範圍<select id="chat-project"><option value="PERSONAL">我的個人記憶</option></select></label><button type="button" class="button primary full-width" id="chat-new">新增聊天</button><div id="chat-conversations" aria-label="已保存聊天"></div></aside>
+<div class="panel chat-main"><div class="section-top"><h2 id="chat-conversation-title">先新增聊天</h2><span id="chat-context" class="small-label">等待對話</span></div><div id="chat-messages" role="log" aria-label="聊天訊息" aria-live="polite"></div>
+<form id="chat-form"><label for="chat-content">你的訊息<textarea id="chat-content" rows="3" maxlength="20000" placeholder="例如：我在規劃一個展覽，請記住預算是兩萬元，文案使用繁體中文。" required disabled></textarea></label><div class="chat-controls"><label for="chat-model">MixRoute 模型<select id="chat-model"><option value="SMART">自動選模（auto）</option></select></label><label for="chat-budget">情境容量<select id="chat-budget"><option value="4096">4K Token</option><option value="8192">8K Token</option><option value="16384">16K Token</option></select></label><button type="submit" class="button primary" id="chat-send" disabled>傳送訊息</button></div></form><p id="chat-status" role="status" class="supporting-text">新增聊天不會呼叫付費 API。</p><p id="chat-usage" class="supporting-text"></p></div>
+<aside class="panel chat-memory-panel"><h2>這個範圍的記憶</h2><p class="supporting-text">候選記憶也可能載入後續聊天，會明示狀態。確認表示你接受此筆記，不代表外部事實已驗證。</p><div id="chat-memories"></div><p class="supporting-text">「忘記」會停止載入該記憶；本機原始聊天及版本仍保留，不會撤回已傳送至供應商的內容。</p></aside></div></section>
       <section id="view-workspace" class="view" aria-labelledby="workspace-title">
         <div class="page-heading"><div><p class="eyebrow">CONTINUITY STARTS HERE</p><h1 id="workspace-title">Every next step,<br><span class="text-teal">with its memory intact.</span></h1><p class="page-description">用最少必要記憶，找到專案、重建情境，接續上次的努力。</p></div><div class="heading-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></div></div>
         <div class="workspace-grid">

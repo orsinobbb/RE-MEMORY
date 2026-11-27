@@ -70,7 +70,7 @@
       "known_api_tokens": 87333
     }
   ],
-  "api_calls": 118,
+  "api_calls": 124,
   "api_tokens": null,
   "api_cost_usd": null,
   "notes": [
@@ -81,8 +81,8 @@
     "Traditional Chinese release adds only the measured interval from23:08:30; preceding language investigation time was not precisely captured and is not included in the elapsed aggregate."
   ],
   "api_usage_unknown_calls": 2,
-  "api_reserved_usd": 1.36435,
-  "known_api_tokens": 129955,
+  "api_reserved_usd": 1.56097,
+  "known_api_tokens": 149617,
   "console_displayed_usd": 0.035152,
   "completed_at": "2026-11-27T00:01:51.505228+08:00",
   "total_elapsed_seconds": 4006.51,
@@ -293,19 +293,85 @@
       "started_at": "2026-11-27T23:29:32+08:00",
       "prepared_at": "2026-11-27T23:38:56.219868+08:00",
       "elapsed_seconds_to_preparation": 564.22,
-      "status": "LIVE_UI_VERIFIED_SOURCE_PUBLICATION_IN_PROGRESS",
+      "status": "GENUINE_MIXROUTE_UI_AND_PUBLIC_DELIVERY_VERIFIED",
       "added_api_calls": 1,
       "added_api_tokens": 925,
       "added_api_cost_usd": null,
       "codex_billing_usd": null,
-      "checks": "True SMART/auto DeepSeek925Tokens, emptySession0, artifact/downloadSHA, desktop/mobile, replay0calls, confirmation racesRED-GREEN,122pytest"
+      "checks": "True SMART/auto DeepSeek925Tokens, emptySession0, artifact/downloadSHA, desktop/mobile, replay0calls, confirmation racesRED-GREEN,122pytest",
+      "completed_at": "2026-11-27T23:47:47.601365+08:00",
+      "elapsed_seconds": 1095.6,
+      "source_commit": "94a6a1b",
+      "pages_commit": "bc15408714a610108ed413ee1aed7dca044cda37",
+      "six_view_smoke": "PASS; isolated provider-disabled fixture",
+      "source_sha256": "1cbe6f828480cccc9842c82d42d1c54f108eab0212942da5eed96a4827d60a93",
+      "anonymous_download": "PASS",
+      "publication_and_final_checks_elapsed_seconds": 531.38
+    },
+    {
+      "name": "final-github-delivery-preparation",
+      "tracked_started_at": "2026-11-27T23:51:40+08:00",
+      "preceding_investigation_elapsed_seconds": null,
+      "completed_at": "2026-11-27T23:56:23.037986+08:00",
+      "tracked_elapsed_seconds": 283.04,
+      "status": "PUBLIC_GITHUB_AND_PAGES_DELIVERY_READY",
+      "added_api_calls": 0,
+      "added_api_tokens": 0,
+      "added_api_cost_usd": 0,
+      "codex_billing_usd": null,
+      "system_behavior_changes": 0,
+      "source_commit": "547f7ce2fc7b438a190e077e33bbf404ccff5901",
+      "pages_commit": "625b7d0bf5deb4f5b0bf39462fc1c24289f412ce",
+      "source_sha256": "58e9c8487e54c9025286ae85987e001c94263fd5107a5e9948387bd94e9f2592",
+      "checks": "Anonymous source/evidence download, source SHA and bytes match, secret/path exclusion, current screenshot, scoped feature text, desktop/mobile overflow and no page errors PASS",
+      "human_voice": "DEFERRED_BY_USER",
+      "competition_submission": "NOT_SUBMITTED"
+    },
+    {
+      "name": "mixroute-persistent-chat-memory",
+      "tracking_started_at": "2026-11-28T00:51:54.864416+08:00",
+      "prepared_at": "2026-11-28T01:11:13.885524+08:00",
+      "elapsed_seconds": 1159.02,
+      "timing_scope": "從第一筆設計呼叫完成時開始追蹤；之前載入與第一筆 17.05 秒呼叫不算入此區間，原收據 started_at 欄位實際捕捉在呼叫後。",
+      "api_calls_added": 6,
+      "known_tokens_added": 19662,
+      "api_cost_usd": null,
+      "cost_upper_bound_usd_added": 0.19662,
+      "codex_billing_usd": null,
+      "stages": [
+        {
+          "name": "設計與後端",
+          "elapsed_seconds": 748.14,
+          "api_calls_added": 3,
+          "known_tokens_added": 17682,
+          "cost_upper_bound_usd_added": 0.17682,
+          "tests_passed": 138
+        },
+        {
+          "name": "聊天介面與回歸",
+          "elapsed_seconds": 235.0,
+          "api_calls_added": 0,
+          "known_tokens_added": 0,
+          "cost_upper_bound_usd_added": 0,
+          "tests_passed": 140
+        },
+        {
+          "name": "真實驗收與文件準備",
+          "elapsed_seconds": 175.89,
+          "api_calls_added": 3,
+          "known_tokens_added": 1980,
+          "cost_upper_bound_usd_added": 0.0198
+        }
+      ],
+      "delivery": "REVIEW_AND_RUNTIME_SYNC_PENDING",
+      "verification_tests_after_review": 142
     }
   ],
   "all_active_work_elapsed_seconds": 9889.42,
-  "latest_completed_at": "2026-11-27T23:15:18.996139+08:00",
+  "latest_completed_at": "2026-11-28T00:44:06.185413+08:00",
   "disk_measurement_scope": "Project files excluding symlinks and Git metadata; includes local runtime/backups/video/private static delivery, excludes linked dependency cache.",
   "usage_unknown_calls": 2,
-  "latest_prepared_at": "2026-11-27T23:15:18.996139+08:00",
+  "latest_prepared_at": "2026-11-28T01:11:13.885524+08:00",
   "all_active_work_elapsed_seconds_to_preparation": 9889.42,
   "console_final_live_displayed_subtotal_usd": 0.03807,
   "console_final_live_reconciled_tokens": 41697

@@ -1,0 +1,36 @@
+import assert from 'node:assert/strict';
+import {loadPlaywright,browserLaunchOptions} from '../scripts/playwright_runtime.mjs';
+const base='http://127.0.0.1:8793';
+const browser=await loadPlaywright().chromium.launch(browserLaunchOptions());
+const page=await browser.newPage({viewport:{width:1440,height:1000}});page.setDefaultTimeout(4000);
+const marker=Date.now();const content=`合成偏好：請使用繁體中文 ${marker}`;const edited=`合成偏好：回答簡潔 ${marker}`;
+const errors=[];page.on('pageerror',e=>errors.push(e.message));
+try {
+ await page.goto(base+'/');
+ await page.locator('#chat-new').waitFor();
+ assert.equal(await page.locator('#view-chat').isVisible(),true);
+ await page.locator('#chat-new').click();
+ await page.locator('#chat-content').fill(content);
+ await page.locator('#chat-send').click();
+ await page.locator('.chat-assistant').filter({hasText:'合成回覆'}).waitFor();
+ await page.reload();
+ await page.locator('.chat-assistant').filter({hasText:'合成回覆'}).waitFor();
+ const memory=page.locator('.chat-memory').filter({hasText:content}).first();
+ await memory.getByRole('button',{name:'確認',exact:true}).click();
+ await memory.filter({hasText:'已確認'}).waitFor();
+ await memory.getByRole('button',{name:'修正',exact:true}).click();
+ await memory.locator('textarea').fill(edited);
+ await memory.getByRole('button',{name:'儲存修正',exact:true}).click();
+ await memory.filter({hasText:'回答簡潔'}).waitFor();
+ await page.locator('#chat-new').click();
+ await page.waitForFunction(()=>document.querySelectorAll('.chat-assistant').length===0);
+ assert.equal(await page.locator('.chat-assistant').count(),0);
+ await page.locator('#chat-content').fill('<img src=x onerror=alert(1)>');
+ await page.locator('#chat-send').click();
+ await page.locator('.chat-assistant').filter({hasText:'<img'}).waitFor();
+ assert.equal(await page.locator('#chat-messages img').count(),0);
+ await page.locator('.chat-memory').filter({hasText:edited}).getByRole('button',{name:'忘記',exact:true}).click();
+ await page.waitForFunction(value=>!document.querySelector('#chat-memories').textContent.includes(value),edited);
+ assert.deepEqual(errors,[]);
+ console.log(JSON.stringify({status:'PASS',checks:['persistent-chat','new-conversation','confirm','edit','forget','escaped-html'],page_errors:errors}));
+} finally {await browser.close();}

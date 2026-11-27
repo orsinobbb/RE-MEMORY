@@ -10,7 +10,7 @@ OPEN LAB 2026 本機可操作原型。用低成本索引、個人語意字典、
 - 原始碼：https://github.com/orsinobbb/RE-MEMORY
 - 下載：[完整原始碼](https://orsinobbb.github.io/RE-MEMORY/assets/RE-MEMORY-source.zip)／[實測證據](https://orsinobbb.github.io/RE-MEMORY/assets/RE-MEMORY-evidence.zip)
 
-目前功能是「記憶找回與任務接續」：使用預載合成專案，找回當前目標與限制，確認後由 MixRoute 產出 Markdown 驗收／接續清單。尚未支援聊天式多輪追問、對話歷史累積或私人聊天匯入。作品頁提供保存實測與下載；互動原型需在本機啟動。
+目前支援「聊天與記憶」及原有「記憶找回與任務接續」。首頁可直接透過 MixRoute 持續對話，保存歷史並自動整理可追溯的候選記憶；同一範圍的新聊天可使用保存記憶。左側「接續工作」保留合成專案三步驟與 Markdown 清單。作品頁提供保存實測與下載；互動原型需在本機啟動。
 
 GitHub 與公開作品頁已準備。最新主要 Demo 約99.93秒，為參賽者重新錄製、包含本人聲音的三步驟操作影片；[播放／下載有聲 Demo](https://orsinobbb.github.io/RE-MEMORY/assets/participant-demo-voiced-20261128.mp4)。影片為原始錄影轉成 MP4，影音資料核對一致，沒有 AI 配音；先前[獨立旁白](https://orsinobbb.github.io/RE-MEMORY/assets/participant-voice.m4a)保留為備份。尚未取得競賽正式收件確認。
 
@@ -28,7 +28,18 @@ Windows 執行 `start_windows.bat`。Windows 腳本已準備，尚未在 Windows
 
 ## 使用
 
-首頁現在只需三步：
+首頁「聊天與記憶」使用方式：
+
+1. 選「我的個人記憶」或一個專案，按「新增聊天」。
+2. 輸入「我正在規劃一個展覽，總預算是兩萬元，文案使用繁體中文。請記住限制。」選 auto，按「傳送訊息」。
+3. 繼續詢問準備步驟；右側查看候選記憶，可確認、修正或忘記。重新整理可讀回歷史。
+4. 同一記憶範圍新增聊天，再問「你記得我的預算與文案語言嗎？」；新聊天使用保存記憶，不帶前一聊天全文。
+
+訊息會傳送至 MixRoute，並保存在本機 SQLite。候選記憶不是已驗證事實；「忘記」只停止載入該記憶，本機聊天與版本仍保留。沒有檔案匯入、程式修改或 shell 工具。實際呼叫共用原預算帳本；送出失聯時查詢原 key，不重複扣費。
+
+11/28 合成聊天真實驗收：三筆 auto 選 DeepSeek-V3.2，共 1,980 Token；第二輪載入兩則歷史，新聊天載入三項記憶、歷史數 0。[驗收收據](reports/chat-memory-acceptance.json)。開發過程也實際使用 MixRoute 做設計及驗證函式草稿，由實作者檢視整合。
+
+左側「接續工作」仍只需三步：
 
 1. 輸入「請接續鋼琴樂理教材，完成目前尚未完成的驗收清單。」並按「找回工作脈絡」。搜尋後留在首頁。
 2. 確認顯示的專案、目標與限制，選 MixRoute 自動選模（SMART）或本機示範，再按確認接續。系統自動建立空白 Session。
@@ -80,7 +91,7 @@ Recovery Lab新增「兩個模型，接續同一份努力」。新來源包可�
 
 最終122項pytest通過；兩項獨立審查問題已以重現測試修正，詳見 [審查與修正](reports/final-code-review.md)。公開靜態交付頁與約99.93秒的本人有聲Demo已準備；[逐句稿](submission/voiceover-final-draft.md) 與 [投稿欄位草稿](submission/final-form-draft.md) 已備妥。GitHub 原始碼與靜態交付已獲本人授權公開；競賽正式收件狀態仍待主辦確認。
 
-公開交付頁：[RE:MEMORY](https://orsinobbb.github.io/RE-MEMORY/)；公開原始碼：[GitHub](https://github.com/orsinobbb/RE-MEMORY)。提供保存實測、靜音影片預覽和來源包下載；可執行原型仍由來源包啟動本機 API。
+公開交付頁：[RE:MEMORY](https://orsinobbb.github.io/RE-MEMORY/)；公開原始碼：[GitHub](https://github.com/orsinobbb/RE-MEMORY)。提供保存實測、有聲影片和來源包下載；可執行原型仍由來源包啟動本機 API。
 
 最新驗收見 [60 項追溯與交付驗收](reports/acceptance.md)；本輪 122 pytest、記憶修正瀏覽器、備份還原與 macOS 解壓啟動通過。最新主要 Demo 已包含參賽者本人錄音。
 

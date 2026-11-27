@@ -22,3 +22,14 @@ GET /api/health -> {status:"ok",dataset:"DEMO"}
 For offline F return status:"NOT_RUN_REQUIRES_LIVE_SMART_ROUTING" with null outcomes.
 Null API costs/metrics are UNKNOWN, never show as measured zero. Offline local
 tokenizer measurements are estimates, not billed API tokens. Use no canned scores.
+
+
+## 聊天與候選記憶（11/28）
+
+- GET `/api/chat?project_id=PERSONAL`：列出範圍內聊天與未忘記記憶。
+- POST `/api/chat/conversations`：`{project_id}`；PERSONAL 或既有專案。
+- GET `/api/chat/conversations/{id}`：按順序讀回保存訊息與候選記憶。
+- POST `/api/chat/conversations/{id}/messages`：`{content,idempotency_key,mode,model,budget}`；SMART/auto、4096 預設，輸出預留 1536。COMPLETED 含 reply/new_memories/context/usage；FAILED 保存原使用者訊息與錯誤，不自動付費重試。
+- POST `/api/chat/memories/{id}`：`{action:CONFIRM|EDIT|FORGET,content?}`。確認／修正為使用者接受的筆記，不改原 FACT/evaluator。忘記保留原聊天與版本，停止載入。
+
+每個聊天有 300 秒鎖，同 key 不同請求回 409；已保存結果可重播而不新增 API。引用只能來自當輪使用者訊息；主回答無效或截斷會失敗，無效候選略過而保留有效回答。所有模型呼叫共用原 SQLite 費用帳本與授權池；金鑰不返回前端。
