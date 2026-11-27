@@ -4,7 +4,7 @@
 
 ## 公開交付狀態
 
-作品頁：[RE:MEMORY](https://orsinobbb.github.io/RE-MEMORY/)；原始碼：[GitHub](https://github.com/orsinobbb/RE-MEMORY)。目前為記憶找回與任務接續，尚未支援聊天式多輪對話。最新單頁 SMART／auto 實測回傳 DeepSeek-V3.2，新增1次呼叫／925Token，成果下載 SHA、空白 Session、桌機／手機與重播零追加呼叫通過；累計118次生成嘗試／129,955已知Token，仍有2次早期用量未知。詳見 [單頁實測](quick-flow-live.json)、[審查](quick-flow-review.md) 與 [資源紀錄](resources.json)。下方保留18:15開始的歷史驗收與當時用量。
+作品頁：[RE:MEMORY](https://orsinobbb.github.io/RE-MEMORY/)；原始碼：[GitHub](https://github.com/orsinobbb/RE-MEMORY)。11/28 已新增本機持續聊天、對話歷史與可追溯候選記憶；原三步驟仍可使用。新增聊天三筆真實 auto 均回傳 DeepSeek，共1,980 Token；新聊天歷史0、載入三項記憶。142 項測試、獨立審查修正與瀏覽器回歸通過，詳見 [聊天實測](chat-memory-acceptance.json) 與 [聊天審查](chat-code-review.md)。以下單頁數據為11/27歷史紀錄。最新單頁 SMART／auto 實測回傳 DeepSeek-V3.2，新增1次呼叫／925Token，成果下載 SHA、空白 Session、桌機／手機與重播零追加呼叫通過；累計118次生成嘗試／129,955已知Token，仍有2次早期用量未知。詳見 [單頁實測](quick-flow-live.json)、[審查](quick-flow-review.md) 與 [資源紀錄](resources.json)。下方保留18:15開始的歷史驗收與當時用量。
 
 ## 本輪實際驗證
 
