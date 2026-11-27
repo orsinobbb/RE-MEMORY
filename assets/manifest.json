@@ -1,5 +1,5 @@
 {
-  "source_sha256": "a565db97b6f237d9a51447519deb1d9b3c02782b91d1ceb6252b1a9dfe8dc4aa",
+  "source_sha256": "1cbe6f828480cccc9842c82d42d1c54f108eab0212942da5eed96a4827d60a93",
   "video_human_voice": false,
   "video_scope": "GENUINE_STORED_LIVE_SCREEN_CAPTURE",
   "case_set_sha256": "08e2e855e0a0756de0ba47e379deac381a6e7c8cad91381998eec4cacaa76fd0",
@@ -11,5 +11,6 @@
   "text_language": "zh-Hant",
   "language_correction_report": "traditional-chinese-release.md",
   "single_page_live_api_calls": 1,
-  "single_page_live_tokens": 925
+  "single_page_live_tokens": 925,
+  "single_page_six_view_smoke": "PASS"
 }
