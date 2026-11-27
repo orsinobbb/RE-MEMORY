@@ -1,0 +1,11 @@
+{
+  "source_sha256": "e41eaeece86100a94a0264adb9c3f4f0f10f8ab51eba4d24f7d2b9c09595cfc1",
+  "video_human_voice": false,
+  "video_scope": "GENUINE_STORED_LIVE_SCREEN_CAPTURE",
+  "case_set_sha256": "08e2e855e0a0756de0ba47e379deac381a6e7c8cad91381998eec4cacaa76fd0",
+  "verification_tests": 122,
+  "human_voice": "DEFERRED_BY_USER",
+  "acceptance_report": "acceptance.md",
+  "console_final_live_displayed_subtotal_usd": 0.03807,
+  "publication_scope": "PUBLIC_STATIC_SYNTHETIC_DELIVERY"
+}
