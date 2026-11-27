@@ -1,7 +1,7 @@
 {
-  "source_sha256": "58e9c8487e54c9025286ae85987e001c94263fd5107a5e9948387bd94e9f2592",
+  "source_sha256": "e5ee9a9ee9642e35fdf85d6a474a9b948d516381a04028889bc052ac2f4dad96",
   "video_human_voice": false,
-  "video_scope": "GENUINE_STORED_LIVE_SCREEN_CAPTURE",
+  "video_scope": "USER_SUPPLIED_GENUINE_UI_SCREEN_RECORDING",
   "case_set_sha256": "08e2e855e0a0756de0ba47e379deac381a6e7c8cad91381998eec4cacaa76fd0",
   "verification_tests": 122,
   "human_voice": "USER_SUPPLIED_SEPARATE_AUDIO",
@@ -18,5 +18,10 @@
   "participant_voice_uploaded": true,
   "participant_voice_file": "participant-voice.m4a",
   "participant_voice_sha256": "6d799ee1b9e28adb5d304e7627c594c47936a2b27a7af7efa6b7e120ff6719a1",
-  "participant_voice_bytes": 1822700
+  "participant_voice_bytes": 1822700,
+  "primary_demo_file": "participant-demo-20261128.mp4",
+  "primary_demo_sha256": "9d6c92bd4ca6713e937e7a9975bec406f6fec1f603d6b80c959791beef281290",
+  "primary_demo_duration_seconds": 179.533333,
+  "primary_demo_bytes": 41411457,
+  "original_video_sha256": "1e3b8e735ab682005e8f9fe90e07ca50499093b6e6698b8328cc35ed76c0e348"
 }

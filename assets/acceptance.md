@@ -1,6 +1,6 @@
 # RE:MEMORY 最終版本驗收
 
-程式與私人交付的本輪驗收通過。範圍是合成資料、本機單使用者原型、持久化記憶與 Markdown 接手清單。本人旁白依使用者安排延後；公開評審入口已上線，競賽尚未投稿。此結論不代表全部 V5 研究驗證完成。
+程式與私人交付的本輪驗收通過。範圍是合成資料、本機單使用者原型、持久化記憶與 Markdown 接手清單。本人旁白已以獨立音檔提供；公開評審入口已上線，尚未取得競賽投稿成功回條。此結論不代表全部 V5 研究驗證完成。
 
 ## 公開交付狀態
 
@@ -104,9 +104,9 @@ PASS 為上述原型範圍內已驗證；PARTIAL 直接列出尚未完成的部�
 | 測試與結果 | 122 pytest＋真實瀏覽器＋保存 LIVE JSON／MD |
 | 架構說明 | [design.md](../docs/design.md) |
 | 作品說明 | [project-description.md](../submission/project-description.md) |
-| Demo 腳本／本人逐句稿 | 已準備；錄音依使用者安排延後 |
+| Demo 腳本／本人逐句稿 | 已準備；本人錄音已上傳，影音尚未合成 |
 | 評審導覽 | [judge-guide.md](../submission/judge-guide.md) |
 | 已知限制 | [known-limits.md](../submission/known-limits.md) 及本表 PARTIAL |
 | 秘密排除／私人交付 | 來源／證據包排除 .env、runtime、backups；GitHub Pages 靜態作品頁已公開 |
 
-正式 Demo 目前為 149.84 秒真實靜音預覽，尚未符合「參賽者本人實際聲音」的正式影片條件。公開作品頁：[RE:MEMORY](https://orsinobbb.github.io/RE-MEMORY/)。程式使用 loopback，沒有部署公開付費後端。
+最新主要 Demo 為179.53秒的參賽者提供操作錄影；本人旁白110.40秒已獨立上傳。影片無音軌、尚未合成，未符合單一影片含本人聲音的條件。公開作品頁：[RE:MEMORY](https://orsinobbb.github.io/RE-MEMORY/)。程式使用 loopback，沒有部署公開付費後端。
