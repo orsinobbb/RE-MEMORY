@@ -1,5 +1,5 @@
 {
-  "source_sha256": "14508d4c174768dbb24fe23a3f8e15bd78db3488ed1771823d3b6226fcbd67b6",
+  "source_sha256": "3bdf4626be2c2c40486c5d6af2145a18b32fde6b75ce7331dc75118955c440c2",
   "video_human_voice": false,
   "video_scope": "GENUINE_STORED_LIVE_SCREEN_CAPTURE",
   "case_set_sha256": "08e2e855e0a0756de0ba47e379deac381a6e7c8cad91381998eec4cacaa76fd0",
@@ -7,5 +7,7 @@
   "human_voice": "DEFERRED_BY_USER",
   "acceptance_report": "acceptance.md",
   "console_final_live_displayed_subtotal_usd": 0.03807,
-  "publication_scope": "PUBLIC_STATIC_SYNTHETIC_DELIVERY"
+  "publication_scope": "PUBLIC_STATIC_SYNTHETIC_DELIVERY",
+  "text_language": "zh-Hant",
+  "language_correction_report": "traditional-chinese-release.md"
 }
