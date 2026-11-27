@@ -1,0 +1,73 @@
+{
+  "completed_at": "2026-11-27T23:02:01.000238+08:00",
+  "authorization": "PUBLIC_REPOSITORY_AFTER_SANITIZATION_AND_CHECKS",
+  "repository_url": "https://github.com/orsinobbb/RE-MEMORY",
+  "repository_visibility": "public",
+  "source_branch": "codex/openlab-2026",
+  "source_commit": "641d5719ec8c376ba5529449f120d13ac8b22a19",
+  "public_page_url": "https://orsinobbb.github.io/RE-MEMORY/",
+  "pages_branch": "codex/pages",
+  "pages_commit": "11992a764f13b0b5a722a024e71ec005fadce9bf",
+  "public_delivery_type": "STATIC_HTTPS_PAGE_WITH_SYNTHETIC_EVIDENCE",
+  "source_archive": {
+    "path": "dist/RE-MEMORY-source.zip",
+    "files": 233,
+    "bytes": 472299,
+    "sha256": "14508d4c174768dbb24fe23a3f8e15bd78db3488ed1771823d3b6226fcbd67b6",
+    "snapshot": "IMMUTABLE_RELEASE_BEFORE_POST_PUBLICATION_LEDGER"
+  },
+  "checks": {
+    "pytest_passed": 122,
+    "actual_browser_workflows_passed": 3,
+    "source_export_startup": "PASS_ON_INDEPENDENT_LOOPBACK_PORT",
+    "public_layout_download_sha_video": "PASS",
+    "history_scan": {
+      "repository": {
+        "history_blob_count": 237,
+        "credential_privacy_scan": "PASS"
+      },
+      "pages": {
+        "history_blob_count": 19,
+        "credential_privacy_scan": "PASS"
+      }
+    },
+    "anonymous_https": {
+      "anonymous_https_page": "PASS",
+      "manifest_matches_latest_zip": "PASS",
+      "anonymous_downloads": {
+        "assets/RE-MEMORY-source.zip": {
+          "status": 200,
+          "bytes": 472299,
+          "sha256": "14508d4c174768dbb24fe23a3f8e15bd78db3488ed1771823d3b6226fcbd67b6"
+        },
+        "assets/RE-MEMORY-evidence.zip": {
+          "status": 200,
+          "bytes": 94103,
+          "sha256": "8721652c0fc59b454e50690f3e3eeb13db5ce823f289e7b03c7f335669b4ab7d"
+        }
+      },
+      "env_and_public_paid_endpoint": "404",
+      "video_serving": {
+        "status": 206,
+        "content_type": "video/mp4",
+        "range_support": "bytes"
+      },
+      "original_ledger_unchanged": true,
+      "added_mixroute_calls": 0,
+      "added_mixroute_tokens": 0,
+      "added_mixroute_cost_usd": 0
+    },
+    "github_pages_build": "built"
+  },
+  "human_narration": "DEFERRED_BY_USER",
+  "competition_submission": "NOT_SUBMITTED",
+  "production_paid_backend": "NOT_EXPOSED",
+  "added_mixroute_calls": 0,
+  "added_mixroute_tokens": 0,
+  "added_mixroute_cost_usd": 0,
+  "codex_token_usage": null,
+  "codex_billing_usd": null,
+  "review_report": "reports/github-publication-review.md",
+  "scope": "Local prototype and static release acceptance; not full penetration-test or independent billing certification.",
+  "cleanup": "Stopped only this run's three disposable loopback servers; removed exported checkout test environment; preserved original backend and user .env."
+}

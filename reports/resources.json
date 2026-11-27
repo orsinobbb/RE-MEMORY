@@ -85,7 +85,7 @@
   "console_displayed_usd": 0.035152,
   "completed_at": "2026-11-27T00:01:51.505228+08:00",
   "total_elapsed_seconds": 4006.51,
-  "project_disk_bytes": 64778062,
+  "project_disk_bytes": 75239756,
   "continuations": [
     {
       "name": "memory-repair",
@@ -222,14 +222,73 @@
           "ended_at": "2026-11-27T18:32:52.229796+08:00"
         }
       ]
+    },
+    {
+      "name": "github-publication",
+      "started_at": "2026-11-27T22:41:00+08:00",
+      "completed_at": "2026-11-27T23:02:01.000238+08:00",
+      "elapsed_seconds": 1261.0,
+      "status": "PUBLIC_REPOSITORY_AND_STATIC_PAGE_ANONYMOUSLY_VERIFIED",
+      "stages": [
+        {
+          "stage": "14-public-source-privacy-portability-and-final-review",
+          "completed_at": "2026-11-27T22:49:04+08:00",
+          "elapsed_seconds": 484.0,
+          "checks": "Portable browser runtime; workstation path cleanup;122pytest;3 actual browser flows; clean exported offline startup; one fresh review Critical0/Important0, one documentation Minor addressed",
+          "added_api_calls": 0,
+          "added_api_tokens": 0,
+          "added_api_cost_usd": 0
+        },
+        {
+          "stage": "15-public-github-pages-and-anonymous-delivery",
+          "completed_at": "2026-11-27T23:02:01.000238+08:00",
+          "elapsed_seconds": 777.0,
+          "checks": "Public clean Git history;233-file source ZIP SHA/CRC; source237 and Pages19 history blobs scanned; exact Pages commit built with HTTPS; anonymous source/evidence downloads, video206, .env/API404; original ledger unchanged",
+          "added_api_calls": 0,
+          "added_api_tokens": 0,
+          "added_api_cost_usd": 0
+        }
+      ],
+      "added_api_calls": 0,
+      "added_api_tokens": 0,
+      "added_api_cost_usd": 0,
+      "codex_token_usage": null,
+      "codex_billing_usd": null,
+      "fresh_review_count": 1,
+      "project_disk_bytes": 75239756,
+      "available_filesystem_bytes": 3538165760,
+      "human_voice": "DEFERRED_BY_USER",
+      "competition_submission": "NOT_SUBMITTED",
+      "repository_url": "https://github.com/orsinobbb/RE-MEMORY",
+      "public_page_url": "https://orsinobbb.github.io/RE-MEMORY/",
+      "active_work_intervals": [
+        {
+          "started_at": "2026-11-27T22:41:00+08:00",
+          "ended_at": "2026-11-27T23:02:01.000238+08:00"
+        }
+      ]
+    },
+    {
+      "name": "traditional-chinese-release",
+      "tracked_started_at": "2026-11-27T23:08:30+08:00",
+      "preceding_investigation_elapsed_seconds": null,
+      "prepared_at": "2026-11-27T23:10:24.493619+08:00",
+      "tracked_elapsed_seconds_to_preparation": 114.49,
+      "status": "TEXT_CORRECTED_TESTED_PUBLIC_UPDATE_PENDING",
+      "checks": "22 source text files and3 page assets corrected; existing122-test suite exits0; original LIVE artifacts and usage unmodified",
+      "added_api_calls": 0,
+      "added_api_tokens": 0,
+      "added_api_cost_usd": 0,
+      "codex_token_usage": null,
+      "codex_billing_usd": null
     }
   ],
-  "all_active_work_elapsed_seconds": 8219.42,
-  "latest_completed_at": "2026-11-27T18:32:52.229796+08:00",
+  "all_active_work_elapsed_seconds": 9480.42,
+  "latest_completed_at": "2026-11-27T23:02:01.000238+08:00",
   "disk_measurement_scope": "Project files excluding symlinks and Git metadata; includes local runtime/backups/video/private static delivery, excludes linked dependency cache.",
   "usage_unknown_calls": 2,
-  "latest_prepared_at": "2026-11-27T18:32:52.229796+08:00",
-  "all_active_work_elapsed_seconds_to_preparation": 8219.42,
+  "latest_prepared_at": "2026-11-27T23:02:01.000238+08:00",
+  "all_active_work_elapsed_seconds_to_preparation": 9480.42,
   "console_final_live_displayed_subtotal_usd": 0.03807,
   "console_final_live_reconciled_tokens": 41697
 }

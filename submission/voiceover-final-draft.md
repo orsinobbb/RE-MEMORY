@@ -34,11 +34,11 @@
 
 ## 1:05–1:35｜MixRoute真實生成
 
-[Recovery Lab真實LIVE结果；若為既有結果，顯示實測紀錄／歷史回放]
+[Recovery Lab真實LIVE結果；若為既有結果，顯示實測紀錄／歷史回放]
 
 模型生成透過 MixRoute API 執行。
 
-SMART 模式使用 auto，由 MixRoute 決定這個請求交给哪個模型；也可以選擇固定模型。
+SMART 模式使用 auto，由 MixRoute 決定這個請求交給哪個模型；也可以選擇固定模型。
 
 這組實際紀錄可以看到回傳的模型、請求編號、Token 用量與生成內容。
 

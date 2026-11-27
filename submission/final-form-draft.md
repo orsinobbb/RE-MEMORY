@@ -16,7 +16,7 @@ RE:MEMORY研究有限上下文中，如何透過專案索引、稱呼、活動�
 
 本機FastAPI/SQLite/FTS5搭配六頁前端，支援記憶修正與成品重新驗證，保存歷史版本及完成紀錄。Recovery Lab實測SMART／auto選到Sonnet建立方案，再以固定DeepSeek於另一個空白Session接續。第二階段模型上下文包含前一成品完整內容與SHA；重開保存紀錄不新增模型呼叫。
 
-## AI与MixRoute使用方式
+## AI與MixRoute使用方式
 
 Codex協助程式、文件與測試開發。作品中的模型生成透過MixRoute Chat Completions：一般Key使用固定模型，Smart Routing Key設定model=auto。授權池為deepseek-v3.2與claude-sonnet-5-5，記錄要求/實際模型、請求ID、Tokens、耗時、生成內容與未知費用；費用共用持久化預留帳本，不重設已消耗資源。檢索、來源/上下文/成品檢查在本機執行。
 
@@ -47,4 +47,4 @@ Codex協助程式、文件與測試開發。作品中的模型生成透過MixRou
 - 是否參加MixRoute特別獎與對應作品使用權條款：由本人最後決定與授權，未代為勾選。
 - 提交成功紀錄：提交後核對完成畫面/收件憑據，報名完成不等於作品投稿完成。
 
-規章來源：https://openlab-ai-build-challenge.davincwc.workers.dev/rules （先前核對11/25更新版；最後提交時再於本人瀏覽器核對。当前伺服器與搜尋工具重新讀取遇到存取限制。）
+規章來源：https://openlab-ai-build-challenge.davincwc.workers.dev/rules （先前核對11/25更新版；最後提交時再於本人瀏覽器核對。當前伺服器與搜尋工具重新讀取遇到存取限制。）

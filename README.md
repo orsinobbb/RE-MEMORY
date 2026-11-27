@@ -71,6 +71,6 @@ Recovery Lab新增「兩個模型，接續同一份努力」。新來源包可�
 
 公開交付頁：[RE:MEMORY](https://orsinobbb.github.io/RE-MEMORY/)；公開原始碼：[GitHub](https://github.com/orsinobbb/RE-MEMORY)。提供保存實測、靜音影片預覽和來源包下載；可執行原型仍由來源包啟動本機 API。
 
-最新驗收見 [60 項追溯與交付驗收](reports/acceptance.md)；本輪 122 pytest、記憶修正瀏覽器、備份还原與 macOS 解壓啟動通過。本人旁白依使用者安排延後。
+最新驗收見 [60 項追溯與交付驗收](reports/acceptance.md)；本輪 122 pytest、記憶修正瀏覽器、備份還原與 macOS 解壓啟動通過。本人旁白依使用者安排延後。
 
 瀏覽器工具可使用 `npm install --no-save playwright` 安裝，再執行 `npx playwright install chromium`；已有 Chrome 可透過 `PLAYWRIGHT_CHROMIUM_EXECUTABLE` 選擇執行檔。`PLAYWRIGHT_MODULE_PATH` 可指定本機已安裝模組，來源不包含個人電腦路徑。

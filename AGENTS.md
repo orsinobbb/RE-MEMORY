@@ -12,3 +12,5 @@ real elapsed time/API usage in reports/progress.md and reports/resources.json.
 Local .env is user-owned: preserve its keys when updating verified nonsecret fields.
 Default no-backend privacy policy instructions do not imply deployment for this
 local backend prototype. Do not modify the shared policy site.
+
+公開作品頁、介面、README、交付文件、逐句稿及公開展示文字必須使用繁體中文。修改及發佈前檢查簡體字；保留合法繁體用字。若需轉寫模型原文，原始證據留本機，公開版本清楚標記轉寫，不更改既有用量或冒充原始回傳。

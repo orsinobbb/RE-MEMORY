@@ -98,7 +98,7 @@ class Orchestrator:
             if mode=="SIMULATION":
                 goal=next(f["content"] for f in context["loaded"] if f.get("kind")=="GOAL")
                 constraints=[f["content"] for f in context["loaded"] if f.get("kind")=="CONSTRAINT"]
-                content="# 接續工作驗收清單\n\nDEMO / SIMULATION — 本機白名單工具產生，未呼叫模型。\n\n## 目標\n"+goal+"\n\n## 限制\n"+"\n".join(constraints)+"\n\n## 下一步\n- [ ] 建立合成資料輸入與預期輸出。\n- [ ] 驗證版本、來源及必要限制。\n- [ ] 逐項執行驗收並記錄結果；本成果僅為清單，未宣稱完成後续測試。\n\n來源："+", ".join(context["manifest"]["evidence_references"])+"\n"
+                content="# 接續工作驗收清單\n\nDEMO / SIMULATION — 本機白名單工具產生，未呼叫模型。\n\n## 目標\n"+goal+"\n\n## 限制\n"+"\n".join(constraints)+"\n\n## 下一步\n- [ ] 建立合成資料輸入與預期輸出。\n- [ ] 驗證版本、來源及必要限制。\n- [ ] 逐項執行驗收並記錄結果；本成果僅為清單，未宣稱完成後續測試。\n\n來源："+", ".join(context["manifest"]["evidence_references"])+"\n"
             else:
                 call=self.provider.call(model_context["messages"],mode,request.get("model"),model_context["token_breakdown"]["output_reserve"],user,parameter="standard")
                 if request.get('different_from_model') and (call.get('model') or '').casefold()==request['different_from_model'].casefold():
