@@ -12,7 +12,7 @@ OPEN LAB 2026 本機可操作原型。用低成本索引、個人語意字典、
 
 目前功能是「記憶找回與任務接續」：使用預載合成專案，找回當前目標與限制，確認後由 MixRoute 產出 Markdown 驗收／接續清單。尚未支援聊天式多輪追問、對話歷史累積或私人聊天匯入。作品頁提供保存實測與下載；互動原型需在本機啟動。
 
-GitHub 與公開作品頁已準備；149.84 秒影片目前為靜音預覽，參賽者本人旁白仍待錄製，競賽尚未投稿。
+GitHub 與公開作品頁已準備。最新主要 Demo 約179.53秒，為參賽者提供的三步驟操作錄影；[下載影片](https://orsinobbb.github.io/RE-MEMORY/assets/participant-demo-20261128.mp4)。本人[原始旁白](https://orsinobbb.github.io/RE-MEMORY/assets/participant-voice.m4a)已上傳，約110.40秒。影片無音軌，旁白獨立提供，尚未合成；沒有競賽投稿成功回條。
 
 ## 啟動
 
@@ -82,6 +82,6 @@ Recovery Lab新增「兩個模型，接續同一份努力」。新來源包可�
 
 公開交付頁：[RE:MEMORY](https://orsinobbb.github.io/RE-MEMORY/)；公開原始碼：[GitHub](https://github.com/orsinobbb/RE-MEMORY)。提供保存實測、靜音影片預覽和來源包下載；可執行原型仍由來源包啟動本機 API。
 
-最新驗收見 [60 項追溯與交付驗收](reports/acceptance.md)；本輪 122 pytest、記憶修正瀏覽器、備份還原與 macOS 解壓啟動通過。本人旁白依使用者安排延後。
+最新驗收見 [60 項追溯與交付驗收](reports/acceptance.md)；本輪 122 pytest、記憶修正瀏覽器、備份還原與 macOS 解壓啟動通過。本人旁白已以獨立音檔提供，尚未合成至影片。
 
 瀏覽器工具可使用 `npm install --no-save playwright` 安裝，再執行 `npx playwright install chromium`；已有 Chrome 可透過 `PLAYWRIGHT_CHROMIUM_EXECUTABLE` 選擇執行檔。`PLAYWRIGHT_MODULE_PATH` 可指定本機已安裝模組，來源不包含個人電腦路徑。

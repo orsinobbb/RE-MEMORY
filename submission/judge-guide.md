@@ -11,3 +11,5 @@
 目前使用合成專案，交付物為驗收／接續清單。SMART／FIXED 使用真實 API，金鑰只留本機。左側仍可查看記憶、檢索過程、完整性、保存的 Sonnet→DeepSeek 兩階段實測與離線比較。公開交付頁：https://orsinobbb.github.io/RE-MEMORY/ 。
 
 目前功能為記憶找回與任務接續，尚未支援聊天式多輪追問或累積對話歷史。公開頁是靜態實測與下載入口；互動原型在本機執行。
+
+最新主要 Demo：[三步驟操作錄影](https://orsinobbb.github.io/RE-MEMORY/assets/participant-demo-20261128.mp4)，約179.53秒；[本人原始旁白](https://orsinobbb.github.io/RE-MEMORY/assets/participant-voice.m4a)，約110.40秒。影音獨立提供，尚未合成。
