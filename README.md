@@ -12,7 +12,7 @@ OPEN LAB 2026 本機可操作原型。用低成本索引、個人語意字典、
 ./start_mac.sh
 ```
 
-Windows 執行 `start_windows.bat`。Windows 腳本已準備，尚未在 Windows 主機實測。瀏覽器開啟 `http://127.0.0.1:8791`；`.env` 的 `APP_PORT` 可改成本機未占用的埠。程式只綁定 loopback，沒有公開部署。
+Windows 執行 `start_windows.bat`。Windows 腳本已準備，尚未在 Windows 主機實測。瀏覽器開啟 `http://127.0.0.1:8791`；`.env` 的 `APP_PORT` 可改成本機未占用的埠。可執行原型只綁定 loopback；公開網站僅提供靜態實測與下載。
 
 第一次將 `.env.example` 複製成 `.env`，金鑰只填入本機檔案。`MIXROUTE_ENABLED=false` 時可使用全部本機檢索與 SIMULATION。填好一般／Smart Key、價格上界、授權模型池後才啟用 LIVE。當前已驗證入口為 `https://api.mixroute.ai/v1/chat/completions`，Smart 的 model 為 `auto`；相容池為 Simple＝deepseek-v3.2、Complex／Ultra＝claude-sonnet-5-5。
 
@@ -67,9 +67,9 @@ Recovery Lab新增「兩個模型，接續同一份努力」。新來源包可�
 
 已保存實測：auto選到Sonnet，再以固定DeepSeek接續；2,732Tokens。固定20新句型的E/F各16任務與4停止案例通過，另6個預選Sonnet案例通過。F在新案例實際生成全部選DeepSeek；結果不證明auto提升品質。新句型使用既有合成來源，沒有調整路由或答案，並非封存盲測。完整紀錄在 [最終實測報告](reports/final-live-summary.md) 與 [固定案例JSON](benchmarks/results/final-live.json)。
 
-最終122項pytest通過；兩項獨立審查問題已以重現測試修正，詳見 [審查與修正](reports/final-code-review.md)。真實靜音操作預覽與私人交付頁已準備，正式1–3分鐘Demo仍待參賽者本人旁白；[逐句稿](submission/voiceover-final-draft.md) 與 [投稿欄位草稿](submission/final-form-draft.md) 已備妥。公開與投稿需本人最後授權。
+最終122項pytest通過；兩項獨立審查問題已以重現測試修正，詳見 [審查與修正](reports/final-code-review.md)。真實靜音操作預覽與公開靜態交付頁已準備，正式1–3分鐘Demo仍待參賽者本人旁白；[逐句稿](submission/voiceover-final-draft.md) 與 [投稿欄位草稿](submission/final-form-draft.md) 已備妥。GitHub 原始碼與靜態交付已獲本人授權公開；競賽投稿仍需本人最後確認。
 
-私人靜態交付頁：https://rememory-openlab-2026.orsinoojzp.chatgpt.site 。提供保存實測、影片預覽和原始碼下載；可執行原型仍由來源包啟動本機API。
+公開交付頁：[RE:MEMORY](https://orsinobbb.github.io/RE-MEMORY/)；公開原始碼：[GitHub](https://github.com/orsinobbb/RE-MEMORY)。提供保存實測、靜音影片預覽和來源包下載；可執行原型仍由來源包啟動本機 API。
 
 最新驗收見 [60 項追溯與交付驗收](reports/acceptance.md)；本輪 122 pytest、記憶修正瀏覽器、備份还原與 macOS 解壓啟動通過。本人旁白依使用者安排延後。
 

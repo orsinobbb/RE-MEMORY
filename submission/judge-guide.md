@@ -13,7 +13,7 @@ reports/evaluation-summary.md記錄完整比較與限制；reports/resources.jso
 
 reports/live-final-cross-first.json、live-final-cross-second.json、live-final-cross-summary.json是依最新規則驗證的實際成果交接，與只回OK的auto連通性探針區分。最初被阻擋的改寫限制pilot保留為失敗證據。
 
-交付頁先準備私人版本，正式本人旁白、公開網址與成功投稿紀錄待完成。這是持久化記憶路由原型，交付物是接手清單，未宣稱把MIDI工作本身完成。
+公开交付頁：https://orsinobbb.github.io/RE-MEMORY/；原始碼：https://github.com/orsinobbb/RE-MEMORY。正式本人旁白與成功投稿紀錄待完成。這是持久化記憶路由原型，交付物是接手清單，未宣稱把MIDI工作本身完成。
 
 
 最終兩階段交接：Recovery Lab →「讀取已保存示範」，各卡片分別顯示SMART/auto Sonnet與固定DeepSeek、不同空白Session、实际用量及SHA；展開第二模型收到的前一成品可核對持久化交接。報告 reports/final-live-demo.json / final-live-summary.md 与 benchmarks/results/final-live.json 保留20新句型與6Sonnet案例的實際輸出。封裝給新的本機時，可「準備兩階段示範」，使用明確SIMULATION或自行設定MixRoute進行LIVE。
