@@ -4,6 +4,16 @@ AI 可以忘記，但人類的努力不能歸零。
 
 OPEN LAB 2026 本機可操作原型。用低成本索引、個人語意字典、來源關係與必要記憶檢查，從空白 Session 找回工作；實際交付物為繁體中文 Markdown 驗收／接手清單，不宣稱已完成音訊轉換程式或清單中的測試。
 
+## 公開交付
+
+- 作品頁：https://orsinobbb.github.io/RE-MEMORY/
+- 原始碼：https://github.com/orsinobbb/RE-MEMORY
+- 下載：[完整原始碼](https://orsinobbb.github.io/RE-MEMORY/assets/RE-MEMORY-source.zip)／[實測證據](https://orsinobbb.github.io/RE-MEMORY/assets/RE-MEMORY-evidence.zip)
+
+目前功能是「記憶找回與任務接續」：使用預載合成專案，找回當前目標與限制，確認後由 MixRoute 產出 Markdown 驗收／接續清單。尚未支援聊天式多輪追問、對話歷史累積或私人聊天匯入。作品頁提供保存實測與下載；互動原型需在本機啟動。
+
+GitHub 與公開作品頁已準備；149.84 秒影片目前為靜音預覽，參賽者本人旁白仍待錄製，競賽尚未投稿。
+
 ## 啟動
 
 需要 Python 3.12 與 [uv](https://docs.astral.sh/uv/)。解壓來源包或 clone 儲存庫後，進入專案根目錄；macOS：
