@@ -1,10 +1,10 @@
 {
-  "source_sha256": "e5ee9a9ee9642e35fdf85d6a474a9b948d516381a04028889bc052ac2f4dad96",
-  "video_human_voice": false,
-  "video_scope": "USER_SUPPLIED_GENUINE_UI_SCREEN_RECORDING",
+  "source_sha256": "7c17163df40e5aea35061ef14df3e3179888f71098ffd6e466491ccc9ba6a869",
+  "video_human_voice": true,
+  "video_scope": "USER_SUPPLIED_GENUINE_UI_WITH_RECORDED_AUDIO",
   "case_set_sha256": "08e2e855e0a0756de0ba47e379deac381a6e7c8cad91381998eec4cacaa76fd0",
   "verification_tests": 122,
-  "human_voice": "USER_SUPPLIED_SEPARATE_AUDIO",
+  "human_voice": "USER_SUPPLIED_EMBEDDED_RECORDING",
   "acceptance_report": "acceptance.md",
   "console_final_live_displayed_subtotal_usd": 0.03807,
   "publication_scope": "PUBLIC_STATIC_SYNTHETIC_DELIVERY",
@@ -19,9 +19,10 @@
   "participant_voice_file": "participant-voice.m4a",
   "participant_voice_sha256": "6d799ee1b9e28adb5d304e7627c594c47936a2b27a7af7efa6b7e120ff6719a1",
   "participant_voice_bytes": 1822700,
-  "primary_demo_file": "participant-demo-20261128.mp4",
-  "primary_demo_sha256": "9d6c92bd4ca6713e937e7a9975bec406f6fec1f603d6b80c959791beef281290",
-  "primary_demo_duration_seconds": 179.533333,
-  "primary_demo_bytes": 41411457,
-  "original_video_sha256": "1e3b8e735ab682005e8f9fe90e07ca50499093b6e6698b8328cc35ed76c0e348"
+  "primary_demo_file": "participant-demo-voiced-20261128.mp4",
+  "primary_demo_sha256": "1daf85210b8ef27141238302ff9192662f4bf53e008bcb0941be5ce47fc5211c",
+  "primary_demo_duration_seconds": 99.932833,
+  "primary_demo_bytes": 25156301,
+  "original_video_sha256": "1d37abf56a31bbfc7cdd52985439aee753082846e90e78cf424ec7478047023c",
+  "audio_video_packet_hash_match": true
 }
