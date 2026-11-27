@@ -12,4 +12,4 @@
 
 目前功能為記憶找回與任務接續，尚未支援聊天式多輪追問或累積對話歷史。公開頁是靜態實測與下載入口；互動原型在本機執行。
 
-最新主要 Demo：[三步驟操作錄影](https://orsinobbb.github.io/RE-MEMORY/assets/participant-demo-20261128.mp4)，約179.53秒；[本人原始旁白](https://orsinobbb.github.io/RE-MEMORY/assets/participant-voice.m4a)，約110.40秒。影音獨立提供，尚未合成。
+最新主要 Demo：[三步驟有聲操作錄影](https://orsinobbb.github.io/RE-MEMORY/assets/participant-demo-voiced-20261128.mp4)，約99.93秒，已包含參賽者本人錄音。先前[獨立旁白](https://orsinobbb.github.io/RE-MEMORY/assets/participant-voice.m4a)保留為備份。
