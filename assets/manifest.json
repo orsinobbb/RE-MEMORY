@@ -4,7 +4,7 @@
   "video_scope": "GENUINE_STORED_LIVE_SCREEN_CAPTURE",
   "case_set_sha256": "08e2e855e0a0756de0ba47e379deac381a6e7c8cad91381998eec4cacaa76fd0",
   "verification_tests": 122,
-  "human_voice": "DEFERRED_BY_USER",
+  "human_voice": "USER_SUPPLIED_SEPARATE_AUDIO",
   "acceptance_report": "acceptance.md",
   "console_final_live_displayed_subtotal_usd": 0.03807,
   "publication_scope": "PUBLIC_STATIC_SYNTHETIC_DELIVERY",
@@ -14,5 +14,9 @@
   "single_page_live_tokens": 925,
   "single_page_six_view_smoke": "PASS",
   "dialogue_scope": "MEMORY_RETRIEVAL_AND_TASK_HANDOFF",
-  "multi_turn_chat": false
+  "multi_turn_chat": false,
+  "participant_voice_uploaded": true,
+  "participant_voice_file": "participant-voice.m4a",
+  "participant_voice_sha256": "6d799ee1b9e28adb5d304e7627c594c47936a2b27a7af7efa6b7e120ff6719a1",
+  "participant_voice_bytes": 1822700
 }
